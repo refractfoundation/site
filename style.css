@@ -20,6 +20,13 @@ header {
   align-items: center;
 }
 
+footer {
+  background-color: #dac8ae;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 header nav {
   flex: 1;
   display: flex;
