@@ -104,6 +104,10 @@ h2 {
   font-size: clamp(0.9rem, 1.75vw, 1.75rem);
 }
 
+.hero img {
+  width: 30%;
+}
+
 .content {
   width: 65%;
   margin: 15px auto;
@@ -209,6 +213,18 @@ h2 {
     line-height: normal;
     gap: 0.75rem;
     background-position-y: center !important;
+  }
+
+  .hero img {
+    width: 55%;
+  }
+
+  .hero h3 {
+    font-size: clamp(1.3rem, 2vw, 2rem);
+  }
+
+  .hero h4 {
+    font-size: clamp(1.1rem, 1.75vw, 1.75rem);
   }
 
   .content {
