@@ -133,7 +133,7 @@ h2 {
 
 .event-projects {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row;
   width: 100%;
 }
 
@@ -208,6 +208,7 @@ h2 {
   .hero {
     line-height: normal;
     gap: 0.75rem;
+    background-position-y: center !important;
   }
 
   .content {
@@ -215,8 +216,9 @@ h2 {
   }
 
   .event-gallery img {
-    width: calc(50% - 20px);
+    width: calc(50% - 8px);
     min-width: 120px;
+    margin: 4px;
   }
 
   .event-projects {
