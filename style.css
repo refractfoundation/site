@@ -104,6 +104,10 @@ h2 {
   font-size: 1.75vw;
 }
 
+.hero img {
+  width: 30%;
+}
+
 .content {
   width: 65%;
   margin: 15px auto;
@@ -133,7 +137,7 @@ h2 {
 
 .event-projects {
   display: flex;
-  flex-flow: row, wrap;
+  flex-flow: row;
   width: 100%;
 }
 
@@ -177,4 +181,99 @@ h2 {
 
 .sponsor-card img {
   max-width: 80%;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  header > img {
+    order: -1;
+    flex: 0 0 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  header nav {
+    flex: none;
+    justify-content: center;
+    padding: 0.25rem 1rem;
+  }
+
+  header nav.nav-left,
+  header nav.nav-right {
+    padding: 0.25rem 1rem;
+  }
+
+  html,
+  body {
+    font-size: 16px;
+  }
+
+  header nav a {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero {
+    line-height: normal;
+    gap: 0.75rem;
+    background-position-y: center !important;
+  }
+
+  .hero img {
+    width: 55%;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero h3 {
+    font-size: 1.3rem;
+  }
+
+  .hero h4 {
+    font-size: 1.1rem;
+  }
+
+  .content {
+    width: 90%;
+  }
+
+  .event-gallery img {
+    width: calc(50% - 8px);
+    min-width: 120px;
+    margin: 4px;
+  }
+
+  .event-projects {
+    flex-wrap: wrap;
+  }
+
+  .event-project {
+    width: calc(50% - 20px);
+  }
+
+  .sponsor-card {
+    width: clamp(55px, 18vw, 100px);
+  }
+}
+
+@media (max-width: 480px) {
+  .event-project {
+    width: 100%;
+    margin: 5px 0;
+  }
 }
