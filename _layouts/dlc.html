@@ -1,0 +1,31 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <div
+      class="hero"
+      style="
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url(/img/campfire/hcampfire_3.JPG);
+        background-position-x: center;
+        background-position-y: -30vh;
+      "
+    >
+      <img
+        src="/img/logo/dlc_white.svg"
+        alt="The Digital Literacy Census"
+        class="hero-logo"
+      />
+      <h3>{{ page.hero_sub }}</h3>
+    </div>
+    <div class="content">{{ content }}</div>
+    {% include footer.html %}
+  </body>
+</html>
