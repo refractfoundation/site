@@ -156,12 +156,14 @@ h2 {
 
 .events {
   display: flex;
+  flex-direction: column;
 }
 
 .event-card {
   background-color: aquamarine;
   border-radius: 20px;
   padding: 15px;
+  margin-bottom: 20px;
   width: 100%;
   height: 30vh;
   color: white;
