@@ -23,8 +23,19 @@ header {
 footer {
   background-color: #dac8ae;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+footer h3 {
+  margin-bottom: 0px;
+  font-size: 3vh;
+  font-weight: bolder;
+}
+
+footer p {
+  margin-top: 1vh;
 }
 
 header nav {
@@ -52,17 +63,53 @@ header nav a {
   font-size: 1.2vw;
 }
 
-header nav a:hover {
-  text-decoration: underline;
+.site-notice-wrap {
+  background: linear-gradient(90deg, #e9dcc4 0%, #f7edd9 50%, #e9dcc4 100%);
+  border-top: 1px solid #d7c2a0;
+  border-bottom: 1px solid #d7c2a0;
+  padding: 0.5rem 1rem;
+}
+
+.site-notice {
+  width: 100%;
+  margin: 0 auto;
+  background-color: transparent;
+  color: #3a2a1a;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: center;
+  padding: 0.1rem 0;
+  line-height: 1.35;
+}
+
+.site-notice__label {
+  display: inline-block;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: #004225;
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+  margin-right: 0.55rem;
+}
+
+.site-notice__text {
+  font-size: 1.12vw;
+  font-weight: 600;
 }
 
 h1 {
   font-family: Zilla Slab Highlight;
   font-size: 2.8vw;
+  font-weight: bold !important;
 }
 
 h2 {
   font-family: Zilla Slab Highlight;
+  font-weight: bolder !important;
 }
 
 .hero {
@@ -261,6 +308,25 @@ h2 {
     font-size: 1rem;
   }
 
+  .site-notice-wrap {
+    padding: 0.45rem 0.7rem;
+  }
+
+  .site-notice {
+    width: 100%;
+    padding: 0.1rem 0;
+  }
+
+  .site-notice__label {
+    margin-right: 0.35rem;
+    font-size: 0.72rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .site-notice__text {
+    font-size: 1rem;
+  }
+
   h1 {
     font-size: 1.6rem;
   }
@@ -319,4 +385,9 @@ h2 {
     width: 100%;
     margin: 5px 0;
   }
+}
+
+.splide__slide img {
+  width: 100%;
+  height: auto;
 }
