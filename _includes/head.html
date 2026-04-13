@@ -3,14 +3,31 @@
   <title>{{ page.title }} | The Refract Foundation</title>
   <link rel="stylesheet" href="/scripts/splide/dist/css/splide.min.css" />
   <link rel="stylesheet" href="/scripts/bootstrap-dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="/assets/style.css" />
+  <link rel="stylesheet" href="/assets/style.css?v={{ site.time | date: '%s' }}" />
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
   <script src="/scripts/splide/dist/js/splide.min.js"></script>
 </head>
-<script src="/scripts/splide/dist/js/splide.min.js"></script>
+<script src="/scripts/splide-extension-auto-scroll.min.js"></script>
 <script src="/scripts/bootstrap-dist/js/bootstrap.min.js"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    new Splide(".splide").mount();
+    var carousel = document.querySelector("#image-carousel.splide");
+
+    if (!carousel) {
+      return;
+    }
+
+    var splide = new Splide(carousel, {
+      type: "loop",
+      drag: "free",
+      focus: "center",
+      perPage: 3,
+      gap: "1rem",
+      autoScroll: {
+        speed: 1,
+      },
+    });
+
+    splide.mount(window.splide.Extensions);
   });
 </script>
