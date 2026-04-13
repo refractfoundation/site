@@ -124,16 +124,28 @@ food and swag was distributed courtesy of our incredible sponsors.
 
 # Event Gallery
 
-<div class="site-notice-wrap">
+<!-- <div class="site-notice-wrap">
   <div class="site-notice" role="status" aria-live="polite">
     <span class="site-notice__label">Returning soon</span>
     <span class="site-notice__text"
       >We're upgrading this event's gallery!</span
     >
   </div>
-</div>
+</div> -->
 
-<!-- <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+<section id="image-carousel" class="splide" style="width: 100%; margin: 0 auto;">
+  <div class="splide__track">
+		<ul class="splide__list">
+      {% for photo in site.data.campfire_photos %}
+			<li class="splide__slide">
+				<img src="{{ photo.url }}" alt="Campfire Birmingham Photo">
+			</li>
+      {% endfor %}
+		</ul>
+  </div>
+</section>
+<!-- 
+<section id="image-carousel" class="splide">
   <div class="splide__track">
 		<ul class="splide__list">
 			<li class="splide__slide">

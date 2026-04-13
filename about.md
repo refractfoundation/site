@@ -32,13 +32,14 @@ Just as light is refracted through a lens to become clearer, our primary goal is
 # Our Team
 
 <div style="display: flex;">
-        <img
-          src="/img/team/oliverpotter.jpg"
-          style="width: 20%; border-radius: 50px"
-          alt="Oliver Potter"
-        />
-        <div style="margin-left: 5%;">
-          <h2>Oliver Potter</h2>
-          <h3>Founder & Programme Director</h3>
-        </div>
-      </div>
+  <img
+    src="/img/team/oliverpotter.jpg"
+    style="width: 30vw; height: 30vw; border-radius: 35px"
+    alt="Oliver Potter"
+    class="img-fluid"
+  />
+  <div style="margin-left: 5%;">
+    <h2>Oliver Potter</h2>
+    <h3>Founder & Programme Director</h3>
+  </div>
+</div>
