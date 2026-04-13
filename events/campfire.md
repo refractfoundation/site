@@ -145,7 +145,7 @@ food and swag was distributed courtesy of our incredible sponsors.
   </div>
 </section>
 <!-- 
-<section id="image-carousel" class="splide">
+<section id="image-carousel" class="splide" aria-label="Beautiful Images">
   <div class="splide__track">
 		<ul class="splide__list">
 			<li class="splide__slide">
