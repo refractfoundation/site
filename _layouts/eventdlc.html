@@ -5,13 +5,12 @@
 <html>
   {% include head.html %}
   <body>
-    {% include header.html %}
     <div
       class="hero"
       style="
         background-image: linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
+            rgba(134, 131, 131, 0.5),
+            rgba(134, 131, 131, 0.5)
           ),
           url(/img/campfire/1.JPG);
         background-position-x: center;
@@ -22,6 +21,7 @@
         src="{{ page.hero_logo }}"
         alt="The Digital Literacy Census"
         class="hero-logo"
+        style="width: 60%;"
       />
       <h3>{{ page.hero_sub }}</h3>
     </div>
