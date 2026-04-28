@@ -1,5 +1,5 @@
 ---
-title: Digital Literacy Census
+title: Ormiston Sandwell
 layout: eventdlc
 hero_sub: 
 hero_logo: /img/dlc/OSaCA DLC.svg
