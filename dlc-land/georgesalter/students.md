@@ -18,7 +18,7 @@ This survey is designed to support a better understanding of students’ digital
 
 # Take part
 
-<iframe id="form" class="airtable-embed" src="https://airtable.com/embed/appFZKaU6XJGJWG21/pagicDnQK3rpi0wMQ/form" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+<iframe id="form" class="airtable-embed" src="https://airtable.com/embed/appFZKaU6XJGJWG21/pagicDnQK3rpi0wMQ/form" frameborder="0" onmousewheel="" width="100%" style="min-height: 2000px; background: transparent;"></iframe>
 
 ---
 
