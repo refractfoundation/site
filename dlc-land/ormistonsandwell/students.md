@@ -2,7 +2,7 @@
 title: Ormiston Sandwell
 layout: eventdlc
 hero_sub: Student Survey
-hero_logo: /img/dlc/OSaCA DLC.svg
+hero_logo: /img/logo/dlc_white.svg
 hero_back: /img/dlc/ormistonsandwell.png
 ---
 
