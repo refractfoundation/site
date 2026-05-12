@@ -8,16 +8,12 @@
     href="/assets/style.css?v={{ site.time | date: '%s' }}"
   />
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+  <!-- Airtable embed script for dynamic iframe resizing -->
+  <script src="https://static.airtable.com/js/base/embed.js"></script>
   <script src="/scripts/splide/dist/js/splide.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@iframe-resizer/parent@5.5.9"></script>
+  <!-- Airtable embed script handles dynamic iframe resizing automatically -->
   <script>
-    iframeResize(
-      {
-        license: "GPLv3",
-        log: "collapsed",
-      },
-      "#form",
-    );
+    // Airtable's embed.js will auto-initialize iframes with class "airtable-embed"
   </script>
 </head>
 <script src="/scripts/splide-extension-auto-scroll.min.js"></script>
