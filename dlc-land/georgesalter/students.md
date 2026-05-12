@@ -1,12 +1,12 @@
 ---
-title: Ormiston Sandwell
+title: George Salter Academy
 layout: eventdlc
 hero_sub: Student Survey
 hero_logo: /img/logo/dlc_white.svg
-hero_back: /img/dlc/ormistonsandwell.png
+hero_back: /img/dlc/georgesalter.png
 ---
 
-Ormiston Sandwell Community Academy is taking part in the Digital Literacy Census in partnership with The Refract Foundation.
+George Salter Academy is taking part in the Digital Literacy Census in partnership with The Refract Foundation.
 
 This survey is designed to support a better understanding of students’ digital skills, confidence, and online safety awareness across the school. The findings will be used to identify areas of need and inform discussions around student digital skills and online safety support.
 
@@ -14,42 +14,17 @@ This survey is designed to support a better understanding of students’ digital
 
 1. You (the student) have been invited to take part
 2. Complete a 5-7 minute online form
-3. OSCA receive a concise report with findings and insights
+3. George Salter Academy receive a concise report with findings and insights
 
 # Take part
 
-<div
-  class="event-card"
-  style="
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(/img/campfire/1.JPG);
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: 75vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  "
->
-  <img
-    src="/img/logo/dlc_white.svg"
-    alt="Digital Literacy Census"
-    style="width: 35%; margin-bottom: 0.1vh"
-  />
-  <a
-    class="btn"
-    href="https://forms.gle/gqfmTH3p5MQUo8qA7"
-    target="_blank"
-    >Click Here ></a
-  >
-</div>
+<iframe id="form" class="airtable-embed" src="https://airtable.com/embed/appFZKaU6XJGJWG21/pagicDnQK3rpi0wMQ/form" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
 
 ---
 
 # Privacy
 
-This survey is part of the Digital Literacy Census conducted by The Refract Foundation in partnership with Ormiston Sandwell Community Academy.
+This survey is part of the Digital Literacy Census conducted by The Refract Foundation in partnership with George Salter Academy.
 
 The survey collects anonymous responses about students’ digital skills, confidence, and online safety, along with optional demographic information (including year group, gender, ethnicity, additional learning needs, and financial support indicators).
 
