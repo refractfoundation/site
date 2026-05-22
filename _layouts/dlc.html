@@ -2,28 +2,15 @@
 ---
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
   {% include head.html %}
   <body>
     {% include header.html %}
     <div
-      class="hero"
-      style="
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
-          ),
-          url(/img/campfire/1.JPG);
-        background-position-x: center;
-        background-position-y: -30vh;
-      "
+      class="hero hero--image"
+      style="--hero-image: url('{{ page.hero_back }}'); --hero-overlay: rgba(26, 24, 24, 0.273); --hero-position-y: -30vh;"
     >
-      <img
-        src="/img/logo/dlc_white.svg"
-        alt="The Digital Literacy Census"
-        class="hero-logo"
-      />
-      <h3>{{ page.hero_sub }}</h3>
+      <img src="{{ page.hero_logo }}" alt="{{ page.hero_alt }}" class="hero-logo hero-logo--wide" />
     </div>
     <div class="content container">{{ content }}</div>
     {% include footer.html %}

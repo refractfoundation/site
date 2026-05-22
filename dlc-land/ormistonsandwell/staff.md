@@ -4,6 +4,7 @@ layout: eventdlc
 hero_sub: Staff Survey
 hero_logo: /img/logo/dlc_white.svg
 hero_back: /img/dlc/ormistonsandwell.png
+hero_alt: Digital Literacy Census
 ---
 
 Ormiston Sandwell Community Academy is taking part in the Digital Literacy Census in partnership with The Refract Foundation.
@@ -20,23 +21,9 @@ This survey is designed to support a better understanding of staff's digital ski
 
 <div
   class="event-card"
-  style="
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(/img/campfire/1.JPG);
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: 75vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  "
+  style="--card-image: url('/img/campfire/1.JPG'); --card-position-y: 75vh;"
 >
-  <img
-    src="/img/logo/dlc_white.svg"
-    alt="Digital Literacy Census"
-    style="width: 35%; margin-bottom: 0.1vh"
-  />
+  <img src="/img/logo/dlc_white.svg" alt="Digital Literacy Census" class="event-card__logo" />
   <a
     class="btn"
     href="https://forms.gle/Nc8qvEKYWYS6qMXDA"
