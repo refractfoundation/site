@@ -8,35 +8,30 @@
     href="/assets/style.css?v={{ site.time | date: '%s' }}"
   />
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
-  <!-- Airtable embed script for dynamic iframe resizing -->
-  <script src="https://static.airtable.com/js/base/embed.js"></script>
-  <script src="/scripts/splide/dist/js/splide.min.js"></script>
-  <!-- Airtable embed script handles dynamic iframe resizing automatically -->
+  <script src="https://static.airtable.com/js/base/embed.js" defer></script>
+  <script src="/scripts/splide/dist/js/splide.min.js" defer></script>
+  <script src="/scripts/splide-extension-auto-scroll.min.js" defer></script>
+  <script src="/scripts/bootstrap-dist/js/bootstrap.min.js" defer></script>
   <script>
-    // Airtable's embed.js will auto-initialize iframes with class "airtable-embed"
+    document.addEventListener("DOMContentLoaded", function () {
+      var carousel = document.querySelector("#image-carousel.splide");
+
+      if (!carousel) {
+        return;
+      }
+
+      var splide = new Splide(carousel, {
+        type: "loop",
+        drag: "free",
+        focus: "center",
+        perPage: 3,
+        gap: "1rem",
+        autoScroll: {
+          speed: 1,
+        },
+      });
+
+      splide.mount(window.splide.Extensions);
+    });
   </script>
 </head>
-<script src="/scripts/splide-extension-auto-scroll.min.js"></script>
-<script src="/scripts/bootstrap-dist/js/bootstrap.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var carousel = document.querySelector("#image-carousel.splide");
-
-    if (!carousel) {
-      return;
-    }
-
-    var splide = new Splide(carousel, {
-      type: "loop",
-      drag: "free",
-      focus: "center",
-      perPage: 3,
-      gap: "1rem",
-      autoScroll: {
-        speed: 1,
-      },
-    });
-
-    splide.mount(window.splide.Extensions);
-  });
-</script>

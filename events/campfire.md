@@ -3,6 +3,9 @@ title: Campfire
 layout: campfire
 hero_date: Saturday 28th February 2026
 hero_loc: Ormiston Sandwell Community Academy
+hero_logo: /img/logo/campfire.svg
+hero_back: /img/campfire/25.JPG
+hero_alt: Campfire Birmingham
 ---
 
 _Dear Hackers, Musicians, and Artists,_

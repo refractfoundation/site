@@ -116,15 +116,21 @@ h2 {
   width: 100%;
   height: 60vh;
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/img/CF_BIRMINGHAM_0072.JPG);
+    linear-gradient(var(--hero-overlay, rgba(0, 0, 0, 0.5)), var(--hero-overlay, rgba(0, 0, 0, 0.5))),
+    var(--hero-image, url(/img/CF_BIRMINGHAM_0072.JPG));
   background-size: cover;
+  background-position-x: center;
+  background-position-y: var(--hero-position-y, center);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   line-height: 1.1;
+}
+
+.hero--image {
+  background-size: cover;
 }
 
 .hero--video {
@@ -194,8 +200,12 @@ h2 {
   font-size: clamp(1rem, 0.9rem + 1.2vw, 1.5rem);
 }
 
-.hero img {
+.hero-logo {
   width: 30%;
+}
+
+.hero-logo--wide {
+  width: 60%;
 }
 
 .content {
@@ -209,14 +219,29 @@ h2 {
 }
 
 .event-card {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    var(--card-image, none);
   background-color: aquamarine;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: var(--card-position-y, center);
   border-radius: 20px;
   padding: 15px;
   margin-bottom: 20px;
   width: 100%;
   height: 30vh;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   align-content: center;
+}
+
+.event-card__logo {
+  width: 35%;
+  margin-bottom: 0.1vh;
 }
 
 .btn {

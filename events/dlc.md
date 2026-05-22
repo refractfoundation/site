@@ -2,6 +2,9 @@
 title: Digital Literacy Census
 layout: dlc
 hero_sub: Understanding digital skills, confidence, and online safety across the region
+hero_logo: /img/logo/dlc_white.svg
+hero_back: /img/campfire/1.JPG
+hero_alt: The Digital Literacy Census
 ---
 
 The Digital Literacy Census is a youth-led research initiative by Refract to help schools and workplaces better understand how students and staff use technology in their everyday lives.
