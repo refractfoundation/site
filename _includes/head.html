@@ -15,24 +15,40 @@
   <script src="/scripts/bootstrap-dist/js/bootstrap.min.js" defer></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      var carousel = document.querySelector("#image-carousel.splide");
+      var addAccessibleFrameNames = function () {
+        document.querySelectorAll("iframe").forEach(function (iframe) {
+          if (!iframe.getAttribute("title")) {
+            iframe.setAttribute("title", "Embedded content");
+          }
+        });
+      };
 
-      if (!carousel) {
-        return;
+      addAccessibleFrameNames();
+
+      if (document.body) {
+        var observer = new MutationObserver(function () {
+          addAccessibleFrameNames();
+        });
+
+        observer.observe(document.body, { childList: true, subtree: true });
       }
 
-      var splide = new Splide(carousel, {
-        type: "loop",
-        drag: "free",
-        focus: "center",
-        perPage: 3,
-        gap: "1rem",
-        autoScroll: {
-          speed: 1,
-        },
-      });
+      var carousel = document.querySelector("#image-carousel.splide");
 
-      splide.mount(window.splide.Extensions);
+      if (carousel) {
+        var splide = new Splide(carousel, {
+          type: "loop",
+          drag: "free",
+          focus: "center",
+          perPage: 3,
+          gap: "1rem",
+          autoScroll: {
+            speed: 1,
+          },
+        });
+
+        splide.mount(window.splide.Extensions);
+      }
     });
   </script>
 </head>

@@ -203,14 +203,16 @@ h2 {
   font-size: clamp(1.25rem, 1rem + 2.5vw, 2.2rem);
 }
 
-.hero h3 {
+.hero h3,
+.hero .hero-meta {
   font-family: Zilla Slab;
   color: white;
   font-size: clamp(1.05rem, 0.95rem + 1.6vw, 1.75rem);
   margin-bottom: 5px;
 }
 
-.hero h4 {
+.hero h4,
+.hero .hero-submeta {
   font-family: Zilla Slab;
   color: white;
   font-size: clamp(1rem, 0.9rem + 1.2vw, 1.5rem);
@@ -298,6 +300,16 @@ button:focus-visible,
 .event-project img {
   width: 90%;
   border-radius: 10px;
+}
+
+.event-project__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0.75rem 0 0.25rem;
+}
+
+.event-project__authors {
+  margin: 0;
 }
 
 .event-gallery {
