@@ -144,13 +144,13 @@ food and swag was distributed courtesy of our incredible sponsors.
 
 <section id="image-carousel" class="splide" style="width: 100%; margin: 0 auto;">
   <div class="splide__track">
-		<ul class="splide__list">
+		<div class="splide__list">
       {% for photo in site.data.campfire_photos %}
-			<li class="splide__slide">
+			<div class="splide__slide">
 				<img src="{{ photo.url }}" alt="Campfire Birmingham Photo">
-			</li>
+			</div>
       {% endfor %}
-		</ul>
+		</div>
   </div>
 </section>
 <!-- 
