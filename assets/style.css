@@ -412,11 +412,13 @@ button:focus-visible,
     font-size: 1.2rem;
   }
 
-  .hero h3 {
+  .hero h3,
+  .hero .hero-meta {
     font-size: 1.3rem;
   }
 
-  .hero h4 {
+  .hero h4,
+  .hero .hero-submeta {
     font-size: 1.1rem;
   }
 
