@@ -8,6 +8,22 @@ body {
   line-height: 1.6;
 }
 
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100%;
+  z-index: 1000;
+  background: #004225;
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
 ::selection {
   background-color: #004225;
   color: white;
@@ -252,6 +268,14 @@ h2 {
   text-decoration: none;
 }
 
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+.nav-link:focus-visible {
+  outline: 3px solid #004225;
+  outline-offset: 3px;
+}
+
 .event-projects {
   display: flex;
   flex-flow: row;
@@ -433,4 +457,10 @@ iframe {
   border: none;
   display: block;
   overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero--video video {
+    display: none;
+  }
 }

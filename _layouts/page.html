@@ -5,8 +5,9 @@
 <html lang="en">
   {% include head.html %}
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     {% include header.html %}
-    <div class="content container">{{ content }}</div>
+    <main id="main-content" class="content container" tabindex="-1">{{ content }}</main>
     {% include footer.html %}
   </body>
 </html>

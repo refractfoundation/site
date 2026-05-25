@@ -28,6 +28,7 @@ This survey is designed to support a better understanding of staff's digital ski
     class="btn"
     href="https://forms.gle/Nc8qvEKYWYS6qMXDA"
     target="_blank"
+    rel="noopener noreferrer"
     >Click Here ></a
   >
 </div>

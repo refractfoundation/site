@@ -43,6 +43,7 @@ food and swag was distributed courtesy of our incredible sponsors.
     class="event-project"
     href="https://ethanhawksley.itch.io/cat-fishing-frenzy"
     target="_blank"
+    rel="noopener noreferrer"
   >
     <img src="/img/campfire/project1.png" alt="" />
     <h3>Cat-Fishing Frenzy</h3>
@@ -51,6 +52,7 @@ food and swag was distributed courtesy of our incredible sponsors.
     class="event-project"
     href="https://icefly147.itch.io/a-gneiss-expedition-demo"
     target="_blank"
+    rel="noopener noreferrer"
   >
     <img src="/img/campfire/project2.png" alt="" />
     <h3>A Gneiss Expedition</h3>
@@ -59,6 +61,7 @@ food and swag was distributed courtesy of our incredible sponsors.
     class="event-project"
     href="https://jacob-hawksley.itch.io/curiosity-calls"
     target="_blank"
+    rel="noopener noreferrer"
   >
     <img src="/img/campfire/project3.png" alt="" />
     <h3>Curiosity Calls</h3>
@@ -70,6 +73,7 @@ food and swag was distributed courtesy of our incredible sponsors.
     class="event-project"
     href="https://gh0st1yyy.itch.io/limbo"
     target="_blank"
+    rel="noopener noreferrer"
   >
     <img src="/img/campfire/project4.png" alt="" />
     <h3>Limbo</h3>
@@ -78,6 +82,7 @@ food and swag was distributed courtesy of our incredible sponsors.
     class="event-project"
     href="https://notharridham.itch.io/harryjumpz"
     target="_blank"
+    rel="noopener noreferrer"
   >
     <img src="/img/campfire/project5.png" alt="" />
     <h3>HarryJumpz</h3>
@@ -86,6 +91,7 @@ food and swag was distributed courtesy of our incredible sponsors.
     class="event-project"
     href="https://gurjot11.itch.io/rage-qutting-football"
     target="_blank"
+    rel="noopener noreferrer"
   >
     <img src="/img/campfire/project6.png" alt="" />
     <h3>Rage Quitting Football</h3>
@@ -103,25 +109,25 @@ food and swag was distributed courtesy of our incredible sponsors.
     padding: 10px;
   "
 >
-  <a href="https://hackclub.com" target="_blank"
+  <a href="https://hackclub.com" target="_blank" rel="noopener noreferrer"
     ><div class="sponsor-card">
-      <img src="/img/sponsor/hc.svg" /></div
+      <img src="/img/sponsor/hc.svg" alt="Hack Club" /></div
   ></a>
-  <a href="https://opensauce.com/" target="_blank"
+  <a href="https://opensauce.com/" target="_blank" rel="noopener noreferrer"
     ><div class="sponsor-card">
-      <img src="/img/sponsor/opensauce.webp" /></div
+      <img src="/img/sponsor/opensauce.webp" alt="Open Sauce" /></div
   ></a>
-  <a href="https://refractfoundation.org" target="_blank"
+  <a href="https://refractfoundation.org" target="_blank" rel="noopener noreferrer"
     ><div class="sponsor-card">
-      <img src="/img/sponsor/refract.svg" /></div
+      <img src="/img/sponsor/refract.svg" alt="The Refract Foundation" /></div
   ></a>
-  <a href="https://cyberheroez.co.uk" target="_blank"
+  <a href="https://cyberheroez.co.uk" target="_blank" rel="noopener noreferrer"
     ><div class="sponsor-card">
-      <img src="/img/sponsor/cyberheroez.png" /></div
+      <img src="/img/sponsor/cyberheroez.png" alt="Cyber HeroEZ" /></div
   ></a>
-  <a href="https://yubico.com" target="_blank"
+  <a href="https://yubico.com" target="_blank" rel="noopener noreferrer"
     ><div class="sponsor-card">
-      <img src="/img/sponsor/yubico.png" /></div
+      <img src="/img/sponsor/yubico.png" alt="Yubico" /></div
   ></a>
 </div>
 
