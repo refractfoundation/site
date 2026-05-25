@@ -13,8 +13,8 @@
         style="--hero-image: url('{{ page.hero_back }}'); --hero-overlay: rgba(0, 0, 0, 0.5); --hero-position-y: -40vh;"
       >
         <img src="{{ page.hero_logo }}" alt="{{ page.hero_alt }}" class="hero-logo" />
-        <h3>{{ page.hero_date }}</h3>
-        <h4>{{ page.hero_loc }}</h4>
+        <p class="hero-meta">{{ page.hero_date }}</p>
+        <p class="hero-submeta">{{ page.hero_loc }}</p>
       </div>
       <div class="content container">{{ content }}</div>
     </main>

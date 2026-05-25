@@ -46,8 +46,8 @@ food and swag was distributed courtesy of our incredible sponsors.
     rel="noopener noreferrer"
   >
     <img src="/img/campfire/project1.png" alt="" />
-    <h3>Cat-Fishing Frenzy</h3>
-    <h4>By Ethan, Ryley & Sam</h4></a
+    <p class="event-project__title">Cat-Fishing Frenzy</p>
+    <p class="event-project__authors">By Ethan, Ryley & Sam</p></a
   ><a
     class="event-project"
     href="https://icefly147.itch.io/a-gneiss-expedition-demo"
@@ -55,8 +55,8 @@ food and swag was distributed courtesy of our incredible sponsors.
     rel="noopener noreferrer"
   >
     <img src="/img/campfire/project2.png" alt="" />
-    <h3>A Gneiss Expedition</h3>
-    <h4>By Shàven, Adam & Amelia</h4></a
+    <p class="event-project__title">A Gneiss Expedition</p>
+    <p class="event-project__authors">By Shàven, Adam & Amelia</p></a
   ><a
     class="event-project"
     href="https://jacob-hawksley.itch.io/curiosity-calls"
@@ -64,8 +64,8 @@ food and swag was distributed courtesy of our incredible sponsors.
     rel="noopener noreferrer"
   >
     <img src="/img/campfire/project3.png" alt="" />
-    <h3>Curiosity Calls</h3>
-    <h4>By Jacob & Robert</h4></a
+    <p class="event-project__title">Curiosity Calls</p>
+    <p class="event-project__authors">By Jacob & Robert</p></a
   >
 </div>
 <div class="event-projects">
@@ -76,8 +76,8 @@ food and swag was distributed courtesy of our incredible sponsors.
     rel="noopener noreferrer"
   >
     <img src="/img/campfire/project4.png" alt="" />
-    <h3>Limbo</h3>
-    <h4>By Josh, Archie & Fin</h4></a
+    <p class="event-project__title">Limbo</p>
+    <p class="event-project__authors">By Josh, Archie & Fin</p></a
   ><a
     class="event-project"
     href="https://notharridham.itch.io/harryjumpz"
@@ -85,8 +85,8 @@ food and swag was distributed courtesy of our incredible sponsors.
     rel="noopener noreferrer"
   >
     <img src="/img/campfire/project5.png" alt="" />
-    <h3>HarryJumpz</h3>
-    <h4>By Harridham & Neil</h4></a
+    <p class="event-project__title">HarryJumpz</p>
+    <p class="event-project__authors">By Harridham & Neil</p></a
   ><a
     class="event-project"
     href="https://gurjot11.itch.io/rage-qutting-football"
@@ -94,8 +94,8 @@ food and swag was distributed courtesy of our incredible sponsors.
     rel="noopener noreferrer"
   >
     <img src="/img/campfire/project6.png" alt="" />
-    <h3>Rage Quitting Football</h3>
-    <h4>By Gurjot</h4></a
+    <p class="event-project__title">Rage Quitting Football</p>
+    <p class="event-project__authors">By Gurjot</p></a
   >
 </div>
 <h1>Our Sponsors</h1>
