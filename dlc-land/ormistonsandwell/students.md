@@ -28,6 +28,7 @@ This survey is designed to support a better understanding of students’ digital
     class="btn"
     href="https://forms.gle/gqfmTH3p5MQUo8qA7"
     target="_blank"
+    rel="noopener noreferrer"
     >Click Here ></a
   >
 </div>
