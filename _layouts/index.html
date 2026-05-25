@@ -9,7 +9,7 @@
     {% include header.html %}
     <main id="main-content" tabindex="-1">
       <div class="hero hero--video">
-        <video
+        <video id="hero-video"
           autoplay
           muted
           loop
@@ -20,6 +20,29 @@
         >
           <source src="/vid/Refract Hero.mp4" type="video/mp4" />
         </video>
+        <script>
+          (function () {
+            var media = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)");
+            if (!media || !media.matches) return;
+
+            var video = document.getElementById("hero-video");
+            if (!video) return;
+
+            try {
+              video.pause();
+              video.removeAttribute("autoplay");
+              video.removeAttribute("loop");
+
+              video.querySelectorAll("source").forEach(function (source) {
+                source.removeAttribute("src");
+              });
+
+              video.load();
+            } catch (e) {
+              // no-op
+            }
+          })();
+        </script>
         <div class="hero-content">
           <h1>{{ page.hero_title }}</h1>
           <h2>{{ page.hero_sub }}</h2>
