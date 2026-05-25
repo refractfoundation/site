@@ -15,19 +15,26 @@
   <script src="/scripts/bootstrap-dist/js/bootstrap.min.js" defer></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      var addAccessibleFrameNames = function () {
-        document.querySelectorAll("iframe").forEach(function (iframe) {
-          if (!iframe.getAttribute("title")) {
-            iframe.setAttribute("title", "Embedded content");
-          }
-        });
+      var addAccessibleFrameName = function (iframe) {
+        if (!iframe || iframe.getAttribute("title")) return;
+        iframe.setAttribute("title", "Embedded content");
       };
 
-      addAccessibleFrameNames();
+      document.querySelectorAll("iframe").forEach(addAccessibleFrameName);
 
       if (document.body) {
-        var observer = new MutationObserver(function () {
-          addAccessibleFrameNames();
+        var observer = new MutationObserver(function (mutations) {
+          mutations.forEach(function (mutation) {
+            mutation.addedNodes.forEach(function (node) {
+              if (node.nodeType !== Node.ELEMENT_NODE) return;
+              if (node.tagName === "IFRAME") {
+                addAccessibleFrameName(node);
+              }
+              if (node.querySelectorAll) {
+                node.querySelectorAll("iframe").forEach(addAccessibleFrameName);
+              }
+            });
+          });
         });
 
         observer.observe(document.body, { childList: true, subtree: true });
