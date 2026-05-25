@@ -5,16 +5,19 @@
 <html lang="en">
   {% include head.html %}
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     {% include header.html %}
-    <div
-      class="hero hero--image"
-      style="--hero-image: url('{{ page.hero_back }}'); --hero-overlay: rgba(0, 0, 0, 0.5); --hero-position-y: -40vh;"
-    >
-      <img src="{{ page.hero_logo }}" alt="{{ page.hero_alt }}" class="hero-logo" />
-      <h3>{{ page.hero_date }}</h3>
-      <h4>{{ page.hero_loc }}</h4>
-    </div>
-    <div class="content container">{{ content }}</div>
+    <main id="main-content" tabindex="-1">
+      <div
+        class="hero hero--image"
+        style="--hero-image: url('{{ page.hero_back }}'); --hero-overlay: rgba(0, 0, 0, 0.5); --hero-position-y: -40vh;"
+      >
+        <img src="{{ page.hero_logo }}" alt="{{ page.hero_alt }}" class="hero-logo" />
+        <h3>{{ page.hero_date }}</h3>
+        <h4>{{ page.hero_loc }}</h4>
+      </div>
+      <div class="content container">{{ content }}</div>
+    </main>
     {% include footer.html %}
   </body>
 </html>
