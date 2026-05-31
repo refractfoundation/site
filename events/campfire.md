@@ -38,134 +38,85 @@ food and swag was distributed courtesy of our incredible sponsors.
 
 # Projects Submitted
 
-<div class="event-projects">
-  <a
-    class="event-project"
-    href="https://ethanhawksley.itch.io/cat-fishing-frenzy"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img src="/img/campfire/project1.png" alt="" />
-    <p class="event-project__title">Cat-Fishing Frenzy</p>
-    <p class="event-project__authors">By Ethan, Ryley & Sam</p></a
-  ><a
-    class="event-project"
-    href="https://icefly147.itch.io/a-gneiss-expedition-demo"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img src="/img/campfire/project2.png" alt="" />
-    <p class="event-project__title">A Gneiss Expedition</p>
-    <p class="event-project__authors">By Shàven, Adam & Amelia</p></a
-  ><a
-    class="event-project"
-    href="https://jacob-hawksley.itch.io/curiosity-calls"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img src="/img/campfire/project3.png" alt="" />
-    <p class="event-project__title">Curiosity Calls</p>
-    <p class="event-project__authors">By Jacob & Robert</p></a
-  >
+<div class="projects-showcase container">
+  <div class="row row-cols-1 row-cols-md-3 g-2 projects-showcase__row projects-showcase__row--podium">
+    {% assign podium = site.data.campfire_projects | slice: 0,3 %}
+    {% for project in podium %}
+    <div class="col">
+      <a
+        class="event-project {% if forloop.first %}event-project--winner{% elsif forloop.index == 2 %}event-project--runnerup{% elsif forloop.index == 3 %}event-project--third{% endif %} h-100 d-flex flex-column"
+        href="{{ project.href }}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {% if forloop.first %}
+          <p class="event-project__label">1st place</p>
+        {% elsif forloop.index == 2 %}
+          <p class="event-project__label event-project__label--silver">2nd place</p>
+        {% elsif forloop.index == 3 %}
+          <p class="event-project__label event-project__label--bronze">3rd place</p>
+        {% endif %}
+        <div class="event-project__media ratio ratio-4x3">
+          <img src="{{ project.screenshot }}" alt="{{ project.project }} screenshot" />
+        </div>
+        <p class="event-project__title">{{ project.project }}</p>
+        <p class="event-project__authors">By {{ project.people }}</p>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-2 projects-showcase__row projects-showcase__row--rest mt-3">
+    {% assign rest = site.data.campfire_projects | slice: 3, 999 %}
+    {% for project in rest %}
+    <div class="col">
+      <a class="event-project h-100" href="{{ project.href }}" target="_blank" rel="noopener noreferrer">
+        <img src="{{ project.screenshot }}" alt="{{ project.project }} screenshot" />
+        <p class="event-project__title">{{ project.project }}</p>
+        <p class="event-project__authors">By {{ project.people }}</p>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
 </div>
-<div class="event-projects">
-  <a
-    class="event-project"
-    href="https://gh0st1yyy.itch.io/limbo"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img src="/img/campfire/project4.png" alt="" />
-    <p class="event-project__title">Limbo</p>
-    <p class="event-project__authors">By Josh, Archie & Fin</p></a
-  ><a
-    class="event-project"
-    href="https://notharridham.itch.io/harryjumpz"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img src="/img/campfire/project5.png" alt="" />
-    <p class="event-project__title">HarryJumpz</p>
-    <p class="event-project__authors">By Harridham & Neil</p></a
-  ><a
-    class="event-project"
-    href="https://gurjot11.itch.io/rage-qutting-football"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img src="/img/campfire/project6.png" alt="" />
-    <p class="event-project__title">Rage Quitting Football</p>
-    <p class="event-project__authors">By Gurjot</p></a
-  >
+
+# Our Partners
+
+<div class="container">
+<div class="row row-cols-2 row-cols-md-6 g-3 align-items-center justify-content-center">
+{% for partner in site.data.campfire_partners %}
+<a class="col sponsor-card d-flex align-items-center justify-content-center p-3 rounded mx-1" href="{{ partner.href }}" target="_blank" rel="noopener noreferrer" style="background-color: {{ partner.colour }}">
+<img class="img-fluid" src="{{ partner.logo }}" alt="{{ partner.partner }}" />
+</a>
+{% endfor %}
 </div>
-<h1>Our Sponsors</h1>
-<div
-  style="
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f94d00;
-    border-radius: 10px;
-    padding: 10px;
-  "
->
-  <a href="https://hackclub.com" target="_blank" rel="noopener noreferrer"
-    ><div class="sponsor-card">
-      <img src="/img/sponsor/hc.svg" alt="Hack Club" /></div
-  ></a>
-  <a href="https://opensauce.com/" target="_blank" rel="noopener noreferrer"
-    ><div class="sponsor-card">
-      <img src="/img/sponsor/opensauce.webp" alt="Open Sauce" /></div
-  ></a>
-  <a href="https://refractfoundation.org" target="_blank" rel="noopener noreferrer"
-    ><div class="sponsor-card">
-      <img src="/img/sponsor/refract.svg" alt="The Refract Foundation" /></div
-  ></a>
-  <a href="https://cyberheroez.co.uk" target="_blank" rel="noopener noreferrer"
-    ><div class="sponsor-card">
-      <img src="/img/sponsor/cyberheroez.png" alt="Cyber HeroEZ" /></div
-  ></a>
-  <a href="https://yubico.com" target="_blank" rel="noopener noreferrer"
-    ><div class="sponsor-card">
-      <img src="/img/sponsor/yubico.png" alt="Yubico" /></div
-  ></a>
 </div>
+
+<br>
 
 # Event Gallery
 
-<!-- <div class="site-notice-wrap">
-  <div class="site-notice" role="status" aria-live="polite">
-    <span class="site-notice__label">Returning soon</span>
-    <span class="site-notice__text"
-      >We're upgrading this event's gallery!</span
-    >
+<div id="campfireCarousel" class="carousel slide gallery-carousel" data-bs-ride="carousel" aria-label="Event gallery">
+  <div class="carousel-indicators">
+    {% for photo in site.data.campfire_photos %}
+      <button type="button" data-bs-target="#campfireCarousel" data-bs-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active" aria-current="true"{% endif %} aria-label="Slide {{ forloop.index }}"></button>
+    {% endfor %}
   </div>
-</div> -->
-
-<section id="image-carousel" class="splide" style="width: 100%; margin: 0 auto;">
-  <div class="splide__track">
-		<div class="splide__list">
-      {% for photo in site.data.campfire_photos %}
-			<div class="splide__slide">
-				<img src="{{ photo.url }}" alt="Campfire Birmingham Photo">
-			</div>
-      {% endfor %}
-		</div>
+  <div class="carousel-inner">
+    {% for photo in site.data.campfire_photos %}
+      <div class="carousel-item {% if forloop.first %}active{% endif %}">
+        <div class="gallery-carousel__frame">
+          <img src="{{ photo.url }}" class="d-block w-100 gallery-carousel__image" alt="Campfire Birmingham Photo">
+        </div>
+      </div>
+    {% endfor %}
   </div>
-</section>
-<!-- 
-<section id="image-carousel" class="splide" aria-label="Beautiful Images">
-  <div class="splide__track">
-		<ul class="splide__list">
-			<li class="splide__slide">
-				<img src="/img/campfire/hcampfire_0.JPG" alt="">
-			</li>
-			<li class="splide__slide">
-				<img src="/img/campfire/hcampfire_1.JPG" alt="">
-			</li>
-			<li class="splide__slide">
-				<img src="/img/campfire/hcampfire_2.JPG" alt="">
-			</li>
-		</ul>
-  </div>
-</section> -->
+  <button class="carousel-control-prev gallery-carousel__control" type="button" data-bs-target="#campfireCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next gallery-carousel__control" type="button" data-bs-target="#campfireCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
