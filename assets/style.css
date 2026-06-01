@@ -45,6 +45,20 @@ header nav a {
   font-size: clamp(0.95rem, 0.85rem + 0.4vw, 1.1rem);
 }
 
+blockquote {
+  border-left: 4px solid #ddd;
+  padding-left: 12px;
+  margin-left: 0;
+  color: #555;
+  font-style: italic;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .col-centered {
   float: none;
   margin-right: auto;
