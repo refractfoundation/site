@@ -3,7 +3,7 @@ title: The Campfire Experience
 layout: post
 author: Oliver Potter
 date: 2026-03-01
-cover: /img/CF_BIRMINGHAM_0072.jpg
+cover: /img/CF_BIRMINGHAM_0072.JPG
 url: /news/campfire-experience
 ---
 
