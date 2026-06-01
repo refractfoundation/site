@@ -2,7 +2,7 @@
 title: "Behind Campfire: Cyber Heroez"
 layout: post
 author: Oliver Potter
-date: 07/03/26
+date: 2026-03-07
 cover: /img/campfire/cyberheroezteam.jpg
 url: /news/cyber-heroez-campfire
 ---

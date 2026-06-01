@@ -1,3 +1,10 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/events/:path*",
+      "destination": "/our-work/:path*",
+      "permanent": true
+    }
+  ]
 }
