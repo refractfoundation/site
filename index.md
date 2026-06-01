@@ -2,7 +2,7 @@
 title: Home
 layout: index
 hero_title: Real skills. Real opportunity.
-hero_sub: Technology shouldn't leave anyone behind
+hero_sub: Helping schools identify and address barriers to digital inclusion.
 ---
 
 # The Digital Divide
@@ -19,6 +19,22 @@ Refract is a youth-led initiative dedicated to making essential digital skills a
 
 From basic smartphone skills to online safety and artificial intelligence, we want to help our community and build the confidence needed to navigate today's technology.
 
-# What we're doing
+# Explore Our Work
 
 {% include events.html %}
+
+# Our Partners
+
+<div class="container">
+<div class="row row-cols-2 row-cols-md-6 g-3 align-items-center justify-content-center">
+{% for partner in site.data.partners %}
+<a class="col sponsor-card d-flex align-items-center justify-content-center p-3 rounded mx-1" href="{{ partner.href }}" target="_blank" rel="noopener noreferrer" style="background-color: {{ partner.colour }}">
+<img class="img-fluid" src="{{ partner.logo }}" alt="{{ partner.partner }}" />
+</a>
+{% endfor %}
+</div>
+</div>
+
+# Latest News
+
+{% include news.html %}
