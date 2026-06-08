@@ -385,7 +385,7 @@ button:focus-visible,
   object-fit: contain;
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   html,
   body {
     font-size: 16px;
@@ -506,4 +506,4 @@ iframe {
   .hero--video video {
     display: none;
   }
-} */
+}

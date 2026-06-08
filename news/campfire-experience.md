@@ -4,7 +4,7 @@ layout: post
 author: Oliver Potter
 date: 2026-03-01
 cover: /img/CF_BIRMINGHAM_0072.JPG
-url: /news/campfire-experience
+permalink: /news/campfire-experience
 ---
 
 In February 2026, I organised Campfire Birmingham as a Hack Club satellite event at Ormiston Sandwell Community Academy through Refract Foundation. Around 20 attendees and a team of 6 volunteers came together for a 12-hour hackathon, open to students aged 13–18 across the West Midlands. The theme for the day was **“beneath the surface”**.
