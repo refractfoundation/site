@@ -8,7 +8,7 @@
     <a class="skip-link" href="#main-content">Skip to main content</a>
     {% include header.html %}
     <main id="main-content" tabindex="-1">
-      <div class="hero hero--video">
+      <div class="hero hero--video d-flex flex-column justify-content-center align-items-center text-center">
         <video id="hero-video"
           autoplay
           muted
@@ -48,7 +48,7 @@
           <h2>{{ page.hero_sub }}</h2>
         </div>
       </div>
-      <div class="content container">{{ content }}</div>
+      <div class="content container my-3">{{ content }}</div>
     </main>
     {% include footer.html %}
   </body>
