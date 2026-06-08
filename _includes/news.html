@@ -17,7 +17,11 @@
       >
         <br />
         <h3>{{ post.title }}</h3>
-        <h4>{{ post.date }}</h4>
+        <h4>
+          <time datetime="{{ post.date | date_to_xmlschema }}"
+            >{{ post.date | date: "%-d %B %Y" }}</time
+          >
+        </h4>
         <a class="btn" href="{{ post.url }}">Read More ></a>
       </div>
     </div>

@@ -1,5 +1,5 @@
 ---
-title: Events
+title: Our Work
 layout: page
 ---
 

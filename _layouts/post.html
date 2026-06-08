@@ -9,7 +9,12 @@
     {% include header.html %}
     <main id="main-content" class="content container" tabindex="-1">
       <h1>{{ page.title }}</h1>
-      <h3>Written by {{ page.author }} | {{ page.date }}</h3>
+      <p>
+        Written by {{ page.author }} |
+        <time datetime="{{ page.date | date_to_xmlschema }}"
+          >{{ page.date | date: "%-d %B %Y" }}</time
+        >
+      </p>
       <hr>
       {{ content }}
     </main>

@@ -4,7 +4,7 @@ layout: post
 author: Oliver Potter
 date: 2026-03-07
 cover: /img/campfire/cyberheroezteam.jpg
-url: /news/cyber-heroez-campfire
+permalink: /news/cyber-heroez-campfire
 ---
 
 ![Cyber Heroez Team](/img/campfire/cyberheroezteam.jpg)
