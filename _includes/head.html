@@ -14,6 +14,10 @@
   <script src="/scripts/splide-extension-auto-scroll.min.js" defer></script>
   <script src="/scripts/bootstrap-dist/js/bootstrap.min.js" defer></script>
   <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+  <script>
     document.addEventListener("DOMContentLoaded", function () {
       var addAccessibleFrameName = function (iframe) {
         if (!iframe || iframe.getAttribute("title")) return;
