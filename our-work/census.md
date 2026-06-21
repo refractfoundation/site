@@ -1,15 +1,15 @@
 ---
-title: Digital Literacy Census
-layout: dlc
+title: Census
+layout: programme
 hero_sub: Understanding digital skills, confidence, and online safety across the region
-hero_logo: /img/logo/dlc_white.svg
+hero_logo: /img/logo/for-web/Census.svg
 hero_back: /img/campfire/1.JPG
 hero_alt: The Digital Literacy Census
 ---
 
-The Digital Literacy Census is a youth-led research initiative by Refract to help schools and workplaces better understand how students and staff use technology in their everyday lives.
+The Digital Literacy Census is a youth-led research initiative by The Refract Foundation to help schools and workplaces better understand how students and staff use technology in their everyday lives.
 
-The census gathers anonymous data on:
+The Census gathers anonymous data on:
 
 - Digital skills and confidence
 - Online safety awareness
@@ -22,7 +22,7 @@ The objective is to identify patterns in digital literacy and highlight where ad
 
 Digital skills are now vital for learning, communication and work, however levels of confidence and access vary across the region.
 
-The census provides institutions with:
+The Census provides institutions with:
 
 - A clear picture of staff or student digital confidence
 - An insight into online safety awareness
@@ -48,17 +48,9 @@ Please feel free to get in touch with us for further details: [oliver@refractfou
 
 # Privacy
 
-We understand that there will be a number of privacy concerns surrounding participation in the census.
+We understand that there will be a number of privacy concerns surrounding participation in the Census.
 
-The survey collects anonymous responses about students' digital skills, confidence, and online safety, along with optional demographic information (including year group, gender, ethnicity, additional learning needs, and financial support indicators).
-
-No names, email addresses, or other directly identifying personal data are collected.
-
-Responses are used for analytical purposes to understand patterns in digital literacy and access across schools. Findings may also be analysed at a broader regional level across the West Midlands in aggregated, non-identifiable form.
-
-Data will be reported only in summary form and will not be used to identify individual students or schools unless explicitly agreed for reporting purposes.
-
-Participation is voluntary, and participants may select 'Prefer not to say' for any demographic question.
+For up-to-date guidance, please see section 7 of our Privacy Policy [here](https://refractfoundation.org/privacy#:~:text=7%2E%20The%20Digital%20Literacy%20Census).
 
 ---
 

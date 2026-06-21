@@ -5,6 +5,11 @@
       "source": "/events/:path*",
       "destination": "/our-work/:path*",
       "permanent": true
+    },
+    {
+      "source": "/our-work/dlc",
+      "destination": "/our-work/census",
+      "permanent": true
     }
   ]
 }

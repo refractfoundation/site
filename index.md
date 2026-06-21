@@ -19,9 +19,9 @@ Refract is a youth-led initiative dedicated to making essential digital skills a
 
 From basic smartphone skills to online safety and artificial intelligence, we want to help our community and build the confidence needed to navigate today's technology.
 
-# Explore Our Work
+# Explore Our Programmes
 
-{% include events.html %}
+{% include programmes.html %}
 
 # Our Partners
 

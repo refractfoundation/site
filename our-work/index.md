@@ -3,11 +3,15 @@ title: Our Work
 layout: page
 ---
 
-# Our Work
+# Current Programmes
 
 Refract works with schools and communities to understand and tackle digital exclusion.
 
-{% include events.html %}
+{% include programmes.html %}
+
+# Past Events
+
+{% include events-past.html %}
 
 # Latest News
 
