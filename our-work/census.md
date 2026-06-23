@@ -7,9 +7,9 @@ hero_back: /img/campfire/1.JPG
 hero_alt: The Digital Literacy Census
 ---
 
-The Digital Literacy Census is a youth-led research initiative by The Refract Foundation to help schools and workplaces better understand how students and staff use technology in their everyday lives.
+Census is a youth-led research initiative by The Refract Foundation to help schools and workplaces better understand how students and staff use technology in their everyday lives.
 
-The Census gathers anonymous data on:
+Census gathers anonymous data on:
 
 - Digital skills and confidence
 - Online safety awareness
@@ -22,7 +22,7 @@ The objective is to identify patterns in digital literacy and highlight where ad
 
 Digital skills are now vital for learning, communication and work, however levels of confidence and access vary across the region.
 
-The Census provides institutions with:
+Census provides institutions with:
 
 - A clear picture of staff or student digital confidence
 - An insight into online safety awareness
@@ -38,7 +38,7 @@ All responses are anonymous and we report in an aggregated form.
 
 # Getting involved
 
-We can't wait to work with schools, businesses and local authorities in the West Midlands to conduct the Digital Literacy Census!
+We can't wait to work with schools, businesses and local authorities in the West Midlands to conduct Census!
 
 As of now, we're particularly interested in working with secondary schools within the region to help us design our future programmes.
 
@@ -48,7 +48,7 @@ Please feel free to get in touch with us for further details: [oliver@refractfou
 
 # Privacy
 
-We understand that there will be a number of privacy concerns surrounding participation in the Census.
+We understand that there will be a number of privacy concerns surrounding participation in Census.
 
 For up-to-date guidance, please see section 7 of our Privacy Policy [here](https://refractfoundation.org/privacy#:~:text=7%2E%20The%20Digital%20Literacy%20Census).
 
