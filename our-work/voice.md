@@ -1,9 +1,9 @@
 ---
 title: Voice
 layout: programme
-hero_sub: Young people deserve a say in their digital future.give
-hero_logo: /img/logo/for-web/Voice.svg
-hero_back: /img/campfire/hcampfire_2.JPG
+hero_sub: Young people deserve a say in their digital future.
+hero_logo: /assets/images/logo/for-web/Voice.svg
+hero_back: /assets/images/campfire/hcampfire_2.JPG
 hero_alt: Voice
 ---
 
@@ -36,36 +36,20 @@ We believe that young people should be present in making decisions about young p
   <div class="row row-cols-1 row-cols-md-2 g-3">
     <div class="col">
       <div
-        class="event-card d-flex flex-column justify-content-between align-items-center text-center"
-        style="
-          background-image: linear-gradient(
-              rgba(0, 0, 0, 0.5),
-              rgba(0, 0, 0, 0.5)
-            ),
-            url(/img/campfire/1.JPG);
-          background-size: cover;
-          background-position: center;
-        "
+        class="event-card event-card--bg d-flex flex-column justify-content-between align-items-center text-center"
+        style="--event-card-image: url(/assets/images/campfire/1.JPG);"
       >
         <h2>Share your thoughts</h2>
-        <a class="btn" href="/our-work/census" aria-label="Read more about the Digital Literacy Census">Start ></a>
+        <a class="btn" href="#" aria-label="Share your thoughts about the social media ban">Start ></a>
       </div>
     </div>
     <div class="col">
       <div
-        class="event-card d-flex flex-column justify-content-between align-items-center text-center"
-        style="
-          background-image: linear-gradient(
-              rgba(0, 0, 0, 0.5),
-              rgba(0, 0, 0, 0.5)
-            ),
-            url(/img/campfire/1.JPG);
-          background-size: cover;
-          background-position: center;
-        "
+        class="event-card event-card--bg d-flex flex-column justify-content-between align-items-center text-center"
+        style="--event-card-image: url(/assets/images/campfire/1.JPG);"
       >
         <h2>Write to your MP</h2>
-        <a class="btn" href="/our-work/census" aria-label="Read more about the Digital Literacy Census">Start ></a>
+        <a class="btn" href="#" aria-label="Write to your MP about the social media ban">Start ></a>
       </div>
     </div>
   </div>

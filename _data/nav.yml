@@ -1,0 +1,8 @@
+- link: /
+  label: Home
+- link: /about
+  label: About
+- link: /our-work
+  label: Our Work
+- link: /contact
+  label: Contact

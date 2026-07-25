@@ -2,9 +2,10 @@
 title: RAISE
 layout: programme
 hero_sub: A framework for the responsible use of artificial intelligence in education
-hero_logo: /img/logo/for-web/RAISE.svg
-hero_back: /img/campfire/hcampfire_2.JPG
+hero_logo: /assets/images/logo/for-web/RAISE.svg
+hero_back: /assets/images/campfire/hcampfire_2.JPG
 hero_alt: RAISE
+hero_colour: "#FF63E2"
 ---
 
 RAISE is a developing initiative by The Refract Foundation focused on helping schools, educators and students navigate the growing role of artificial intelligence in education.

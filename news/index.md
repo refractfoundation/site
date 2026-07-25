@@ -6,3 +6,7 @@ layout: page
 # News
 
 {% include news.html %}
+
+# Support Our Work
+
+{% include donate.html %}

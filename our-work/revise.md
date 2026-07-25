@@ -2,9 +2,10 @@
 title: Revise
 layout: programme
 hero_sub: Supporting Computer Science students through accessible learning resources
-hero_logo: /img/logo/for-web/Revise.svg
-hero_back: /img/campfire/hcampfire_4.JPG
+hero_logo: /assets/images/logo/for-web/Revise.svg
+hero_back: /assets/images/campfire/hcampfire_4.JPG
 hero_alt: Revise
+hero_colour: "#00AE62"
 ---
 
 Revise is a developing programme by The Refract Foundation designed to support students studying Computer Science.

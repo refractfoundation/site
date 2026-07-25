@@ -2,12 +2,10 @@
 title: "Behind Campfire: Cyber Heroez"
 layout: post
 author: Oliver Potter
-date: 2026-03-07
-cover: /img/campfire/cyberheroezteam.jpg
+date: 2026-03-08
+cover: /assets/images/campfire/cyberheroezteam.jpg
 permalink: /news/cyber-heroez-campfire
 ---
-
-![Cyber Heroez Team](/img/campfire/cyberheroezteam.jpg)
 
 [Cyber Heroez CIC](https://cyberheroez.co.uk/) played a key role in supporting Campfire Birmingham, a 12-hour student-led game jam hosted at Ormiston Sandwell Community Academy as part of Hack Club’s global Campfire initiative.
 
@@ -50,7 +48,7 @@ He explained:
 
 This helped participants understand how the skills they were developing at Campfire connected to wider industry pathways.
 
-![Owhonda's Speech](/img/campfire/owhondaspeech.jpg)
+![Owhonda's Speech](/assets/images/campfire/owhondaspeech.jpg)
 
 ## Impact on participants
 

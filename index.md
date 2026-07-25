@@ -34,7 +34,12 @@ From basic smartphone skills to online safety and artificial intelligence, we wa
 {% endfor %}
 </div>
 </div>
+<br>
+
+# Support Our Work
+
+{% include donate.html %}
 
 # Latest News
 
-{% include news.html %}
+{% include news.html limit=2 %}
