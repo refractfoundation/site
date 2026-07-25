@@ -1,306 +1,245 @@
 ---
 title: Privacy Policy
 layout: page
+content_class: policy
 ---
 
 # Privacy Policy
 
-Last Updated: 31 May 2026
+**Last Updated:** 25 July 2026
 
 ## 1. Introduction
 
-The Refract Foundation ('Refract', 'we', 'our', 'us') is committed to protecting the privacy and personal information of individuals and organisations who interact with our programmes, research, events and services.
+The Refract Foundation ("Refract", "we", "our", or "us") is committed to protecting your privacy and handling personal information responsibly.
 
-This privacy policy outlines how we collect, use, store, share and protect information in accordance with applicable legislation, such as the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018 (DPA).
+This Privacy Policy explains what information we collect, how we use it, who we share it with, and the rights you have under applicable data protection laws, including the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.
 
-By using our services, participating in our programmes and research, attending our events or visiting our website, you acknowledge the practices described in this policy.
+By using our website, participating in our programmes or research, attending our events, or otherwise interacting with Refract, you agree to the practices described in this policy.
 
 ## 2. Who We Are
 
-The Refract Foundation is a youth-led initiative focused on improving digital literacy, digital inclusion, online safety and access to digital skills for young people in the West Midlands.
+The Refract Foundation is a youth-led non-profit organisation working to improve digital literacy, digital inclusion, online safety and access to technology education.
 
-Refract Foundation operates under the fiscal sponsorship of Hack Club, a United States 501(c)(3) nonprofit organisation (EIN 81-2908499). Fiscal sponsorship relates primarily to financial administration and does not generally affect the day-to-day operation of Refract Foundation's programmes, research activities, or data processing practices.
+We deliver educational programmes, conduct research, organise events, and create resources that help young people develop digital skills.
 
-Depending on the nature of a programme, event, or research activity, Refract Foundation may work with educational institutions, partner organisations, or service providers who process information in accordance with their own legal obligations and privacy practices.
+Refract Foundation operates under the fiscal sponsorship of Hack Club, a United States 501(c)(3) nonprofit organisation (EIN 81-2908499). Hack Club provides financial administration and charitable oversight but does not generally determine how Refract delivers its programmes or processes personal information.
 
-For privacy-related enquiries, you should contact: [dpo@refractfoundation.org](mailto:dpo@refractfoundation.org).
+We may also work with schools, colleges, charities, public bodies and other partner organisations. Where those organisations collect information independently, their own privacy policies will apply.
 
-## 3. Scope
+For privacy enquiries, contact [dpo@refractfoundation.org](mailto:dpo@refractfoundation.org).
 
-This privacy policy applies to:
+## 3. When This Policy Applies
 
-- The Refract Foundation Website
-- The Digital Literacy Census
-- Research projects
-- Events and workshops
-- School engagement activities
-- Communications with Refract
-- Applications, registrations and forms
-- Other services operated by Refract
+This policy applies whenever you:
+
+- Visit our websites
+- Participate in our programmes or research
+- Complete forms or surveys
+- Register for events
+- Contact us
+- Apply to volunteer or work with us
+- Use any other services operated by Refract Foundation
 
 ## 4. Information We Collect
 
 ### Information You Provide
 
-We may collect information including:
+Depending on how you interact with us, we may collect:
 
 - Name
 - Email address
 - School, college or organisation
 - Event registration details
 - Application information
-- Correspondence with us
-- Feedback and research responses
+- Messages you send us
+- Feedback and survey responses
 
-### Technical Information
+### Information Collected Automatically
 
-When using our website or digital services, we may collect:
+When you use our website, we may collect:
 
 - IP address
-- Browser information
-- Device information
-- Operating system information
+- Browser and device information
+- Operating system
+- Pages visited
 - Website usage statistics
-- Analytics information
-- Security logs
+- Security and diagnostic logs
 
-### Research Information
+### Programme and Research Information
 
-The Digital Literacy Census may collect information relating to:
+Some programmes may collect information about:
 
 - Digital skills
 - Technology access
-- Online safety awareness
 - Confidence using technology
-- Digital learning experiences
+- Online safety awareness
+- Learning experiences
 - Attitudes towards digital technology
 
-The Census may also collect optional demographic information such as:
+Where appropriate, we may also collect optional demographic information such as:
 
 - Year group
 - Gender
 - Ethnicity
 - Additional learning needs
 - Indicators of economic disadvantage
-- Other equality and inclusion information
 
-Unless explicitly stated otherwise, the Census is designed not to collect names, email addresses, student identifiers, home addresses or other directly identifying information.
+Unless clearly stated otherwise, our programmes are designed **not** to collect names, email addresses, student identifiers, home addresses or other directly identifying information.
 
-Participants should not include identifying information within free-text responses.
+Please do not include personal information in free-text responses unless specifically requested.
 
 ## 5. How We Use Information
 
-We may use information to:
+We use information to:
 
-- Deliver programmes and services
-- Conduct research and analysis
-- Improve educational initiatives
-- Measure impact and outcomes
+- Deliver our programmes and services
+- Conduct educational research
+- Improve our resources and initiatives
+- Measure impact
 - Produce reports and recommendations
+- Organise events
 - Communicate with participants and partners
-- Organise events and activities
 - Support funding and grant applications
-- Improve our services
-- Meet legal obligations
-- Protect the security and integrity of our systems
+- Protect our systems and services
+- Meet legal and safeguarding obligations
 
-## 6. Legal Bases for Processing
+Where possible, research findings are reported using anonymised or aggregated data.
 
-Where UK GDPR applies, we process information under one or more of the following lawful bases:
+## 6. Our Legal Basis
 
-### Consent
+Where UK GDPR applies, we process personal information under one or more of the following lawful bases:
 
-Where an individual voluntarily provides information or agrees to participate in a survey, programme or activity.
+- **Consent** – where you choose to provide information or participate.
+- **Legitimate Interests** – to deliver our charitable activities, conduct research, improve services and administer the organisation.
+- **Legal Obligation** – where we must comply with applicable laws.
+- **Public Task or Public Interest** – where research or educational activities contribute to the public benefit.
 
-### Legitimate Interests
-
-Where processing is necessary to support educational research, programme delivery, impact measurement, organisational administration, safeguarding or service improvement.
-
-### Legal Obligations
-
-Where processing is required to comply with applicable laws or regulations.
-
-### Public Interest
-
-Where activities contribute to educational improvement, digital inclusion, public benefit or research purposes.
-
-## 7. The Digital Literacy Census
-
-### Purpose
-
-The Digital Literacy Census is a research initiative designed to better understand:
-
-- Digital access
-- Digital skills
-- Digital confidence
-- Online safety knowledge
-- Technology use among young people
-
-The findings are intended to support educational improvement, digital inclusion initiatives, policy development, and programme planning.
-
-While the Digital Literacy Census is designed to minimise the collection of personal data and does not intentionally collect directly identifying information, certain combinations of demographic responses may constitute personal data under applicable legislation. Refract Foundation therefore treats Census responses with appropriate safeguards.
-
-### Voluntary Participation
-
-Participation is voluntary.
-
-Participants may choose not to answer individual questions where appropriate, including by selecting "Prefer not to say" where available.
-
-### Reporting
-
-Results are generally analysed and reported in aggregated form.
-
-Reports may be produced at:
-
-- School level
-- Trust level
-- Local authority level
-- Regional level
-
-The purpose of reporting is to identify trends, gaps, opportunities, and recommendations.
-
-### Use of Census Data
-
-Information collected through the Digital Literacy Census may be used to:
-
-- Produce reports
-- Conduct statistical analysis
-- Identify trends
-- Support educational improvement
-- Inform policy discussions
-- Support funding applications
-- Measure programme impact
-- Develop future initiatives
-
-## 8. Sharing Information
+## 7. Sharing Information
 
 We may share information where necessary with:
 
-- Schools
-- Colleges
+- Schools and colleges
 - Academy trusts
 - Local authorities
-- Government organisations
+- Research partners
 - Charities and non-profit organisations
-- Research institutions
-- Strategic partners
 - Technology providers
 - Professional advisers
 - Funders
 
-Where possible, information shared externally will be anonymised, aggregated, pseudonymised or otherwise minimised.
+Where practical, information is shared in anonymised, aggregated or pseudonymised form.
 
-Digital Literacy Census findings may be shared with third parties for educational, research, policy, funding, impact measurement or public benefit purposes.
+We may publish reports, dashboards and research findings that are designed to prevent individuals from being identified.
 
-We may publish reports, statistics, dashboards, and research findings based on Census data. Such publications will be designed to prevent the identification of individual participants.
+We may also disclose information where required by law, safeguarding obligations, or to protect the rights, safety or security of Refract Foundation or others.
 
-**We do not sell personal information.**
+> **We never sell personal information.**
 
-## 9. Data Processors and Service Providers
+## 8. Third-Party Services
 
-We may use trusted third-party service providers to support:
+We use trusted third-party providers to help deliver our services.
 
-- Website hosting
-- Survey delivery
-- Data storage
-- Analytics
-- Email communications
-- Event registration
-- Research activities
+These may include:
 
-Examples of services we may use include:
-
-- Tally for surveys, registrations, and data collection
-- Airtable for data management, analysis, and project administration
-- Vercel and GitHub for web hosting
-- Purelymail and tawk.to for communications
-- Analytics providers
+- Tally
+- Airtable
+- GitHub
+- Vercel
+- Purelymail
+- tawk.to
+- Website analytics providers
 - Cloud storage and productivity platforms
 
-These providers may process information on our behalf and are required to implement appropriate safeguards.
+These providers may process information on our behalf and are required to maintain appropriate security and privacy safeguards.
 
-We remain responsible for ensuring that information processed on our behalf is handled appropriately and securely.
+## 9. International Transfers
 
-## 10. International Transfers
+Some of the services we use operate internationally and may process information outside the United Kingdom.
 
-Some organisations that provide services to Refract Foundation may process or store information outside the United Kingdom.
+Where personal information is transferred internationally, we take reasonable steps to ensure appropriate safeguards are in place, such as recognised adequacy decisions, standard contractual clauses, or equivalent legal protections.
 
-For example, cloud-based software providers may operate internationally and use data centres located in multiple countries.
+## 10. Data Retention
 
-Where personal information is transferred internationally, we take reasonable steps to ensure appropriate safeguards are in place. These safeguards may include:
+We keep personal information only for as long as necessary for the purposes described in this policy or to comply with legal obligations.
 
-- Transfers to countries recognised as providing an adequate level of protection under applicable data protection laws.
-- Standard contractual clauses or equivalent legal mechanisms.
-- Contractual requirements relating to confidentiality, security, and data protection.
-- Additional technical and organisational safeguards where appropriate.
+When information is no longer required, it is securely deleted, anonymised or otherwise disposed of.
 
-We seek to ensure that any international transfers are conducted in a manner that protects the rights and freedoms of individuals and complies with applicable legal requirements.
+Anonymous statistical and research data may be retained indefinitely.
 
-Further information regarding international transfers may be requested using the contact details provided in this Privacy Policy.
+## 11. Data Security
 
-## 11. Data Retention
+We use appropriate technical and organisational measures to protect personal information, including:
 
-We retain information only for as long as reasonably necessary for the purposes outlined in this policy, including research, analysis, reporting, programme delivery, legal compliance, safeguarding, and organisational administration.
+- Access controls
+- Authentication
+- Secure cloud infrastructure
+- Encryption where appropriate
+- Security monitoring
+- Regular software updates
 
-Retention periods may vary depending on the nature of the information and the purpose for which it was collected.
+Although we work to keep information secure, no system can guarantee absolute security.
 
-Where information is no longer required, we will take reasonable steps to securely delete, anonymise, or otherwise dispose of it.
+## 12. Cookies
 
-Aggregated, anonymised, statistical, or research data may be retained indefinitely for educational, historical, research, public interest, or longitudinal analysis purposes.
+Our website may use cookies and similar technologies to:
 
-## 12. Data Security
+- Remember your preferences
+- Improve website performance
+- Understand how visitors use our website
+- Maintain security
 
-We implement appropriate technical and organisational measures to protect information from:
+Where required by law, we will request your consent before using non-essential cookies.
 
-- Unauthorised access
-- Accidental loss
-- Misuse
-- Disclosure
-- Alteration
-- Destruction
+## 13. Children's Privacy
 
-Access to personal information is restricted to authorised individuals who require access for legitimate organisational purposes.
+Many of our programmes are designed for young people.
 
-While we take reasonable precautions, no system can guarantee absolute security.
+We are committed to handling children's information responsibly and in accordance with applicable data protection and safeguarding requirements.
 
-## 13. Children's Information
-
-Many Refract programmes involve young people.
-
-We are committed to handling information relating to children responsibly and in accordance with applicable laws and safeguarding requirements.
-
-Where activities are conducted through schools or educational institutions, we may rely on arrangements established with those organisations regarding participation and data collection.
+Where activities are delivered through schools or other educational organisations, participation and data collection may be managed in partnership with those organisations.
 
 ## 14. Your Rights
 
-Subject to applicable law, individuals may have the right to:
+Subject to applicable law, you may have the right to:
 
-- Request access to personal information
-- Request correction of inaccurate information
-- Request deletion of information
-- Request restriction of processing
-- Object to certain processing activities
-- Request data portability
+- Access your personal information
+- Correct inaccurate information
+- Request deletion of your information
+- Restrict processing
+- Object to certain processing
+- Request a copy of your data
 - Withdraw consent where consent is relied upon
 
-Requests may be submitted by emailing [dpo@refractfoundation.org](mailto:dpo@refractfoundation.org).
+To exercise your rights, email [dpo@refractfoundation.org](mailto:dpo@refractfoundation.org).
 
 ## 15. Complaints
 
-If you have concerns about how information has been handled, please contact us first by emailing [dpo@refractfoundation.org](mailto:dpo@refractfoundation.org).
+If you have concerns about how we handle personal information, please contact us first so we can try to resolve the issue.
 
-You may also lodge a complaint with the Information Commissioner's Office (ICO) if you believe data protection laws have been breached.
+You also have the right to complain to the Information Commissioner's Office (ICO).
 
 ## 16. Changes to This Policy
 
 We may update this Privacy Policy from time to time.
 
-Any updates will be published on our website with a revised effective date.
+The latest version will always be published on our website with the revised "Last Updated" date.
 
 ## 17. Contact
 
-Privacy enquiries: [dpo@refractfoundation.org](mailto:dpo@refractfoundation.org)
+**Privacy enquiries**
 
-General enquiries: [hello@refractfoundation.org](mailto:hello@refractfoundation.org)
+[dpo@refractfoundation.org](mailto:dpo@refractfoundation.org)
 
-Website: [refractfoundation.org](https://refractfoundation.org)
+**General enquiries**
+
+[hello@refractfoundation.org](mailto:hello@refractfoundation.org)
+
+**Website**
+
+[refractfoundation.org](https://refractfoundation.org)
+
+---
+
+## Support Our Work
+
+{% include donate.html %}

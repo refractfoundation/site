@@ -7,7 +7,7 @@
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
     {% include header.html %}
-    <main id="main-content" class="content container" tabindex="-1">{{ content }}</main>
+    <main id="main-content" class="content container my-5{% if page.content_class %} {{ page.content_class }}{% endif %}" tabindex="-1">{{ content }}</main>
     {% include footer.html %}
   </body>
 </html>

@@ -1,0 +1,14 @@
+- name: Email Us
+  description: Drop us a message and we'll get back to you as soon as possible.
+  detail: hello@refractfoundation.org
+  href: mailto:hello@refractfoundation.org
+  button: Send an Email
+  background: /assets/images/campfire/4.JPG
+  external: false
+- name: LinkedIn
+  description: Follow us for updates on programmes, events, and opportunities.
+  detail: linkedin.com/company/refractfoundation
+  href: https://linkedin.com/company/refractfoundation
+  button: Connect on LinkedIn
+  background: /assets/images/campfire/22.JPG
+  external: true

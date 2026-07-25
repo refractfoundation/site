@@ -1,17 +1,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{ page.title }} | The Refract Foundation</title>
-  <link rel="stylesheet" href="/scripts/splide/dist/css/splide.min.css" />
+  {% seo %}
   <link rel="stylesheet" href="/scripts/bootstrap-dist/css/bootstrap.min.css" />
   <link
     rel="stylesheet"
     href="/assets/style.css?v={{ site.time | date: '%s' }}"
   />
-  <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
   <script src="https://static.airtable.com/js/base/embed.js" defer></script>
-  <script src="/scripts/splide/dist/js/splide.min.js" defer></script>
-  <script src="/scripts/splide-extension-auto-scroll.min.js" defer></script>
   <script src="/scripts/bootstrap-dist/js/bootstrap.min.js" defer></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -39,38 +36,21 @@
 
         observer.observe(document.body, { childList: true, subtree: true });
       }
-
-      var carousel = document.querySelector("#image-carousel.splide");
-
-      if (carousel) {
-        var splide = new Splide(carousel, {
-          type: "loop",
-          drag: "free",
-          focus: "center",
-          perPage: 3,
-          gap: "1rem",
-          autoScroll: {
-            speed: 1,
-          },
-        });
-
-        splide.mount(window.splide.Extensions);
-      }
     });
   </script>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = "https://embed.tawk.to/6956926eb11caa197dad0980/1jdt2o0go";
+      s1.charset = "UTF-8";
+      s1.setAttribute("crossorigin", "*");
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
 </head>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-  var Tawk_API = Tawk_API || {},
-    Tawk_LoadStart = new Date();
-  (function () {
-    var s1 = document.createElement("script"),
-      s0 = document.getElementsByTagName("script")[0];
-    s1.async = true;
-    s1.src = "https://embed.tawk.to/6956926eb11caa197dad0980/1jdt2o0go";
-    s1.charset = "UTF-8";
-    s1.setAttribute("crossorigin", "*");
-    s0.parentNode.insertBefore(s1, s0);
-  })();
-</script>
-<!--End of Tawk.to Script-->

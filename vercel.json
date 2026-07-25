@@ -1,9 +1,15 @@
 {
+  "buildCommand": "npm ci && node scripts/generate-webp.js && bundle exec jekyll build",
   "cleanUrls": true,
   "redirects": [
     {
       "source": "/events/:path*",
       "destination": "/our-work/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/our-work/dlc",
+      "destination": "/our-work/census",
       "permanent": true
     }
   ]

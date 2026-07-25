@@ -3,7 +3,7 @@ title: The Campfire Experience
 layout: post
 author: Oliver Potter
 date: 2026-03-01
-cover: /img/CF_BIRMINGHAM_0072.JPG
+cover: /assets/images/CF_BIRMINGHAM_0072.JPG
 permalink: /news/campfire-experience
 ---
 
@@ -13,7 +13,7 @@ This event was the result of several months of preparation. I spent a significan
 
 At points during the build-up, there was uncertainty about whether everything would come together. However, seeing the room reach capacity on the day made the effort worthwhile.
 
-![Campfire full room](/img/campfire/campfirefullroom.jpg)
+![Campfire full room](/assets/images/campfire/campfirefullroom.jpg)
 
 The event marked many participants’ first hackathon experience. Young people aged 13–18 from across the region spent the day developing games, experimenting with new tools, and shipping projects they were proud of. For many, these were their first lines of code.
 
@@ -25,7 +25,7 @@ As I reflected later, one of the most striking outcomes was how quickly particip
 
 That shift from uncertainty to capability was visible across the room.
 
-![Teams collaborating during development](/img/campfire/2.JPG)
+![Teams collaborating during development](/assets/images/campfire/2.JPG)
 
 By the end of the day, 6 games were successfully shipped:
 
@@ -42,7 +42,7 @@ One of the strongest outcomes was *Cat-Fishing Frenzy*, which went on to win the
 
 > “We began the event by first creating the assets we would need. After not too long, we had created the skeleton of a fully functional game.”
 
-![Cat-Fishing Frenzy team](/img/campfire/5.JPG)
+![Cat-Fishing Frenzy team](/assets/images/campfire/5.JPG)
 
 After months of planning, the event only became possible through the support of many individuals and organisations. Campfire Birmingham would not have happened without:
 
@@ -53,7 +53,7 @@ After months of planning, the event only became possible through the support of 
 - Mrs James and Mr Lovatt from [Ormiston Sandwell Community Academy](https://ormistonsandwell.org.uk/) — for providing a welcoming venue and continued support  
 - [Hack Club](https://hackclub.com/) and [Open Sauce](https://www.opensauce.com/) — for creating the Campfire initiative in the first place  
 
-![Closing group photo](/img/CF_BIRMINGHAM_0219.JPG)
+![Closing group photo](/assets/images/CF_BIRMINGHAM_0219.JPG)
 
 Campfire Birmingham demonstrated what can be achieved when young people are given time, tools, and trust. In just 12 hours, complete beginners and experienced coders alike were able to collaborate, learn new skills, and bring ideas to life.
 

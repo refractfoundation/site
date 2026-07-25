@@ -1,19 +1,20 @@
 ---
 title: Safeguarding Policy
 layout: page
+content_class: policy
 ---
 
 # Safeguarding Policy
 
-Last Updated: 31 May 2026
+**Last Updated:** 31 May 2026
 
 ## 1. Statement of Commitment
 
-The Refract Foundation ('Refract', 'we', 'our', 'us') is committed to promoting the welfare, safety and wellbeing of all children, young people and vulnerable adults who engage with our programmes, events, research activities and services.
+The Refract Foundation ("Refract", "we", "our", "us") is committed to promoting the welfare, safety and wellbeing of all children, young people and vulnerable adults who engage with our programmes, events, research activities and services.
 
 We believe that everyone has the right to participate in our activities free from abuse, neglect, exploitation, discrimination, bullying, harassment or harm.
 
-Safeguarding is everyone's responsibility.
+> Safeguarding is everyone's responsibility.
 
 ## 2. Scope
 
@@ -34,7 +35,6 @@ This policy applies to:
 - Online activities
 - Workshops and events
 - Research projects
-- The Digital Literacy Census
 - Communications undertaken on behalf of Refract Foundation
 
 ## 3. Definitions
@@ -83,9 +83,9 @@ Where activities occur online:
 - One-to-one communication with minors should be avoided unless necessary and appropriate.
 - Safeguarding concerns identified online should be reported in the same way as offline concerns.
 
-## 7. Research and Census Activities
+## 7. Research Activities
 
-When conducting research, surveys or the Digital Literacy Census, Refract Foundation will:
+When conducting research or surveys, Refract Foundation will:
 
 - Minimise collection of personal data.
 - Avoid collecting unnecessary sensitive information.
@@ -106,7 +106,7 @@ Examples include:
 - Online harm
 - Threats to safety or wellbeing
 
-Where there is an immediate risk of harm, emergency services should be contacted immediately.
+> Where there is an immediate risk of harm, emergency services should be contacted immediately.
 
 ## 9. Confidentiality
 
@@ -137,10 +137,24 @@ Safeguarding concerns should be reported to:
 
 [safeguarding@refractfoundation.org](mailto:safeguarding@refractfoundation.org)
 
-Where there is an immediate risk of harm, contact emergency services immediately.
+> Where there is an immediate risk of harm, contact emergency services immediately.
 
 ## 13. Contact
 
-General enquiries: [hello@refractfoundation.org](mailto:hello@refractfoundation.org)
+**Safeguarding concerns**
 
-Website: [refractfoundation.org](https://refractfoundation.org)
+[safeguarding@refractfoundation.org](mailto:safeguarding@refractfoundation.org)
+
+**General enquiries**
+
+[hello@refractfoundation.org](mailto:hello@refractfoundation.org)
+
+**Website**
+
+[refractfoundation.org](https://refractfoundation.org)
+
+---
+
+## Support Our Work
+
+{% include donate.html %}

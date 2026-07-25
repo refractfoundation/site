@@ -1,0 +1,27 @@
+- name: Census
+  logo: /assets/images/logo/for-web/Census.svg
+  description: Digital Literacy Research
+  url: /our-work/census
+  background: /assets/images/campfire/1.JPG
+  colour: "#00537C"
+
+- name: RAISE
+  logo: /assets/images/logo/for-web/RAISE.svg
+  description: Responsible AI in Education
+  url: /our-work/raise
+  background: /assets/images/campfire/hcampfire_2.JPG
+  colour: "#FF63E2"
+
+- name: Revise
+  logo: /assets/images/logo/for-web/Revise.svg
+  description: Supporting Computer Science Students
+  url: /our-work/revise
+  background: /assets/images/campfire/hcampfire_4.JPG
+  colour: "#00AE62"
+
+- name: Futures
+  logo: /assets/images/logo/for-web/Futures.svg
+  description: Inspiring Careers in Tech
+  url: /our-work/futures
+  background: /assets/images/campfire/hcampfire_6.JPG
+  colour: "#FF8D00"

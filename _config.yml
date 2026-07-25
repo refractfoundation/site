@@ -1,5 +1,11 @@
 title: The Refract Foundation
 description: "Real skills. Real opportunity."
+url: https://refractfoundation.org
 encoding: utf-8
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-target-blank
 
 exclude: ["README.md", "LICENSE", "*.gem", "*.gemspec", "Gemfile.lock"]
