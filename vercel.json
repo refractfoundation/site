@@ -1,5 +1,5 @@
 {
-  "buildCommand": "apt-get update -y && apt-get install -y webp && bash scripts/generate-webp.sh && bundle exec jekyll build",
+  "buildCommand": "npm ci && node scripts/generate-webp.js && bundle exec jekyll build",
   "cleanUrls": true,
   "redirects": [
     {
