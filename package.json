@@ -1,0 +1,15 @@
+{
+  "name": "refract-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Build-time helpers for The Refract Foundation site",
+  "scripts": {
+    "generate-webp": "node scripts/generate-webp.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5"
+  }
+}

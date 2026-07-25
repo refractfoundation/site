@@ -1,10 +1,12 @@
 ---
 title: Campfire
-layout: campfire
+layout: programme
+hero_overlay: rgba(0, 0, 0, 0.5)
+hero_position_y: -40vh
 hero_date: Saturday 28th February 2026
 hero_loc: Ormiston Sandwell Community Academy
-hero_logo: /img/logo/campfire.svg
-hero_back: /img/campfire/25.JPG
+hero_logo: /assets/images/logo/campfire.svg
+hero_back: /assets/images/campfire/25.JPG
 hero_alt: Campfire Birmingham
 ---
 
@@ -38,42 +40,25 @@ food and swag was distributed courtesy of our incredible sponsors.
 
 # Projects Submitted
 
-<div class="projects-showcase container">
-  <div class="row row-cols-1 row-cols-md-3 g-2 projects-showcase__row projects-showcase__row--podium">
-    {% assign podium = site.data.campfire_projects | slice: 0,3 %}
-    {% for project in podium %}
+<div class="container mb-4">
+  <div class="row row-cols-1 row-cols-md-3 g-3">
+    {% for project in site.data.campfire_projects %}
     <div class="col">
-      <a
-        class="event-project {% if forloop.first %}event-project--winner{% elsif forloop.index == 2 %}event-project--runnerup{% elsif forloop.index == 3 %}event-project--third{% endif %} h-100 d-flex flex-column"
-        href="{{ project.href }}"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {% if forloop.first %}
-          <p class="event-project__label">1st place</p>
+      <a class="project-card d-flex flex-column h-100" href="{{ project.href }}" target="_blank" rel="noopener noreferrer">
+        {% if forloop.index == 1 %}
+          <span class="project-badge project-badge--gold">1st place</span>
         {% elsif forloop.index == 2 %}
-          <p class="event-project__label event-project__label--silver">2nd place</p>
+          <span class="project-badge project-badge--silver">2nd place</span>
         {% elsif forloop.index == 3 %}
-          <p class="event-project__label event-project__label--bronze">3rd place</p>
+          <span class="project-badge project-badge--bronze">3rd place</span>
         {% endif %}
-        <div class="event-project__media ratio ratio-4x3">
-          <img src="{{ project.screenshot }}" alt="{{ project.project }} screenshot" />
+        <div class="project-card__media ratio ratio-4x3">
+          <img src="{{ project.screenshot }}" alt="{{ project.project }} screenshot" loading="lazy" />
         </div>
-        <p class="event-project__title">{{ project.project }}</p>
-        <p class="event-project__authors">By {{ project.people }}</p>
-      </a>
-    </div>
-    {% endfor %}
-  </div>
-
-  <div class="row row-cols-1 row-cols-md-3 g-2 projects-showcase__row projects-showcase__row--rest mt-3">
-    {% assign rest = site.data.campfire_projects | slice: 3, 999 %}
-    {% for project in rest %}
-    <div class="col">
-      <a class="event-project h-100" href="{{ project.href }}" target="_blank" rel="noopener noreferrer">
-        <img src="{{ project.screenshot }}" alt="{{ project.project }} screenshot" />
-        <p class="event-project__title">{{ project.project }}</p>
-        <p class="event-project__authors">By {{ project.people }}</p>
+        <div class="project-card__body">
+          <p class="project-card__title">{{ project.project }}</p>
+          <p class="project-card__authors">By {{ project.people }}</p>
+        </div>
       </a>
     </div>
     {% endfor %}
@@ -120,3 +105,9 @@ food and swag was distributed courtesy of our incredible sponsors.
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
+---
+
+## Support Our Work
+
+{% include donate.html %}

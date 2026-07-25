@@ -5,7 +5,24 @@ layout: page
 
 # Get in Touch
 
-As of now, the best way to get in touch with us is either via email or sending us a message on LinkedIn.
+We'd love to hear from you. Reach out via email or connect with us on LinkedIn.
 
-<a class="btn" href="mailto:oliver@refractfoundation.org">Email</a>
-<a class="btn" href="https://linkedin.com/company/refractfoundation" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+<div class="container text-center">
+  <div class="row row-cols-1 row-cols-md-2 g-3">
+    {% for method in site.data.contact %}
+    <div class="col">
+      <div class="event-card event-card--bg d-flex flex-column justify-content-between align-items-center text-center" style="--event-card-image: url({{ method.background }});">
+        <br />
+        <h3>{{ method.name }}</h3>
+        <p>{{ method.description }}</p>
+        <p class="small">{{ method.detail }}</p>
+        <a class="btn" href="{{ method.href }}">{{ method.button }}</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+## Support Our Work
+
+{% include donate.html %}

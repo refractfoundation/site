@@ -1,15 +1,16 @@
 ---
 title: Code of Conduct
 layout: page
+content_class: policy
 ---
 
 # Code of Conduct
 
-Last Updated: 31 May 2026
+**Last Updated:** 31 May 2026
 
 ## 1. Purpose
 
-The Refract Foundation ('Refract', 'we', 'our', 'us') is committed to creating safe, welcoming, inclusive and respectful environments for everyone.
+The Refract Foundation ("Refract", "we", "our", "us") is committed to creating safe, welcoming, inclusive and respectful environments for everyone.
 
 This Code of Conduct applies to all participants, volunteers, mentors, speakers, partners, organisers and representatives involved in Refract Foundation activities.
 
@@ -19,7 +20,6 @@ This Code of Conduct applies to:
 
 - Events and workshops
 - Research activities
-- The Digital Literacy Census
 - Online communities and communication channels
 - Meetings and outreach activities
 - Any activity organised, operated or supported by Refract Foundation
@@ -39,7 +39,7 @@ Participants are expected to:
 
 ## 4. Inclusion and Equality
 
-Refract Foundation is committed to providing an environment free from discrimination.
+> Refract Foundation is committed to providing an environment free from discrimination.
 
 We expect all participants to respect individuals regardless of:
 
@@ -129,10 +129,24 @@ Continued participation in Refract Foundation activities constitutes acceptance 
 
 ## 12. Contact
 
-Conduct concerns: [conduct@refractfoundation.org](mailto:conduct@refractfoundation.org)
+**Conduct concerns**
 
-Safeguarding concerns: [safeguarding@refractfoundation.org](mailto:safeguarding@refractfoundation.org)
+[conduct@refractfoundation.org](mailto:conduct@refractfoundation.org)
 
-General enquiries: [hello@refractfoundation.org](mailto:hello@refractfoundation.org)
+**Safeguarding concerns**
 
-Website: [refractfoundation.org](https://refractfoundation.org)
+[safeguarding@refractfoundation.org](mailto:safeguarding@refractfoundation.org)
+
+**General enquiries**
+
+[hello@refractfoundation.org](mailto:hello@refractfoundation.org)
+
+**Website**
+
+[refractfoundation.org](https://refractfoundation.org)
+
+---
+
+## Support Our Work
+
+{% include donate.html %}

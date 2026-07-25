@@ -1,11 +1,11 @@
 <header>
-  <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #dac8ae;" aria-label="Primary">
+  <nav class="navbar navbar-expand-md navbar-light" aria-label="Primary">
     <div class="container-fluid px-3 px-md-4">
       <a class="navbar-brand flex-shrink-0" href="/">
-        <img src="/img/logo/full_colour.svg" alt="The Refract Foundation" />
+        <img src="/assets/images/logo/full_colour.svg" alt="The Refract Foundation" />
       </a>
       <button
-        class="navbar-toggler ms-auto d-lg-none"
+        class="navbar-toggler ms-auto d-md-none"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#collapsibleNavId"
@@ -16,19 +16,24 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/our-work">Our Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contact">Contact</a>
-          </li>
+        <ul class="navbar-nav ms-auto mt-2 mt-md-0">
+          {% for item in site.data.nav %}
+            {% assign link = item.link %}
+            {% assign label = item.label %}
+            {% assign is_active = false %}
+            {% if page.url == link or page.url == link | append: "/" %}
+              {% assign is_active = true %}
+            {% elsif link != "/" and page.url contains link %}
+              {% assign is_active = true %}
+            {% endif %}
+            <li class="nav-item">
+              <a
+                class="nav-link{% if is_active %} active{% endif %}"
+                href="{{ link }}"
+                {% if is_active %}aria-current="page"{% endif %}
+              >{{ label }}</a>
+            </li>
+          {% endfor %}
         </ul>
       </div>
     </div>

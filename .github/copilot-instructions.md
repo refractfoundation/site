@@ -15,7 +15,7 @@
 - `/_data/*.yml`: structured data consumed by Liquid templates.
 - `/assets/style.css`: global styling.
 - `/scripts/`: vendored frontend libraries (Bootstrap, Splide).
-- `/img/`, `/vid/`: static assets.
+- `/assets/images/`, `/vid/`: static assets.
 
 ## Local setup and validation workflow
 Run all commands from repository root (`/home/runner/work/site/site`).
@@ -46,7 +46,7 @@ If `bundle` is on PATH in your environment, the standard command is:
 - For new pages, use existing layouts (`page`, `index`, `campfire`, `dlc`, `eventdlc`) and define required front-matter keys used by that layout.
 - Prefer editing content in Markdown files; only touch layout/include HTML when structure changes are needed.
 - Keep styles centralized in `/assets/style.css` unless there is a clear reason to inline style.
-- Reuse existing assets under `/img` and `/vid` and keep paths absolute from site root (e.g., `/img/...`).
+- Reuse existing assets under `/assets/images` and `/vid` and keep paths absolute from site root (e.g., `/assets/images/...`).
 
 ## Quality checks before finishing changes
 - Re-run `bundle exec jekyll build` (or full path Bundler command above) and confirm successful generation.
