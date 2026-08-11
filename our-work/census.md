@@ -26,7 +26,7 @@ The objective is to identify patterns in digital literacy and highlight where ad
         <p class="dls-kicker">How we measure digital literacy</p>
         <h2 class="dls-title">The Digital Literacy Score</h2>
         <p class="dls-lead">
-          Every survey response produces a <strong>Digital Literacy Score (DLS)</strong> — a single number from <strong>0 to 100</strong>. The DLS is the average of four equally weighted index scores — Access, Confidence, Safety and Development — each capturing a different dimension of digital life.
+          Every survey response helps to produce an average <strong>Digital Literacy Score (DLS)</strong> — a single number from <strong>0 to 100</strong>. The DLS is the average of four equally weighted index scores — Access, Confidence, Safety and Development — each capturing a different dimension of digital life.
         </p>
       </div>
       <div class="col-lg-5">
@@ -90,7 +90,7 @@ The objective is to identify patterns in digital literacy and highlight where ad
 
 # Inside the survey
 
-The survey takes around **5–7 minutes** to complete, with no right or wrong answers. Demographics questions are optional — students can skip anything or answer **"Prefer not to say"**. Sections 2–5 feed directly into the four Digital Literacy indices.
+The survey takes around **5–7 minutes** to complete, with no right or wrong answers. Demographics questions are optional — students can answer **"Prefer not to say"**. Sections 2–5 feed directly into the four Digital Literacy indices.
 
 <div class="survey-list">
   <div class="survey-row">

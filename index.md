@@ -33,7 +33,7 @@ hero_slides:
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path></svg>
       Digital inclusion for all
     </span>
-    <p class="mt-3">Refract is a youth-led initiative dedicated to making essential digital skills accessible to everyone in the West Midlands. We provide hands-on training and support that meets people where they are, regardless of background &mdash; from basic smartphone skills to online safety and artificial intelligence.</p>
+    <p class="mt-3">Refract is a youth-led initiative based in the West Midlands, dedicated to ensuring that digital skills are accessible to everyone. We aim to focus on building confidence in navigating the digital landscape &mdash; from basic smartphone skills to online safety and artificial intelligence.</p>
     <div class="split-intro__ctas">
       <a class="btn" href="/our-work">Our Work &rarr;</a>
       <a class="btn btn-outline" href="/contact">Get Involved &rarr;</a>
@@ -51,7 +51,7 @@ hero_slides:
 
 # The Digital Divide
 
-Digital literacy isn't a luxury &ndash; it's essential for everyday life. Whether applying for jobs, staying connected or accessing vital services, everyone deserves the skills to navigate our digital world safely, effectively and responsibly.
+Digital literacy isn't a luxury &mdash; it's essential for everyday life. Whether applying for jobs, staying connected or accessing vital services, everyone deserves the skills to navigate our digital world safely, effectively and responsibly.
 
 Without digital skills, millions are locked out of opportunities, independence and inclusion. These aren't just statistics &mdash; they're our neighbours, friends and family.
 
