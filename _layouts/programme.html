@@ -7,7 +7,7 @@
     <main id="main-content" tabindex="-1" class="programme-page"{% if page.hero_colour %} style="--accent: {{ page.hero_colour }};"{% endif %}>
       <div
         class="hero hero--image hero--center"
-        style="--hero-image: url('{{ page.hero_back }}'); --hero-position-y: {{ page.hero_position_y | default: '-30vh' }};"
+        style="--hero-image: url('{{ page.hero_back }}'); --hero-overlay: {{ page.hero_overlay | default: 'rgba(26, 24, 24, 0.273)' }}; --hero-position-y: {{ page.hero_position_y | default: '-30vh' }};"
       >
         <div class="hero-content">
           <img src="{{ page.hero_logo }}" alt="{{ page.hero_alt }}" class="hero-logo{% if page.hero_logo_wide %} hero-logo--wide{% endif %}" />
