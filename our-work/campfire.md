@@ -1,7 +1,6 @@
 ---
 title: Campfire
 layout: programme
-hero_overlay: rgba(0, 0, 0, 0.5)
 hero_position_y: -40vh
 hero_date: Saturday 28th February 2026
 hero_loc: Ormiston Sandwell Community Academy
@@ -68,10 +67,10 @@ food and swag was distributed courtesy of our incredible sponsors.
 # Our Partners
 
 <div class="container">
-<div class="row row-cols-2 row-cols-md-6 g-3 align-items-center justify-content-center">
+<div class="row row-cols-2 row-cols-md-4 g-4 align-items-center justify-content-center">
 {% for partner in site.data.campfire_partners %}
-<a class="col sponsor-card d-flex align-items-center justify-content-center p-3 rounded mx-1" href="{{ partner.href }}" target="_blank" rel="noopener noreferrer" style="background-color: {{ partner.colour }}">
-<img class="img-fluid" src="{{ partner.logo }}" alt="{{ partner.partner }}" />
+<a class="col sponsor-card" href="{{ partner.href }}" target="_blank" rel="noopener noreferrer" style="--partner-colour: {{ partner.colour }}">
+<span class="sponsor-card__inner"><img src="{{ partner.logo }}" alt="{{ partner.partner }}"{% if partner.invert %} class="sponsor-card__logo--invert"{% endif %} /></span>
 </a>
 {% endfor %}
 </div>

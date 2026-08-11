@@ -5,13 +5,14 @@
 - partner: Open Sauce
   logo: /assets/images/sponsor/opensauce.webp
   colour: "#ff5a2e"
+  invert: true
   href: https://opensauce.com
 - partner: Cyber Heroez CIC
   logo: /assets/images/sponsor/cyberheroez.png
   colour: "#3a85f5"
   href: https://cyberheroez.co.uk
 - partner: Ormiston Sandwell Community Academy
-  logo: /assets/images/sponsor/OSCA.svg
+  logo: /assets/images/sponsor/osca.png
   colour: "#c42eff"
   href: https://ormistonsandwell.org.uk
 - partner: HackUK
@@ -21,6 +22,7 @@
 - partner: Yubico
   logo: /assets/images/sponsor/yubico.png
   colour: "#85be00"
+  invert: true
   href: https://yubico.com
 - partner: CraftPix
   logo: /assets/images/sponsor/craftpix.svg

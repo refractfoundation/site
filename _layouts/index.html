@@ -8,46 +8,148 @@
     <a class="skip-link" href="#main-content">Skip to main content</a>
     {% include header.html %}
     <main id="main-content" tabindex="-1">
-      <div class="hero hero--video d-flex flex-column justify-content-center align-items-center text-center">
-        <video id="hero-video"
-          autoplay
-          muted
-          loop
-          playsinline
-          preload="metadata"
-          poster="/assets/images/CF_BIRMINGHAM_0072.JPG"
-          aria-hidden="true"
-        >
-          <source src="/vid/Refract Hero.mp4" type="video/mp4" />
-        </video>
-        <script>
-          (function () {
-            var media = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)");
-            if (!media || !media.matches) return;
-
-            var video = document.getElementById("hero-video");
-            if (!video) return;
-
-            try {
-              video.pause();
-              video.removeAttribute("autoplay");
-              video.removeAttribute("loop");
-
-              video.querySelectorAll("source").forEach(function (source) {
-                source.removeAttribute("src");
-              });
-
-              video.load();
-            } catch (e) {
-              // no-op
-            }
-          })();
-        </script>
-        <div class="hero-content">
-          <h1>{{ page.hero_title }}</h1>
-          <h2>{{ page.hero_sub }}</h2>
+      <div class="hero hero-carousel">
+        <div class="hero-carousel__slides">
+          {% if page.hero_slides %}
+            {% for slide in page.hero_slides %}
+            <section class="hero-slide{% if forloop.first %} is-active{% endif %}" style="--slide-bg: url('{{ slide.img | default: '/assets/images/CF_BIRMINGHAM_0072.JPG' }}')">
+              <div class="hero-content">
+                <h1>{{ slide.title }}</h1>
+                <h2>{{ slide.sub }}</h2>
+                {% if slide.lead %}
+                <p class="hero-lead">{{ slide.lead }}</p>
+                {% endif %}
+                {% if slide.cta %}
+                <a class="hero-cta" href="{{ slide.link | default: '/our-work' }}">{{ slide.cta }} &rarr;</a>
+                {% endif %}
+              </div>
+            </section>
+            {% endfor %}
+          {% else %}
+            <section class="hero-slide is-active" style="--slide-bg: url('/assets/images/CF_BIRMINGHAM_0072.JPG')">
+              <div class="hero-content">
+                <h1>{{ page.hero_title }}</h1>
+                <h2>{{ page.hero_sub }}</h2>
+                {% if page.hero_cta %}
+                <a class="hero-cta" href="{{ page.hero_cta_link | default: '/our-work' }}">{{ page.hero_cta }} &rarr;</a>
+                {% endif %}
+              </div>
+            </section>
+          {% endif %}
+        </div>
+        {% if page.hero_slides %}
+        <button type="button" class="hero-arrow hero-arrow--prev" data-hero-prev aria-label="Previous slide">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
+        </button>
+        <button type="button" class="hero-arrow hero-arrow--next" data-hero-next aria-label="Next slide">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+        </button>
+        {% endif %}
+        <div class="hero-controls">
+          {% if page.hero_slides %}
+          <span class="hero-dashes">
+            {% for slide in page.hero_slides %}
+            <button type="button" class="hero-dash{% if forloop.first %} is-active{% endif %}" data-hero-go="{{ forloop.index0 }}" aria-label="Go to slide: {{ slide.title | strip_html }}" aria-current="{% if forloop.first %}true{% else %}false{% endif %}"></button>
+            {% endfor %}
+          </span>
+          {% else %}
+          <span class="hero-dashes" aria-hidden="true">
+            <span class="hero-dash is-active"></span>
+          </span>
+          {% endif %}
+          <span class="hero-scroll" aria-hidden="true">Scroll &darr;</span>
         </div>
       </div>
+      <script>
+        (function () {
+          var hero = document.querySelector(".hero-carousel");
+          if (!hero) return;
+
+          var slides = Array.prototype.slice.call(hero.querySelectorAll(".hero-slide"));
+          var dots = Array.prototype.slice.call(hero.querySelectorAll(".hero-dash"));
+          if (slides.length < 2 || dots.length < 2) return;
+
+          var current = 0;
+          var timer = null;
+          var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+          function show(index) {
+            current = (index + slides.length) % slides.length;
+            slides.forEach(function (slide, i) {
+              slide.classList.toggle("is-active", i === current);
+            });
+            dots.forEach(function (dot, i) {
+              dot.classList.toggle("is-active", i === current);
+              if (i === current) {
+                dot.setAttribute("aria-current", "true");
+              } else {
+                dot.removeAttribute("aria-current");
+              }
+            });
+          }
+
+          function next() {
+            show(current + 1);
+          }
+
+          function stop() {
+            if (timer) {
+              clearInterval(timer);
+              timer = null;
+            }
+          }
+
+          function start() {
+            stop();
+            if (reduceMotion.matches) return;
+            timer = setInterval(next, 6000);
+          }
+
+          dots.forEach(function (dot, i) {
+            dot.addEventListener("click", function () {
+              show(i);
+              start();
+            });
+          });
+
+          var prevBtn = hero.querySelector("[data-hero-prev]");
+          var nextBtn = hero.querySelector("[data-hero-next]");
+
+          if (prevBtn) {
+            prevBtn.addEventListener("click", function () {
+              show(current - 1);
+              start();
+            });
+          }
+
+          if (nextBtn) {
+            nextBtn.addEventListener("click", function () {
+              show(current + 1);
+              start();
+            });
+          }
+
+          hero.addEventListener("keydown", function (e) {
+            if (e.key === "ArrowLeft") {
+              e.preventDefault();
+              show(current - 1);
+              start();
+            } else if (e.key === "ArrowRight") {
+              e.preventDefault();
+              show(current + 1);
+              start();
+            }
+          });
+
+          hero.addEventListener("mouseenter", stop);
+          hero.addEventListener("mouseleave", start);
+          hero.addEventListener("focusin", stop);
+          hero.addEventListener("focusout", start);
+
+          show(0);
+          start();
+        })();
+      </script>
       <div class="content container my-5">{{ content }}</div>
     </main>
     {% include footer.html %}
