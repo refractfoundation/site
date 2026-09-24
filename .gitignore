@@ -10,5 +10,6 @@ node_modules
 assets/images/**/*.webp
 
 # Local tooling
+.claude/settings.local.json
 .wakatime-project
 .DS_Store
