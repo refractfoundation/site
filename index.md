@@ -25,6 +25,10 @@ hero_slides:
     img: /assets/images/campfire/0.JPG
 ---
 
+# Upcoming Events
+
+{% include events-upcoming.html %}
+
 # Bridging the Gap
 
 <div class="split-intro">

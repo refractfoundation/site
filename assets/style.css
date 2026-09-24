@@ -536,6 +536,78 @@ h2 {
   margin-bottom: 0.1vh;
 }
 
+.event-card--featured {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  height: auto;
+  min-height: 55vh;
+  padding: 2.5rem;
+  text-align: left;
+}
+
+.event-card--featured .event-card__logo {
+  width: clamp(120px, 25%, 260px);
+  flex-shrink: 0;
+}
+
+.event-card__badge {
+  display: inline-block;
+  background: var(--accent, var(--green));
+  color: white;
+  border-radius: 999px;
+  padding: 0.2rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.event-card--featured h3 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  margin: 0.6rem 0 0.4rem;
+}
+
+.event-card__tagline {
+  font-size: 1.15rem;
+  margin-bottom: 0.4rem;
+}
+
+.event-card__meta {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.event-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.event-card--featured .btn-outline,
+.content a.event-card--featured .btn-outline,
+.content .event-card--featured a.btn-outline {
+  color: white;
+  border-color: white;
+}
+
+.content .event-card--featured a.btn-outline:hover {
+  background: white;
+  color: var(--green);
+}
+
+@media (max-width: 767px) {
+  .event-card--featured {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  .event-card__actions {
+    justify-content: center;
+  }
+}
+
 /* ── Buttons ─────────────────────────────────────────── */
 
 .btn {
