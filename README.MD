@@ -135,6 +135,13 @@ The build pipeline installs dependencies, generates WebP assets, then builds the
 - `/events/:path*` → `/our-work/:path*`
 - `/our-work/dlc` → `/our-work/census`
 
+## Contributing
+
+- Work on a branch named `<type>/<short-description>` and open a pull request into `main`; never commit directly to `main`.
+- Use [Conventional Commits](https://www.conventionalcommits.org) (`feat:`, `fix:`, `docs:`, `chore:` …).
+- CI runs `npm audit` and a full Jekyll build on every PR; Dependabot opens weekly dependency updates.
+- Security headers are configured in `vercel.json`.
+
 ## License
 
 This project is licensed under the [GNU General Public License v3.0](LICENSE).
