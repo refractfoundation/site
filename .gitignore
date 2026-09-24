@@ -8,3 +8,7 @@ vendor/
 node_modules
 # Generated WebP images
 assets/images/**/*.webp
+
+# Local tooling
+.wakatime-project
+.DS_Store

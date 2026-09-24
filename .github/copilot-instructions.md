@@ -8,14 +8,14 @@
 ## Key paths to know
 - `/_config.yml`: Jekyll site configuration.
 - `/*.md`: top-level pages (`index.md`, `about.md`, `contact.md`).
-- `/events/*.md`: event content pages.
-- `/dlc-land/**.md`: event landing pages.
+- `/our-work/*.md`: programme and event pages.
+- `/news/*.md`: news posts.
 - `/_layouts/*.html`: page templates.
 - `/_includes/*.html`: shared partials (head, header, footer, event cards, donate block).
 - `/_data/*.yml`: structured data consumed by Liquid templates.
 - `/assets/style.css`: global styling.
-- `/scripts/`: vendored frontend libraries (Bootstrap, Splide).
-- `/assets/images/`, `/vid/`: static assets.
+- `/scripts/`: WebP generator and vendored Bootstrap.
+- `/assets/images/`: static assets.
 
 ## Local setup and validation workflow
 Run all commands from repository root (`/home/runner/work/site/site`).
@@ -43,11 +43,14 @@ If `bundle` is on PATH in your environment, the standard command is:
 
 ## Editing guidance
 - Keep existing Liquid/front-matter patterns intact.
-- For new pages, use existing layouts (`page`, `index`, `campfire`, `dlc`, `eventdlc`) and define required front-matter keys used by that layout.
+- For new pages, use existing layouts (`page`, `index`, `post`, `programme`) and define required front-matter keys used by that layout.
 - Prefer editing content in Markdown files; only touch layout/include HTML when structure changes are needed.
 - Keep styles centralized in `/assets/style.css` unless there is a clear reason to inline style.
-- Reuse existing assets under `/assets/images` and `/vid` and keep paths absolute from site root (e.g., `/assets/images/...`).
+- Reuse existing assets under `/assets/images` and keep paths absolute from site root (e.g., `/assets/images/...`).
 
 ## Quality checks before finishing changes
 - Re-run `bundle exec jekyll build` (or full path Bundler command above) and confirm successful generation.
 - If build fails, fix Liquid/front-matter/path issues first; these are common break points in this repo.
+
+## Git workflow
+- Work on a branch, use Conventional Commits, and open a PR into `main`. See `CLAUDE.md`.
