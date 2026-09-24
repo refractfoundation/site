@@ -385,6 +385,10 @@ h2 {
   width: 60%;
 }
 
+.hero-logo--large {
+  width: min(80%, 460px);
+}
+
 /* Hero CTA + chrome */
 
 .hero-cta {

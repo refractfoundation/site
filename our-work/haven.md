@@ -2,8 +2,9 @@
 title: Haven West Midlands
 layout: programme
 hero_position_y: 0vh
-hero_date: 14th–15th November 2026
-hero_loc: Venue and times to be announced
+hero_date: 14th or 15th November 2026 (date to be confirmed)
+hero_loc: A 12-hour event · venue and times to be announced
+hero_logo_large: true
 hero_logo: /assets/images/logo/haven-white.png
 hero_back: /assets/images/heroes/haven-hero.png
 hero_alt: Haven West Midlands
@@ -50,12 +51,12 @@ the venue and times are confirmed.
 
 <div class="container mb-4">
 <div class="row row-cols-1 row-cols-md-2 g-3">
-<div class="col"><strong>When</strong><br>14th&ndash;15th November 2026</div>
+<div class="col"><strong>When</strong><br>14th or 15th November 2026 &mdash; a 12-hour event, date to be confirmed</div>
 <div class="col"><strong>Where</strong><br>Venue to be announced, West Midlands</div>
 <div class="col"><strong>Who it's for</strong><br>Ages 13&ndash;18, all experience levels &mdash; no prior experience needed</div>
 <div class="col"><strong>Cost</strong><br>Free &mdash; Hack Club is a nonprofit and runs Haven at no cost to teens</div>
 <div class="col"><strong>What to bring</strong><br>To be confirmed &mdash; we'll update this once the schedule is final</div>
-<div class="col"><strong>Times</strong><br>To be announced</div>
+<div class="col"><strong>Times</strong><br>12 hours on the day &mdash; exact times to be announced</div>
 <div class="col"><strong>Questions</strong><br><a href="mailto:west-midlands@haven.hackclub.com">west-midlands@haven.hackclub.com</a></div>
 </div>
 </div>
