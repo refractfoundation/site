@@ -4,7 +4,8 @@
   "private": true,
   "description": "Build-time helpers for The Refract Foundation site",
   "scripts": {
-    "generate-webp": "node scripts/generate-webp.js"
+    "generate-webp": "node scripts/generate-webp.js",
+    "optimise-images": "node scripts/optimise-images.js"
   },
   "engines": {
     "node": ">=20.0.0"
