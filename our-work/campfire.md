@@ -1,11 +1,11 @@
 ---
 title: Campfire
 layout: programme
-hero_position_y: -40vh
+hero_position_y: 0vh
 hero_date: Saturday 28th February 2026
 hero_loc: Ormiston Sandwell Community Academy
 hero_logo: /assets/images/logo/campfire.svg
-hero_back: /assets/images/campfire/25.JPG
+hero_back: /assets/images/heroes/campfire-hero.png
 hero_alt: Campfire Birmingham
 ---
 
