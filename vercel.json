@@ -1,6 +1,11 @@
 {
   "buildCommand": "npm ci && node scripts/generate-webp.js && bundle exec jekyll build",
   "cleanUrls": true,
+  "git": {
+    "deploymentEnabled": {
+      "dependabot/**": false
+    }
+  },
   "redirects": [
     {
       "source": "/events/:path*",
