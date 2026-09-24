@@ -1,0 +1,26 @@
+{% if site.data.events.size > 0 %}
+<div class="container">
+  <div class="row row-cols-1 g-3">
+    {% for event in site.data.events %}
+    <div class="col">
+      <div
+        class="event-card event-card--bg event-card--featured"
+        style="--event-card-image: url({{ event.background }});"
+      >
+        <img src="{{ event.logo }}" alt="" class="event-card__logo" />
+        <div class="event-card__body">
+          <span class="event-card__badge">Next up</span>
+          <h3>{{ event.name }}</h3>
+          {% if event.tagline %}<p class="event-card__tagline">{{ event.tagline }}</p>{% endif %}
+          <p class="event-card__meta">{{ event.date }} &middot; {{ event.location }}</p>
+          <div class="event-card__actions">
+            {% if event.signup %}<a class="btn" href="{{ event.signup }}" target="_blank" rel="noopener noreferrer">Sign up &rarr;</a>{% endif %}
+            <a class="btn btn-outline" href="{{ event.url }}" aria-label="Read more about {{ event.name }}">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}

@@ -29,6 +29,10 @@ These challenges combine to create a system where opportunity is unevenly distri
 
 {% include programmes.html %}
 
+# Upcoming Events
+
+{% include events-upcoming.html %}
+
 # Past Events
 
 {% include events-past.html %}

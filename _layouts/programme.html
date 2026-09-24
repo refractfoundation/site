@@ -10,7 +10,7 @@
         style="--hero-image: url('{{ page.hero_back }}'); --hero-overlay: {{ page.hero_overlay | default: 'rgba(26, 24, 24, 0.273)' }}; --hero-position-y: {{ page.hero_position_y | default: '-30vh' }};"
       >
         <div class="hero-content">
-          <img src="{{ page.hero_logo }}" alt="{{ page.hero_alt }}" class="hero-logo{% if page.hero_logo_wide %} hero-logo--wide{% endif %}" />
+          <img src="{{ page.hero_logo }}" alt="{{ page.hero_alt }}" class="hero-logo{% if page.hero_logo_wide %} hero-logo--wide{% endif %}{% if page.hero_logo_large %} hero-logo--large{% endif %}" />
           {% if page.hero_date %}
             <p class="hero-meta">{{ page.hero_date }}</p>
             {% if page.hero_loc %}<p class="hero-submeta">{{ page.hero_loc }}</p>{% endif %}
