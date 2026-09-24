@@ -4,7 +4,7 @@ layout: programme
 hero_position_y: 0vh
 hero_date: 14th–15th November 2026
 hero_loc: Venue and times to be announced
-hero_logo: /assets/images/logo/haven.png
+hero_logo: /assets/images/logo/haven-white.png
 hero_back: /assets/images/heroes/haven-hero.png
 hero_alt: Haven West Midlands
 hero_cta: Sign up
