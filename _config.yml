@@ -8,4 +8,24 @@ plugins:
   - jekyll-seo-tag
   - jekyll-target-blank
 
-exclude: ["README.md", "LICENSE", "*.gem", "*.gemspec", "Gemfile.lock"]
+exclude:
+  - README.md
+  - README.MD
+  - CLAUDE.md
+  - LICENSE
+  - "*.gem"
+  - "*.gemspec"
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - vercel.json
+  - scripts/generate-webp.js
+  - scripts/optimise-images.js
+  # Only bootstrap.min.css and bootstrap.min.js are referenced (_includes/head.html)
+  - scripts/bootstrap-dist/css/bootstrap-*
+  - scripts/bootstrap-dist/css/bootstrap.css
+  - scripts/bootstrap-dist/css/bootstrap.rtl*
+  - scripts/bootstrap-dist/js/bootstrap.bundle*
+  - scripts/bootstrap-dist/js/bootstrap.esm*
+  - scripts/bootstrap-dist/js/bootstrap.js
+  - "scripts/bootstrap-dist/**/*.map"
