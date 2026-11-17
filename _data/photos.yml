@@ -1,0 +1,207 @@
+# Photo metadata, keyed by filename stem (files live in assets/images/events/<event>/).
+# alt:     required; describe what the photo shows.
+# caption: optional; {person} tokens expand to LinkedIn links from people.yml.
+# w/h:     pixel size of the file, so pages can reserve space and avoid layout shift.
+# Only photos that a page uses need an entry.
+campfire-birmingham-2026-003:
+  file: "/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-003.jpg"
+  w: 2400
+  h: 1600
+  alt: "An attendee in a hoodie sketching in a notebook beside his laptop"
+campfire-birmingham-2026-005:
+  file: "/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-005.jpg"
+  w: 2400
+  h: 1600
+  alt: "A smiling attendee at a table surrounded by other attendees at laptops"
+campfire-birmingham-2026-010:
+  file: "/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-010.jpg"
+  w: 2400
+  h: 1600
+  alt: "Attendees and a mentor gathered around a table of laptops"
+campfire-birmingham-2026-018:
+  file: "/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-018.jpg"
+  w: 2400
+  h: 1600
+  alt: "A smiling attendee giving a thumbs up to the camera"
+campfire-birmingham-2026-019:
+  file: "/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-019.jpg"
+  w: 2400
+  h: 1600
+  alt: "Attendees at a table, one of them writing notes"
+campfire-birmingham-2026-020:
+  file: "/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-020.jpg"
+  w: 1620
+  h: 1080
+  alt: "Two attendees working closely together at a laptop"
+campfire-birmingham-2026-023:
+  file: "/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-023.jpg"
+  w: 1620
+  h: 1080
+  alt: "A smiling attendee with headphones around his neck"
+campfire-birmingham-2026-024:
+  file: "/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-024.jpg"
+  w: 1620
+  h: 1080
+  alt: "Two attendees laughing at something on a laptop screen"
+campfire-birmingham-2026-037:
+  file: "/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-037.jpg"
+  w: 1620
+  h: 1080
+  alt: "Two attendees working at laptops while a third leans over to help"
+campfire-birmingham-2026-042:
+  file: "/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-042.jpg"
+  w: 1620
+  h: 1080
+  alt: "A mentor in a cap leaning over two attendees to look at their screens"
+campfire-birmingham-2026-046:
+  file: "/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-046.jpg"
+  w: 1620
+  h: 1080
+  alt: "An attendee in a leather jacket coding on a laptop balanced on his lap"
+campfire-birmingham-2026-047:
+  file: "/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-047.jpg"
+  w: 2400
+  h: 1600
+  alt: "Three mentors in conversation at Campfire Birmingham"
+  caption: "Mentors, from left: {dipesh}, {boma} and {owhonda}."
+campfire-birmingham-2026-049:
+  file: "/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-049.jpg"
+  w: 1620
+  h: 1080
+  alt: "An attendee with headphones around his neck working on a laptop"
+campfire-birmingham-2026-058:
+  file: "/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-058.jpg"
+  w: 2400
+  h: 1600
+  alt: "Three attendees working together at a table with water bottles"
+campfire-birmingham-2026-060:
+  file: "/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-060.jpg"
+  w: 1620
+  h: 1080
+  alt: "Attendees gathered around a table with a mentor in a leather jacket looking on"
+campfire-birmingham-2026-062:
+  file: "/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-062.jpg"
+  w: 1620
+  h: 1080
+  alt: "Attendees at laptops with a scoreboard on the screen behind them"
+campfire-birmingham-2026-064:
+  file: "/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-064.jpg"
+  w: 2400
+  h: 1600
+  alt: "Everyone at Campfire Birmingham posing together in a classroom, with one attendee held horizontally in front"
+  caption: "All attendees at Campfire Birmingham."
+campfire-birmingham-2026-065:
+  file: "/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-065.jpg"
+  w: 2400
+  h: 1803
+  alt: "Wide view of the Campfire Birmingham room, with teams working at shared tables and bunting overhead"
+  caption: "The full room at Campfire Birmingham."
+campfire-birmingham-2026-066:
+  file: "/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-066.jpg"
+  w: 2400
+  h: 1800
+  alt: "Three mentors standing at a window, talking quietly"
+  caption: "From left: {dipesh}, {owhonda} and {boma}, a mentor at the event."
+haven-west-midlands-2026-000:
+  file: "/assets/images/events/haven-west-midlands-2026/haven-west-midlands-2026-000.jpg"
+  w: 2400
+  h: 1061
+  alt: "Haven West Midlands attendees lined up in front of the projector screen, some pulling playful poses"
+  caption: "All attendees at Haven West Midlands."
+haven-west-midlands-2026-002:
+  file: "/assets/images/events/haven-west-midlands-2026/haven-west-midlands-2026-002.jpg"
+  w: 2400
+  h: 1600
+  alt: "The Cyber Heroez team and an organiser smiling in front of the Haven screen"
+  caption: "The Cyber Heroez team, from left: {owhonda}, {oliver} and {dipesh}."
+haven-west-midlands-2026-009:
+  file: "/assets/images/events/haven-west-midlands-2026/haven-west-midlands-2026-009.jpg"
+  w: 2400
+  h: 1600
+  alt: "Attendees at a table of laptops, with games in progress on their screens"
+haven-west-midlands-2026-011:
+  file: "/assets/images/events/haven-west-midlands-2026/haven-west-midlands-2026-011.jpg"
+  w: 1600
+  h: 2400
+  alt: "Sachith waving to the room while holding his laptop"
+  caption: "First place: Sachith, with Escape for your Life."
+haven-west-midlands-2026-012:
+  file: "/assets/images/events/haven-west-midlands-2026/haven-west-midlands-2026-012.jpg"
+  w: 2400
+  h: 1600
+  alt: "Attendees seated at tables across the large Haven room"
+  caption: "The full room at Haven West Midlands."
+haven-west-midlands-2026-013:
+  file: "/assets/images/events/haven-west-midlands-2026/haven-west-midlands-2026-013.jpg"
+  w: 2400
+  h: 1600
+  alt: "Two organisers seated at the front watching a presentation, with a third person standing behind them"
+  caption: "Organisers {preston} (front) and {oliver} (behind), with {owhonda} at the back."
+haven-west-midlands-2026-014:
+  file: "/assets/images/events/haven-west-midlands-2026/haven-west-midlands-2026-014.jpg"
+  w: 2400
+  h: 1600
+  alt: "Three attendees presenting their game on the projector screen"
+haven-west-midlands-2026-015:
+  file: "/assets/images/events/haven-west-midlands-2026/haven-west-midlands-2026-015.jpg"
+  w: 2400
+  h: 1600
+  alt: "An organiser leaning over a laptop to help an attendee"
+  caption: "Organiser {shaven} (right) helping an attendee."
+haven-west-midlands-2026-016:
+  file: "/assets/images/events/haven-west-midlands-2026/haven-west-midlands-2026-016.jpg"
+  w: 2400
+  h: 1600
+  alt: "Three organisers grinning in a selfie in front of the Haven West Midlands screen"
+  caption: "Organisers, from left: {oliver}, {preston} and {shaven}."
+haven-west-midlands-2026-020:
+  file: "/assets/images/events/haven-west-midlands-2026/haven-west-midlands-2026-020.jpg"
+  w: 2400
+  h: 1600
+  alt: "Three organisers standing in front of the projector screen"
+  caption: "Organisers, from left: {shaven}, {oliver} and {preston}."
+haven-west-midlands-2026-022:
+  file: "/assets/images/events/haven-west-midlands-2026/haven-west-midlands-2026-022.jpg"
+  w: 2400
+  h: 1600
+  alt: "A volunteer standing beside an attendee who is testing a puzzle game on a laptop"
+haven-west-midlands-2026-024:
+  file: "/assets/images/events/haven-west-midlands-2026/haven-west-midlands-2026-024.jpg"
+  w: 2400
+  h: 1600
+  alt: "Close-up of laptops, one showing a colourful top-down game in progress"
+haven-west-midlands-2026-026:
+  file: "/assets/images/events/haven-west-midlands-2026/haven-west-midlands-2026-026.jpg"
+  w: 2400
+  h: 1600
+  alt: "An attendee in a red t-shirt resting his head on his hand while concentrating on a laptop"
+haven-west-midlands-2026-029:
+  file: "/assets/images/events/haven-west-midlands-2026/haven-west-midlands-2026-029.jpg"
+  w: 2400
+  h: 1600
+  alt: "An attendee grinning and framing her face with her hands, beside a laptop covered in stickers"
+haven-west-midlands-2026-030:
+  file: "/assets/images/events/haven-west-midlands-2026/haven-west-midlands-2026-030.jpg"
+  w: 2400
+  h: 1600
+  alt: "Two attendees chatting and laughing in the corner of the room"
+haven-west-midlands-2026-031:
+  file: "/assets/images/events/haven-west-midlands-2026/haven-west-midlands-2026-031.jpg"
+  w: 2400
+  h: 1600
+  alt: "Attendees working at a table covered with laptops, stickers and notes"
+haven-west-midlands-2026-032:
+  file: "/assets/images/events/haven-west-midlands-2026/haven-west-midlands-2026-032.jpg"
+  w: 2400
+  h: 1600
+  alt: "A volunteer in a white t-shirt leaning in to help two attendees at a laptop"
+haven-west-midlands-2026-035:
+  file: "/assets/images/events/haven-west-midlands-2026/haven-west-midlands-2026-035.jpg"
+  w: 2400
+  h: 1600
+  alt: "Two attendees posing for the camera, one giving a thumbs up"
+oliver-potter:
+  file: "/assets/images/people/oliver-potter.jpg"
+  w: 2400
+  h: 2400
+  alt: "Portrait of Oliver Potter"
