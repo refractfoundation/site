@@ -2,77 +2,77 @@
 title: Haven West Midlands
 layout: programme
 hero_position_y: 0vh
-hero_date: 14th or 15th November 2026 (date to be confirmed)
-hero_loc: A 12-hour event · venue and times to be announced
+hero_date: Saturday 14th November 2026
+hero_loc: University of Wolverhampton Science Park
 hero_logo_large: true
 hero_logo: /assets/images/logo/haven-white.png
 hero_back: /assets/images/heroes/haven-hero.png
 hero_alt: Haven West Midlands
-hero_cta: Sign up
-hero_cta_link: https://forms.hackclub.com/haven-signup?event=reciNEcfRgNeFSUzp
 ---
 
-This November, YOU can join the world's largest teen game jam. Yes, you! It
+_Dear Hackers, Musicians, and Artists,_
+
+_This November, YOU can join the world's largest teen game jam. Yes, you! It
 doesn't matter if you have years of experience, or just learned what they are
-today.
+today._
 
-You'll join thousands of teens making games from all around the world. Don't
+_You'll join thousands of teens making games from all around the world. Don't
 consider yourself a game dev? No problem - we have tons of workshops for you to
-make your game!
+make your game!_
 
-This is your chance to learn something new, meet new friends, and go on an
-incredible adventure together!
+_This is your chance to learn something new, meet new friends, and go on an
+incredible adventure together!_
 
-# What is Haven?
+_With love,<br />The Haven Team_
+
+---
 
 Haven is a teen game jam run by [Hack Club](https://hackclub.com), the global
-nonprofit network of teen coders. Thousands of teenagers gather at local events
-around the world over the same weekend to design, build and share games, and
-Refract is proud to bring it to the West Midlands.
+nonprofit network of teen coders, with local events in over 200 cities. On
+Saturday 14th November 2026 we hosted Haven West Midlands at the University of
+Wolverhampton Science Park, our second Hack Club event after Campfire
+Birmingham.
 
-You'll spend the day turning an idea into a playable game, supported by
-workshops and mentors, and finish by showing what you built to everyone else in
-the room.
+With 10 attendees and a team of 5 volunteers, teenagers aged 13-18 spent the
+day building a video game from scratch around the theme 'Bounce Back', supported by
+workshops, lightning talks and mentors. The day finished with presentations and
+a peer vote, with free food and prizes courtesy of our incredible sponsors.
 
-# What Happens on the Day
-
-<div class="container mb-4">
-<div class="row row-cols-1 row-cols-md-3 g-3">
-<div class="col"><strong>Learn</strong><br>Follow beginner-friendly workshops, or create at your own pace.</div>
-<div class="col"><strong>Build</strong><br>Make a video game with friends, with mentors and teammates to help you every step of the way.</div>
-<div class="col"><strong>Share</strong><br>Show off your project, play other people's games and celebrate what everyone made.</div>
-</div>
-</div>
-
-Free snacks and prizes are part of the fun. A full schedule will be published here once
-the venue and times are confirmed.
-
-# Event Details
+{% if site.data.haven_projects.size > 0 %}
+# Projects Submitted
 
 <div class="container mb-4">
-<div class="row row-cols-1 row-cols-md-2 g-3">
-<div class="col"><strong>When</strong><br>14th or 15th November 2026 &mdash; a 12-hour event, date to be confirmed</div>
-<div class="col"><strong>Where</strong><br>Venue to be announced, West Midlands</div>
-<div class="col"><strong>Who it's for</strong><br>Ages 13&ndash;18, all experience levels &mdash; no prior experience needed</div>
-<div class="col"><strong>Cost</strong><br>Free &mdash; Hack Club is a nonprofit and runs Haven at no cost to teens</div>
-<div class="col"><strong>What to bring</strong><br>To be confirmed &mdash; we'll update this once the schedule is final</div>
-<div class="col"><strong>Times</strong><br>12 hours on the day &mdash; exact times to be announced</div>
-<div class="col"><strong>Questions</strong><br><a href="mailto:west-midlands@haven.hackclub.com">west-midlands@haven.hackclub.com</a></div>
+  <div class="row row-cols-1 row-cols-md-3 g-3">
+    {% for project in site.data.haven_projects %}
+    <div class="col">
+      <a class="project-card d-flex flex-column h-100" href="{{ project.href }}" target="_blank" rel="noopener noreferrer">
+        {% if forloop.index == 1 %}
+          <span class="project-badge project-badge--gold">1st place</span>
+        {% elsif forloop.index == 2 %}
+          <span class="project-badge project-badge--silver">2nd place</span>
+        {% elsif forloop.index == 3 %}
+          <span class="project-badge project-badge--bronze">3rd place</span>
+        {% endif %}
+        <div class="project-card__media ratio ratio-4x3">
+          <img src="{{ project.screenshot }}" alt="{{ project.project }} screenshot" loading="lazy" />
+        </div>
+        <div class="project-card__body">
+          <p class="project-card__title">{{ project.project }}</p>
+          <p class="project-card__authors">By {{ project.people }}</p>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
 </div>
-</div>
+{% endif %}
 
-# Sign Up
-
-<a class="btn" href="https://forms.hackclub.com/haven-signup?event=reciNEcfRgNeFSUzp" target="_blank" rel="noopener noreferrer">Sign up for Haven West Midlands &rarr;</a>
-
-# Our Sponsors
-
-Haven West Midlands is made possible by our sponsors and partners.
+# Our Partners
 
 <div class="container">
 <div class="row row-cols-2 row-cols-md-4 g-4 align-items-center justify-content-center">
 {% for partner in site.data.haven_partners %}
-<a class="col sponsor-card" href="{{ partner.href }}" target="_blank" rel="noopener noreferrer" style="--partner-colour: {{ partner.colour }}">
+<a class="col sponsor-card{% if partner.dark %} sponsor-card--dark{% endif %}" href="{{ partner.href }}" target="_blank" rel="noopener noreferrer" style="--partner-colour: {{ partner.colour }}">
 <span class="sponsor-card__inner"><img src="{{ partner.logo }}" alt="{{ partner.partner }}"{% if partner.invert %} class="sponsor-card__logo--invert"{% endif %} /></span>
 </a>
 {% endfor %}
@@ -81,48 +81,34 @@ Haven West Midlands is made possible by our sponsors and partners.
 
 <br>
 
-# FAQ
+{% if site.data.haven_photos.size > 0 %}
+# Event Gallery
 
-**Do I need to know how to code?** No. There are workshops for beginners.
-
-**Is it free?** Yes.
-
-**Can I come with friends?** Yes, please sign up individually so we can plan numbers.
-
-**Do I need experience?** No. Game jams are designed for beginners.
-
-**Who can come?** Anyone aged 13&ndash;18.
-
-**Is it safe?** Yes. Haven follows Hack Club's [code of conduct](https://hackclub.com/conduct) and [safeguarding policy](https://hackclub.com/safeguarding), which apply to everyone at the event.
-
-**Who do I contact with questions?** Email [west-midlands@haven.hackclub.com](mailto:west-midlands@haven.hackclub.com). All contact for this event goes through that address.
-
-# Get Involved
-
-Want to volunteer, mentor or sponsor Haven West Midlands? Email
-[west-midlands@haven.hackclub.com](mailto:west-midlands@haven.hackclub.com).
-
-# We've Done This Before
-
-Haven is new to the West Midlands, but running a teen game jam isn't. On
-Saturday 28th February 2026 we hosted **Campfire Birmingham**, our first
-hackathon and a Hack Club satellite event, at Ormiston Sandwell Community
-Academy.
-
-<div class="container mb-4">
-<div class="row row-cols-2 row-cols-md-4 g-3 text-center">
-<div class="col"><strong class="d-block fs-2">~20</strong>teenagers aged 13&ndash;18</div>
-<div class="col"><strong class="d-block fs-2">6</strong>volunteers</div>
-<div class="col"><strong class="d-block fs-2">12</strong>hours of building</div>
-<div class="col"><strong class="d-block fs-2">6</strong>games shipped</div>
+<div id="havenCarousel" class="carousel slide gallery-carousel" data-bs-ride="carousel" aria-label="Event gallery">
+  <div class="carousel-indicators">
+    {% for photo in site.data.haven_photos %}
+      <button type="button" data-bs-target="#havenCarousel" data-bs-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active" aria-current="true"{% endif %} aria-label="Slide {{ forloop.index }}"></button>
+    {% endfor %}
+  </div>
+  <div class="carousel-inner">
+    {% for photo in site.data.haven_photos %}
+      <div class="carousel-item {% if forloop.first %}active{% endif %}">
+        <div class="gallery-carousel__frame">
+          <img src="{{ photo.url }}" class="d-block w-100 gallery-carousel__image" alt="Haven West Midlands Photo">
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <button class="carousel-control-prev gallery-carousel__control" type="button" data-bs-target="#havenCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next gallery-carousel__control" type="button" data-bs-target="#havenCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
-</div>
-
-Everyone built a game from scratch around the theme "beneath the surface",
-with food and swag provided by our sponsors. Haven West Midlands builds on
-that, and you can see the games and photos on our Campfire page.
-
-<a class="btn" href="/our-work/campfire">See how Campfire went &rarr;</a>
+{% endif %}
 
 ---
 
