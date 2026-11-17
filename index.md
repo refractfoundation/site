@@ -7,12 +7,12 @@ hero_slides:
     lead: Every young person deserves the confidence, skills and opportunity to thrive in a digital world.
     cta: Discover Our Work
     link: /our-work
-    img: /assets/images/CF_BIRMINGHAM_0072.JPG
+    img: /assets/images/campfire/12.JPG
   - title: Know your digital future
     sub: Our Census measures digital access, confidence, safety and development across schools &mdash; so every student can thrive online.
     cta: Explore the Census
     link: /our-work/census
-    img: /assets/images/campfire/hcampfire_10.JPG
+    img: /assets/images/campfire/5.JPG
   - title: Bridging the digital divide
     sub: Hands-on digital skills for young people across the West Midlands &mdash; from a first smartphone to safe, responsible AI use.
     cta: See Our Work

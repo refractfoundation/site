@@ -3,7 +3,7 @@ title: Revise
 layout: programme
 hero_sub: Supporting Computer Science students through accessible learning resources
 hero_logo: /assets/images/logo/for-web/Revise.svg
-hero_back: /assets/images/campfire/hcampfire_4.JPG
+hero_back: /assets/images/campfire/2.JPG
 hero_alt: Revise
 hero_colour: "#00AE62"
 ---

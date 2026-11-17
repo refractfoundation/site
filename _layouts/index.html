@@ -12,7 +12,7 @@
         <div class="hero-carousel__slides">
           {% if page.hero_slides %}
             {% for slide in page.hero_slides %}
-            <section class="hero-slide{% if forloop.first %} is-active{% endif %}" style="--slide-bg: url('{{ slide.img | default: '/assets/images/CF_BIRMINGHAM_0072.JPG' }}')">
+            <section class="hero-slide{% if forloop.first %} is-active{% endif %}" style="--slide-bg: url('{{ slide.img | default: '/assets/images/campfire/12.JPG' }}')">
               <div class="hero-content">
                 <h1>{{ slide.title }}</h1>
                 <h2>{{ slide.sub }}</h2>
@@ -26,7 +26,7 @@
             </section>
             {% endfor %}
           {% else %}
-            <section class="hero-slide is-active" style="--slide-bg: url('/assets/images/CF_BIRMINGHAM_0072.JPG')">
+            <section class="hero-slide is-active" style="--slide-bg: url('/assets/images/campfire/12.JPG')">
               <div class="hero-content">
                 <h1>{{ page.hero_title }}</h1>
                 <h2>{{ page.hero_sub }}</h2>
