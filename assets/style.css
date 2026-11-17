@@ -1546,3 +1546,18 @@ iframe {
     transition: border-color 0.2s ease, background-color 0.2s ease;
   }
 }
+
+/* Partner logos that are white-on-transparent and can't be inverted (e.g. coloured marks) */
+.sponsor-card--dark .sponsor-card__inner {
+  background: #1b1b1f;
+}
+
+.sponsor-card--dark:hover .sponsor-card__inner,
+.sponsor-card--dark:focus-visible .sponsor-card__inner {
+  background: #26262c;
+}
+
+/* The WebP hook wraps logos in <picture>; let the img stay the flex item so it centres */
+.event-card picture {
+  display: contents;
+}

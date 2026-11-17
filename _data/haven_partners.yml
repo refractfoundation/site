@@ -6,3 +6,18 @@
   logo: /assets/images/sponsor/cyberheroez.png
   colour: "#3a85f5"
   href: https://cyberheroez.co.uk
+- partner: RedOps Ltd
+  logo: /assets/images/sponsor/redops.png
+  colour: "#ce3636"
+  dark: true
+  href: https://redops.co.uk
+- partner: CodeCrafters
+  logo: /assets/images/sponsor/codecrafters.svg
+  colour: "#122A32"
+  invert: true
+  href: https://codecrafters.io
+- partner: gen.xyz
+  logo: /assets/images/sponsor/genxyz.svg
+  colour: "#4A1955"
+  invert: true
+  href: https://gen.xyz

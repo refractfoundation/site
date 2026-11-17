@@ -29,9 +29,11 @@ These challenges combine to create a system where opportunity is unevenly distri
 
 {% include programmes.html %}
 
+{% if site.data.events.size > 0 %}
 # Upcoming Events
 
 {% include events-upcoming.html %}
+{% endif %}
 
 # Past Events
 
