@@ -12,6 +12,7 @@ exclude:
   - README.md
   - README.MD
   - CLAUDE.md
+  - docs
   - LICENSE
   - "*.gem"
   - "*.gemspec"
