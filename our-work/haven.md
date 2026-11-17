@@ -5,8 +5,8 @@ hero_position_y: 0vh
 hero_date: Saturday 14th November 2026
 hero_loc: University of Wolverhampton Science Park
 hero_logo_large: true
-hero_logo: /assets/images/logo/haven-white.png
-hero_back: /assets/images/heroes/haven-hero.png
+hero_logo: /assets/images/events/haven-west-midlands-2026/haven-west-midlands-logo-white.png
+hero_back: /assets/images/events/haven-west-midlands-2026/haven-west-midlands-2026-hero.png
 hero_alt: Haven West Midlands
 ---
 

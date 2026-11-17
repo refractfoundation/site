@@ -3,12 +3,12 @@
   detail: hello@refractfoundation.org
   href: mailto:hello@refractfoundation.org
   button: Send an Email
-  background: /assets/images/campfire/4.JPG
+  background: /assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-007.jpg
   external: false
 - name: LinkedIn
   description: Follow us for updates on programmes, events, and opportunities.
   detail: linkedin.com/company/refractfoundation
   href: https://linkedin.com/company/refractfoundation
   button: Connect on LinkedIn
-  background: /assets/images/campfire/22.JPG
+  background: /assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-059.jpg
   external: true

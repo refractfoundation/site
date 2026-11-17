@@ -190,7 +190,7 @@ h2 {
   line-height: 1.1;
   background-image:
     linear-gradient(var(--hero-overlay, rgba(8, 12, 26, 0.62)), var(--hero-overlay, rgba(8, 12, 26, 0.62))),
-    var(--hero-image, url(/assets/images/campfire/12.JPG));
+    var(--hero-image, url(/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-025.jpg));
   background-size: cover;
   background-position-x: center;
   background-position-y: var(--hero-position-y, center);
@@ -204,7 +204,7 @@ h2 {
    Gradients live on ::before so the photo's --hero-position-y shift (and the
    default background-repeat) can never make them wrap into a visible seam. */
 .programme-page .hero {
-  background-image: var(--hero-image, url(/assets/images/campfire/12.JPG));
+  background-image: var(--hero-image, url(/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-025.jpg));
   background-repeat: no-repeat;
 }
 
@@ -242,7 +242,7 @@ h2 {
   display: flex;
   align-items: center;
   grid-area: 1 / 1;
-  background-image: var(--slide-bg, url(/assets/images/campfire/12.JPG));
+  background-image: var(--slide-bg, url(/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-025.jpg));
   background-size: cover;
   background-position: center;
   opacity: 0;

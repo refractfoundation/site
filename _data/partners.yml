@@ -1,16 +1,16 @@
 - partner: Cyber Heroez CIC
-  logo: /assets/images/sponsor/cyberheroez.png
+  logo: /assets/images/partners/cyber-heroez.png
   colour: "#3a85f5"
   href: https://cyberheroez.co.uk
 - partner: Ormiston Sandwell Community Academy
-  logo: /assets/images/sponsor/osca.png
+  logo: /assets/images/partners/osca.png
   colour: "#c42eff"
   href: https://ormistonsandwell.org.uk
 - partner: HackUK
-  logo: /assets/images/sponsor/huk.png
+  logo: /assets/images/partners/hackuk.png
   colour: "#193858"
   href: https://hackuk.network
 - partner: Hack Club
-  logo: /assets/images/sponsor/hc.svg
+  logo: /assets/images/partners/hack-club.svg
   colour: "#ec3750"
   href: https://hackclub.com

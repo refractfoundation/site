@@ -3,7 +3,7 @@ title: "Behind Campfire: Cyber Heroez"
 layout: post
 author: Oliver Potter
 date: 2026-03-08
-cover: /assets/images/campfire/cyberheroezteam.jpg
+cover: /assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-066.jpg
 permalink: /news/cyber-heroez-campfire
 ---
 
@@ -48,7 +48,7 @@ He explained:
 
 This helped participants understand how the skills they were developing at Campfire connected to wider industry pathways.
 
-![Owhonda's Speech](/assets/images/campfire/owhondaspeech.jpg)
+![Owhonda's Speech](/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-067.jpg)
 
 ## Impact on participants
 

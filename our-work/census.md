@@ -2,8 +2,8 @@
 title: Census
 layout: programme
 hero_sub: Understanding digital skills, confidence, and online safety across the region
-hero_logo: /assets/images/logo/for-web/Census.svg
-hero_back: /assets/images/campfire/1.JPG
+hero_logo: /assets/images/programmes/census/census-logo.svg
+hero_back: /assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-003.jpg
 hero_alt: Census
 hero_colour: "#00537C"
 ---

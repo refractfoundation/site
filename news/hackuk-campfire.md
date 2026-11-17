@@ -3,7 +3,7 @@ title: "Behind Campfire: HackUK"
 layout: post
 author: Oliver Potter
 date: 2026-03-07
-cover: /assets/images/campfire/19.JPG
+cover: /assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-055.jpg
 permalink: /news/hackuk-campfire
 ---
 
@@ -39,7 +39,7 @@ HackUK also summarised their role in supporting the event:
 
 > “We were mostly on hand to help out: running short workshops, sitting down with people who got stuck, and giving a bit of direction where it was needed. A fair few who'd never written a line of code before walked out with something that worked.”
 
-![Paramveer Singh mentoring at Campfire Birmingham](/assets/images/campfire/hcampfire_60.JPG)
+![Paramveer Singh mentoring at Campfire Birmingham](/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-060.jpg)
 
 ## Impact on participants
 

@@ -2,8 +2,8 @@
 title: Futures
 layout: programme
 hero_sub: Inspiring young people to explore careers in technology
-hero_logo: /assets/images/logo/for-web/Futures.svg
-hero_back: /assets/images/campfire/hcampfire_6.JPG
+hero_logo: /assets/images/programmes/futures/futures-logo.svg
+hero_back: /assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-006.jpg
 hero_alt: Futures
 hero_colour: "#FF8D00"
 ---
