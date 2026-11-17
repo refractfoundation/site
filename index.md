@@ -25,9 +25,11 @@ hero_slides:
     img: /assets/images/campfire/0.JPG
 ---
 
+{% if site.data.events.size > 0 %}
 # Upcoming Events
 
 {% include events-upcoming.html %}
+{% endif %}
 
 # Bridging the Gap
 
