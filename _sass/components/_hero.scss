@@ -149,6 +149,7 @@
 @media (max-width: 760px) {
   .hero--forest::after,
   .hero--accent::after,
+  .carousel__slide::before,
   .carousel__slide::after {
     box-shadow: inset 0 0 0 100vmax rgb(0 30 16 / 38%);
   }
@@ -161,18 +162,35 @@
   position: relative;
   height: max(min(56.25vw, calc(100svh - var(--header-height))), 520px);
 
+  // Replaced by the overlays on each slide (see __slide).
+  &::after {
+    display: none;
+  }
+
+  // Slides change in two layers. The photo and gradient of the incoming slide fade in over the
+  // outgoing one, which stays fully opaque beneath until it is covered (fading both together
+  // lets the dark background show through and washes everything out). Text is never faded: it
+  // stays at full strength and changes with the slide.
   &__slide {
     position: absolute;
     inset: 0;
+    z-index: 0;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.6s ease, visibility 0.6s;
+    // Leaving: hold full opacity for the length of the fade, then disappear.
+    transition: opacity 0s 0.6s, visibility 0s 0.6s;
 
     &.is-active {
+      z-index: 1;
       visibility: visible;
       opacity: 1;
+      transition: opacity 0.6s ease;
     }
 
+    // The slide is its own stacking context, so the hero's overlay (.hero--forest::after on the
+    // section) would sit on top of the text. The slide paints that overlay itself, twice: once
+    // as the section's did and once as its own always has.
+    &::before,
     &::after {
       content: "";
       position: absolute;
@@ -259,6 +277,12 @@
 
     &--prev { left: max(14px, env(safe-area-inset-left, 0px)); }
     &--next { right: max(14px, env(safe-area-inset-right, 0px)); }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel__slide {
+    transition: none;
   }
 }
 
