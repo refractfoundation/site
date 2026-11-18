@@ -22,6 +22,8 @@
     max-width: 46ch;
     margin-top: 1rem;
     font-size: clamp(1.3rem, 2vw, 1.55rem);
+    // Bold: white on Carrot needs large AND bold text to pass AA.
+    font-weight: 700;
     line-height: 1.4;
   }
 

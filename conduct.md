@@ -144,8 +144,3 @@ Continued participation in Refract Foundation activities constitutes acceptance 
 
 [refractfoundation.org](https://refractfoundation.org)
 
----
-
-## Support Our Work
-
-{% include donate.html %}

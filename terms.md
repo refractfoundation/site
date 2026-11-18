@@ -125,8 +125,3 @@ Any disputes arising from these Terms shall be subject to the jurisdiction of th
 
 [refractfoundation.org](https://refractfoundation.org)
 
----
-
-## Support Our Work
-
-{% include donate.html %}
