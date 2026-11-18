@@ -1,0 +1,215 @@
+// Cards: events, projects and people. Hard-edged forest outline; photos have a slanted bottom edge.
+
+.badge {
+  display: inline-block;
+  padding: 0.15rem 0.75rem;
+  background: var(--forest);
+  color: var(--white);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 1rem;
+  color: var(--brown-2);
+  font-size: 0.97rem;
+}
+
+// ---- Event card ----
+
+.event-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(1.2rem, 3vw, 2.4rem);
+  align-items: start;
+  margin-top: 2.4rem;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  box-shadow: 0 0 0 2px var(--forest);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  &__image {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 28px));
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__body {
+    display: grid;
+    gap: 0.45rem;
+    padding: 1.2rem 1.6rem 1.6rem;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+  }
+
+  .badge {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 760px) {
+  .event-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+// ---- Project card (games built at an event) ----
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.4rem;
+  margin-top: 2.4rem;
+}
+
+.project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  box-shadow: 0 0 0 2px var(--forest);
+
+  &__image {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 20px));
+
+    img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+  }
+
+  &__body {
+    display: grid;
+    gap: 0.15rem;
+    padding: 1rem 1.3rem 1.2rem;
+  }
+
+  &__title {
+    font-size: 1.25rem;
+  }
+
+  &__authors {
+    color: var(--brown-2);
+    font-size: 0.97rem;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    margin-top: 0.4rem;
+    color: var(--carrot-text);
+    font-weight: 700;
+    text-underline-offset: 3px;
+  }
+
+  // Ribbon for the top three.
+  &__rank {
+    position: absolute;
+    top: 0;
+    left: 14px;
+    z-index: 2;
+    padding: 0.6rem 0.8rem 0.9rem;
+    color: #1a0f05;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 8px), 0 100%);
+
+    &--1 { background: #f2c94c; }
+    &--2 { background: #d3dae0; }
+    &--3 { background: #e3a06a; }
+  }
+}
+
+@media (max-width: 900px) {
+  .project-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+// ---- Person card (team) ----
+
+.people-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 260px));
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.person-card {
+  background: var(--white);
+  box-shadow: 0 0 0 2px var(--forest);
+
+  img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: 50% 25%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 20px));
+  }
+
+  &__body {
+    display: grid;
+    gap: 0.1rem;
+    padding: 1rem 1.2rem 1.2rem;
+  }
+
+  &__name {
+    font-size: 1.2rem;
+  }
+
+  &__role {
+    color: var(--brown-2);
+    font-size: 0.95rem;
+  }
+
+  &__links {
+    display: flex;
+    gap: 0.25rem;
+    margin-top: 0.4rem;
+  }
+
+  &__link {
+    display: inline-grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    color: var(--forest);
+
+    &:hover {
+      color: var(--carrot-text);
+    }
+
+    svg {
+      width: 22px;
+      height: 22px;
+    }
+  }
+}

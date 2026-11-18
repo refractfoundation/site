@@ -1,0 +1,257 @@
+// Heroes: the full-width photo with a gradient and text on top, used by the home carousel and
+// by every page hero.
+//
+// The forest gradient is the original site's .hero-slide::after, unchanged. Three overlays:
+//   --forest   the original side gradient; use where the left of the photo is not important
+//   --people   rises from the bottom, so faces in group photos stay clear (events, About)
+//   --accent   the page's own colour, for programme pages (Census blue)
+
+@mixin overlay-forest {
+  background:
+    radial-gradient(820px 500px at 84% -10%, rgb(249 77 0 / 30%), transparent 62%),
+    linear-gradient(to top, rgb(0 26 13 / 45%) 0%, transparent 38%),
+    linear-gradient(115deg, rgb(0 66 37 / 94%) 0%, rgb(0 66 37 / 82%) 32%, rgb(0 66 37 / 56%) 48%, rgb(173 84 21 / 52%) 56%, rgb(249 77 0 / 36%) 100%);
+}
+
+@mixin overlay-people {
+  background:
+    radial-gradient(820px 500px at 84% -10%, rgb(249 77 0 / 22%), transparent 62%),
+    linear-gradient(to top, rgb(0 40 22 / 94%) 0%, rgb(0 52 29 / 78%) 30%, rgb(0 66 37 / 28%) 58%, transparent 78%);
+}
+
+@mixin overlay-accent {
+  background:
+    radial-gradient(820px 500px at 84% -10%, rgb(255 255 255 / 18%), transparent 62%),
+    linear-gradient(to top, rgb(0 0 0 / 38%) 0%, transparent 40%),
+    linear-gradient(
+      115deg,
+      color-mix(in srgb, var(--accent) 96%, transparent) 0%,
+      color-mix(in srgb, var(--accent) 88%, transparent) 34%,
+      color-mix(in srgb, var(--accent) 62%, transparent) 52%,
+      color-mix(in srgb, var(--accent) 30%, transparent) 100%
+    );
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: var(--forest);
+  color: var(--white);
+
+  // The photo fills the hero; the crop is kept mild by choosing the hero's height per page.
+  &__image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  &--forest::after { @include overlay-forest; }
+  &--people::after { @include overlay-people; }
+  &--accent::after { @include overlay-accent; }
+
+  &__body {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+  }
+
+  &--people &__body {
+    justify-content: flex-end;
+    padding-bottom: clamp(2rem, 4vw, 3.5rem);
+  }
+
+  &__title {
+    max-width: 18ch;
+    color: var(--white);
+    font-size: clamp(2.6rem, 5.6vw, 4.8rem);
+    line-height: 1.04;
+    letter-spacing: 0.005em;
+  }
+
+  &__text {
+    max-width: 56ch;
+    color: rgb(255 255 255 / 94%);
+    font-size: clamp(1.1rem, 1.4vw, 1.25rem);
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  &__lead {
+    font-weight: 700;
+  }
+
+  &__eyebrow {
+    color: var(--oak);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem 1.4rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+  &__logo {
+    width: clamp(200px, 24vw, 320px);
+    height: auto;
+  }
+}
+
+// Page heroes set their height in front matter (as a vw value) so each photo is cropped as
+// little as possible: wide group photos get a short hero, 3:2 photos a taller one.
+.page-hero {
+  height: clamp(440px, var(--hero-height, 46vw), 760px);
+
+  > .wrap {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+  }
+
+  .hero__title {
+    max-width: none;
+  }
+}
+
+// Small screens: a flat tint under the gradient keeps white text readable on a busy photo.
+@media (max-width: 760px) {
+  .hero--forest::after,
+  .hero--accent::after,
+  .carousel__slide::after {
+    box-shadow: inset 0 0 0 100vmax rgb(0 30 16 / 38%);
+  }
+}
+
+// ---- Home carousel ----
+// Plays once through the slides (see carousel.js) and every control is a real button.
+
+.carousel {
+  position: relative;
+  height: max(min(56.25vw, calc(100svh - var(--header-height))), 520px);
+
+  &__slide {
+    position: absolute;
+    inset: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.6s ease, visibility 0.6s;
+
+    &.is-active {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      @include overlay-forest;
+    }
+
+    > .wrap {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+    }
+  }
+
+  &__controls {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1.1rem;
+    z-index: 4;
+    pointer-events: none;
+  }
+
+  &__dashes {
+    display: flex;
+    gap: 0.35rem;
+    pointer-events: auto;
+  }
+
+  &__dash {
+    position: relative;
+    width: 40px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: calc(50% - 1.5px);
+      height: 3px;
+      background: rgb(255 255 255 / 40%);
+      transition: background 0.2s;
+    }
+
+    &:hover::before {
+      background: rgb(255 255 255 / 70%);
+    }
+
+    &.is-active::before {
+      background: var(--white);
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 4;
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    margin-top: -24px;
+    padding: 0;
+    border: 1.5px solid rgb(255 255 255 / 85%);
+    border-radius: 50%;
+    background: rgb(0 26 13 / 35%);
+    color: var(--white);
+    cursor: pointer;
+
+    &:hover {
+      background: rgb(0 26 13 / 65%);
+    }
+
+    svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    &--prev { left: max(14px, env(safe-area-inset-left, 0px)); }
+    &--next { right: max(14px, env(safe-area-inset-right, 0px)); }
+  }
+}
+
+@media (max-width: 1100px) {
+  .carousel__arrow {
+    display: none;
+  }
+}

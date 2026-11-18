@@ -1,0 +1,13 @@
+{%- comment -%}
+  Latest news. Parameter: limit  how many posts to show (default: all)
+{%- endcomment -%}
+{%- assign limit = include.limit | default: 999 -%}
+<ul class="news-list">
+  {%- for post in site.posts limit: limit %}
+  <li class="news-list__item">
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <span>{{ post.author }}</span>
+  </li>
+  {%- endfor %}
+</ul>

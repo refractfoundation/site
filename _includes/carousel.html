@@ -1,0 +1,38 @@
+{%- comment -%}
+  The home page hero carousel. carousel.js adds the dots, arrows and autoplay.
+  Parameter: slides  a list from _data/home.yml
+  Only the first slide is an <h1>; the others are <h2>. Inactive slides are inert so keyboard
+  focus and screen readers only meet the visible one.
+{%- endcomment -%}
+<section class="hero hero--forest carousel" aria-roledescription="carousel" aria-label="Refract highlights" data-carousel>
+  {%- for slide in include.slides %}
+  <article class="carousel__slide{% if forloop.first %} is-active{% endif %}" aria-roledescription="slide" aria-label="{{ forloop.index }} of {{ include.slides.size }}"{% unless forloop.first %} inert{% endunless %}>
+    {% include picture.html photo=slide.photo class="hero__image" alt="" eager=forloop.first position=slide.position %}
+    <div class="wrap">
+      <div class="hero__body">
+        {%- if forloop.first %}
+        <h1 class="hero__title">{{ slide.title }}</h1>
+        {%- else %}
+        <h2 class="hero__title">{{ slide.title }}</h2>
+        {%- endif %}
+        <p class="hero__text">{{ slide.text }}</p>
+        {%- if slide.lead %}
+        <p class="hero__text hero__lead">{{ slide.lead }}</p>
+        {%- endif %}
+        <a class="button button--primary" href="{{ slide.button.url }}">{{ slide.button.label }} {% include icon-arrow.html %}</a>
+      </div>
+    </div>
+  </article>
+  {%- endfor %}
+  <button class="carousel__arrow carousel__arrow--prev" type="button" data-carousel-prev aria-label="Previous slide">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg>
+  </button>
+  <button class="carousel__arrow carousel__arrow--next" type="button" data-carousel-next aria-label="Next slide">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+  </button>
+  <div class="carousel__controls">
+    <div class="wrap">
+      <div class="carousel__dashes" role="group" aria-label="Choose slide" data-carousel-dashes></div>
+    </div>
+  </div>
+</section>

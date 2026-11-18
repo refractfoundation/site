@@ -1,0 +1,44 @@
+// News list on the home page and the news index.
+
+.news-list {
+  margin: 2.2rem 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 2px solid var(--forest);
+
+  &__item {
+    display: grid;
+    grid-template-columns: 150px 1fr auto;
+    gap: 1rem;
+    align-items: baseline;
+    padding: 1.1rem 0;
+    border-bottom: 1px solid var(--line);
+
+    h3 {
+      font-size: 1.3rem;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+          text-underline-offset: 3px;
+        }
+      }
+    }
+
+    time,
+    span {
+      color: var(--brown-2);
+      font-size: 0.95rem;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .news-list__item {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+}

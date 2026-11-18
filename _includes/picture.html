@@ -24,8 +24,7 @@
   {%- assign alt = "" -%}
 {%- endif -%}
 {%- if include.alt != nil -%}{%- assign alt = include.alt -%}{%- endif -%}
-{%- assign ext = src | split: "." | last -%}
-{%- assign stem = src | remove_last: ext | remove_last: "." -%}
+{%- assign stem = src | replace: ".jpg", "" | replace: ".jpeg", "" | replace: ".png", "" -%}
 {%- assign widths = "640,1024,1600" | split: "," -%}
 {%- capture srcset -%}
   {%- for width in widths -%}
@@ -35,6 +34,6 @@
   {{ stem }}.webp {{ w }}w
 {%- endcapture -%}
 <picture>
-  <source type="image/webp" srcset="{{ srcset }}" sizes="{{ include.sizes | default: '100vw' }}">
+  <source type="image/webp" srcset="{{ srcset }}" sizes="{{ include.sizes | default: '100vw' }}" />
   <img{% if include.class %} class="{{ include.class }}"{% endif %} src="{{ src }}" width="{{ w }}" height="{{ h }}" alt="{{ alt | escape }}"{% if include.eager %} fetchpriority="high"{% else %} loading="lazy"{% endif %} decoding="async"{% if include.position %} style="object-position: {{ include.position }}"{% endif %}>
 </picture>
