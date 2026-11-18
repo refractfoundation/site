@@ -1,0 +1,40 @@
+{%- comment -%}
+  A responsive image: WebP at several widths with the original as the fallback.
+  The WebP files are generated at build time by scripts/generate-webp.js.
+
+  Parameters
+    photo     key in _data/photos.yml (supplies file, width, height, alt)  -- or --
+    src, w, h  a path and its pixel size, for images that are not in photos.yml
+    alt       overrides the alt text; pass alt="" for a purely decorative image
+    sizes     the srcset sizes attribute (default 100vw)
+    class     class for the <img>
+    eager     true for the first, above-the-fold image (loads immediately, high priority)
+    position  CSS object-position, to choose which part of a cropped photo stays visible
+{%- endcomment -%}
+{%- if include.photo -%}
+  {%- assign entry = site.data.photos[include.photo] -%}
+  {%- assign src = entry.file -%}
+  {%- assign w = entry.w -%}
+  {%- assign h = entry.h -%}
+  {%- assign alt = entry.alt -%}
+{%- else -%}
+  {%- assign src = include.src -%}
+  {%- assign w = include.w -%}
+  {%- assign h = include.h -%}
+  {%- assign alt = "" -%}
+{%- endif -%}
+{%- if include.alt != nil -%}{%- assign alt = include.alt -%}{%- endif -%}
+{%- assign ext = src | split: "." | last -%}
+{%- assign stem = src | remove_last: ext | remove_last: "." -%}
+{%- assign widths = "640,1024,1600" | split: "," -%}
+{%- capture srcset -%}
+  {%- for width in widths -%}
+    {%- assign n = width | plus: 0 -%}
+    {%- if n < w -%}{{ stem }}-{{ width }}.webp {{ width }}w, {% endif -%}
+  {%- endfor -%}
+  {{ stem }}.webp {{ w }}w
+{%- endcapture -%}
+<picture>
+  <source type="image/webp" srcset="{{ srcset }}" sizes="{{ include.sizes | default: '100vw' }}">
+  <img{% if include.class %} class="{{ include.class }}"{% endif %} src="{{ src }}" width="{{ w }}" height="{{ h }}" alt="{{ alt | escape }}"{% if include.eager %} fetchpriority="high"{% else %} loading="lazy"{% endif %} decoding="async"{% if include.position %} style="object-position: {{ include.position }}"{% endif %}>
+</picture>
