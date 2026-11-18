@@ -1,13 +1,31 @@
-<footer class="d-flex flex-column justify-content-center align-items-center py-3 text-center">
-  <p class="m-0 fw-bolder fs-2">&copy; {{ site.time | date: '%Y' }} The Refract Foundation</p>
-  <p class="mt-1 mb-0 fst-italic">The Refract Foundation is fiscally sponsored by Hack Club, a 501(c)(3) nonprofit. Our registered EIN is 81-2908499.</p>
-
-  <nav aria-label="Footer" class="mt-3">
-    <ul class="nav justify-content-center flex-wrap gap-2">
-      <li class="nav-item"><a class="nav-link small text-muted" href="/privacy">Privacy</a></li>
-      <li class="nav-item"><a class="nav-link small text-muted" href="/terms">Terms</a></li>
-      <li class="nav-item"><a class="nav-link small text-muted" href="/safeguarding">Safeguarding</a></li>
-      <li class="nav-item"><a class="nav-link small text-muted" href="/conduct">Conduct</a></li>
-    </ul>
-  </nav>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <img src="/assets/images/brand/refract-full-colour.svg" alt="The Refract Foundation" width="122" height="44" />
+        <p class="site-footer__about">A youth-led initiative making digital skills accessible across the West Midlands.</p>
+      </div>
+      <div>
+        <h2>Get in touch</h2>
+        <ul>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li><a href="{{ site.linkedin }}">LinkedIn</a></li>
+          <li><a href="/contact">Contact page</a></li>
+        </ul>
+      </div>
+      <nav aria-label="Footer">
+        <h2>Good to know</h2>
+        <ul>
+          <li><a href="/privacy">Privacy</a></li>
+          <li><a href="/terms">Terms</a></li>
+          <li><a href="/safeguarding">Safeguarding</a></li>
+          <li><a href="/conduct">Conduct</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="site-footer__legal">
+      <p>&copy; {{ site.time | date: '%Y' }} The Refract Foundation</p>
+      <p>The Refract Foundation is fiscally sponsored by Hack Club, a 501(c)(3) nonprofit. Our registered EIN is 81-2908499.</p>
+    </div>
+  </div>
 </footer>

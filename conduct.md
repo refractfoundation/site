@@ -1,7 +1,6 @@
 ---
 title: Code of Conduct
 layout: page
-content_class: policy
 ---
 
 # Code of Conduct
@@ -145,8 +144,3 @@ Continued participation in Refract Foundation activities constitutes acceptance 
 
 [refractfoundation.org](https://refractfoundation.org)
 
----
-
-## Support Our Work
-
-{% include donate.html %}

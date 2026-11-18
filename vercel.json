@@ -16,6 +16,11 @@
       "source": "/our-work/dlc",
       "destination": "/our-work/census",
       "permanent": true
+    },
+    {
+      "source": "/our-work/:programme(raise|revise|futures|voice)",
+      "destination": "/our-work",
+      "permanent": false
     }
   ],
   "headers": [

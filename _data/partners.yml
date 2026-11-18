@@ -1,16 +1,92 @@
-- partner: Cyber Heroez CIC
-  logo: /assets/images/partners/cyber-heroez.png
-  colour: "#3a85f5"
+# Every partner, keyed by id. Pages list the ids they want (see home.yml and _events/*.md).
+#
+# colour:  the partner's own colour; tints and outlines the card
+# dark:    true for logos that are white or made for dark backgrounds (shown on a dark tile)
+# invert:  true for white logos on transparent backgrounds (inverted to black on the light tile)
+# logo:    omit if there is no logo file yet; the card shows the partner's name instead
+# w / h:   pixel size of the logo, so the card reserves its space
+
+cyber-heroez:
+  name: Cyber Heroez CIC
   href: https://cyberheroez.co.uk
-- partner: Ormiston Sandwell Community Academy
-  logo: /assets/images/partners/osca.png
-  colour: "#c42eff"
-  href: https://ormistonsandwell.org.uk
-- partner: HackUK
-  logo: /assets/images/partners/hackuk.png
-  colour: "#193858"
-  href: https://hackuk.network
-- partner: Hack Club
-  logo: /assets/images/partners/hack-club.svg
-  colour: "#ec3750"
+  logo: /assets/images/partners/cyber-heroez.png
+  w: 1265
+  h: 1280
+  colour: "#3a85f5"
+
+redops:
+  name: RedOps
+  href: https://redops.co.uk
+  logo: /assets/images/partners/redops.png
+  w: 1082
+  h: 464
+  colour: "#ce3636"
+  dark: true
+
+hack-club:
+  name: Hack Club
   href: https://hackclub.com
+  logo: /assets/images/partners/hack-club.svg
+  w: 526
+  h: 184
+  colour: "#ec3750"
+
+hackuk:
+  name: HackUK
+  href: https://hackuk.network
+  logo: /assets/images/partners/hackuk.png
+  w: 1000
+  h: 1000
+  colour: "#193858"
+
+osca:
+  name: Ormiston Sandwell Community Academy
+  href: https://ormistonsandwell.org.uk
+  logo: /assets/images/partners/osca.png
+  w: 500
+  h: 187
+  colour: "#c42eff"
+
+codecrafters:
+  name: CodeCrafters
+  href: https://codecrafters.io
+  logo: /assets/images/partners/codecrafters.svg
+  w: 1280
+  h: 900
+  colour: "#122A32"
+  invert: true
+
+gen-xyz:
+  name: gen.xyz
+  href: https://gen.xyz
+  logo: /assets/images/partners/gen-xyz.svg
+  w: 85
+  h: 50
+  colour: "#4A1955"
+  invert: true
+
+yubico:
+  name: Yubico
+  href: https://yubico.com
+  logo: /assets/images/partners/yubico.png
+  w: 611
+  h: 196
+  colour: "#85be00"
+  invert: true
+
+craftpix:
+  name: CraftPix
+  href: https://craftpix.net/
+  logo: /assets/images/partners/craftpix.svg
+  w: 212
+  h: 191
+  colour: "#fc9326"
+
+open-sauce:
+  name: Open Sauce
+  href: https://opensauce.com
+  logo: /assets/images/partners/open-sauce.svg
+  w: 130
+  h: 29
+  colour: "#ff5a2e"
+  dark: true

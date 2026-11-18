@@ -1,29 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-  {% include head.html %}
-  <body>
-    <a class="skip-link" href="#main-content">Skip to main content</a>
-    {% include header.html %}
-    <main id="main-content" tabindex="-1" class="programme-page"{% if page.hero_colour %} style="--accent: {{ page.hero_colour }};"{% endif %}>
-      <div
-        class="hero hero--image hero--center"
-        style="--hero-image: url('{{ page.hero_back }}'); --hero-overlay: {{ page.hero_overlay | default: 'rgba(26, 24, 24, 0.273)' }}; --hero-position-y: {{ page.hero_position_y | default: '-30vh' }};"
-      >
-        <div class="hero-content">
-          <img src="{{ page.hero_logo }}" alt="{{ page.hero_alt }}" class="hero-logo{% if page.hero_logo_wide %} hero-logo--wide{% endif %}{% if page.hero_logo_large %} hero-logo--large{% endif %}" />
-          {% if page.hero_date %}
-            <p class="hero-meta">{{ page.hero_date }}</p>
-            {% if page.hero_loc %}<p class="hero-submeta">{{ page.hero_loc }}</p>{% endif %}
-          {% else %}
-            <h3>{{ page.hero_sub }}</h3>
-          {% endif %}
-          {% if page.hero_cta %}
-            <a class="hero-cta" href="{{ page.hero_cta_link | default: '/contact' }}">{{ page.hero_cta }} &rarr;</a>
-          {% endif %}
-        </div>
+---
+layout: default
+---
+{%- comment -%}
+  A programme page. The programme's own colour (colour in front matter) becomes --accent, so the
+  hero, heading rules, tiles and bands all take it with no extra CSS.
+{%- endcomment -%}
+<div class="programme" style="--accent: {{ page.colour }}">
+  <section class="hero hero--accent page-hero" style="--hero-height: {{ page.hero.height | default: '44vw' }}" aria-labelledby="programme-title">
+    {% include picture.html photo=page.hero.photo class="hero__image" alt="" eager=true position=page.hero.position %}
+    <div class="wrap">
+      <div class="hero__body">
+        <h1 class="hero__logo-title" id="programme-title">
+          <img class="hero__logo" src="{{ page.logo }}" alt="{{ page.title }}" width="{{ page.logo_w }}" height="{{ page.logo_h }}">
+        </h1>
+        <p class="hero__text hero__text--large">{{ page.hero_text }}</p>
+        {%- if page.cta %}
+        <div class="button-row"><a class="button button--primary" href="{{ page.cta.url }}">{{ page.cta.label }}</a></div>
+        {%- endif %}
       </div>
-      <div class="content container my-5">{{ content }}</div>
-    </main>
-    {% include footer.html %}
-  </body>
-</html>
+    </div>
+  </section>
+
+  {{ content }}
+</div>

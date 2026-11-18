@@ -5,7 +5,8 @@
 //   1. a filename breaks the rule: lowercase letters, digits, hyphens, dots only
 //   2. a page, layout, data file or stylesheet references an image that is missing
 //   3. a photos.yml entry has no alt text, a missing file, or the wrong size
-//   4. two images are visually the same picture, even under different names
+//   4. a page, post or data file refers to a photo id that is not in photos.yml
+//   5. two images are visually the same picture, even under different names
 //
 // Spare photos that nothing references are fine: they are kept for future pages.
 //
@@ -31,10 +32,10 @@ const SKIP_DIRS = new Set(['node_modules', '_site', '.git', '.jekyll-cache', 've
 const DUPLICATE_DISTANCE = 10;
 
 // Known problems that are tracked elsewhere. Remove an entry when it is fixed.
-const KNOWN_MISSING = new Set([
-  // Open Sauce logo: referenced by campfire_partners.yml but never had a source file.
-  '/assets/images/partners/opensauce.webp',
-]);
+const KNOWN_MISSING = new Set([]);
+
+// Front matter and data keys that hold photo ids.
+const PHOTO_KEYS = new Set(['photo', 'cover', 'gallery', 'photos']);
 
 const errors = [];
 const fail = (message) => errors.push(message);
@@ -106,6 +107,53 @@ async function checkPhotoData() {
   }
 }
 
+// Collect photo ids from the values of PHOTO_KEYS anywhere in a parsed YAML document.
+function collectPhotoIds(node, found = new Set()) {
+  if (Array.isArray(node)) {
+    node.forEach((item) => collectPhotoIds(item, found));
+  } else if (node && typeof node === 'object') {
+    for (const [key, value] of Object.entries(node)) {
+      if (PHOTO_KEYS.has(key)) {
+        [].concat(value).forEach((id) => typeof id === 'string' && found.add(id));
+      }
+      collectPhotoIds(value, found);
+    }
+  }
+  return found;
+}
+
+// Every photo id a page names must exist in photos.yml, or the image silently disappears.
+function checkPhotoReferences() {
+  const file = path.join(ROOT, '_data', 'photos.yml');
+  if (!fs.existsSync(file)) return;
+  const known = new Set(Object.keys(YAML.parse(fs.readFileSync(file, 'utf8')) || {}));
+
+  for (const source of walk(ROOT)) {
+    if (source.startsWith(IMG_DIR) || path.basename(source) === 'photos.yml') continue;
+    const extension = path.extname(source);
+    const text = fs.readFileSync(source, 'utf8');
+    const ids = new Set();
+
+    if (extension === '.yml' && source.includes(`${path.sep}_data${path.sep}`)) {
+      collectPhotoIds(YAML.parse(text), ids);
+    } else if (['.md', '.html'].includes(extension)) {
+      const frontMatter = text.match(/^---\n([\s\S]*?)\n---/);
+      if (frontMatter) {
+        const data = YAML.parse(frontMatter[1]) || {};
+        // Unpublished pages (the paused programmes) may name photos that are not listed yet.
+        if (data.published === false) continue;
+        collectPhotoIds(data, ids);
+      }
+      // {% include picture.html photo="some-id" %}
+      for (const match of text.matchAll(/photo="([^"{]+)"/g)) ids.add(match[1]);
+    }
+
+    for (const id of ids) {
+      if (!known.has(id)) fail(`${relative(source)} uses photo "${id}", which is not in _data/photos.yml`);
+    }
+  }
+}
+
 // Difference hash: shrink to 17x16 greyscale and record whether each pixel is brighter than
 // its right-hand neighbour. Survives resizing and re-encoding, so it finds copies that a
 // byte comparison misses.
@@ -145,6 +193,7 @@ async function main() {
   checkFilenames(files);
   checkReferences();
   await checkPhotoData();
+  checkPhotoReferences();
   const compared = await checkDuplicates(files);
 
   if (errors.length) {

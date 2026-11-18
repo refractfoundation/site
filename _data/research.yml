@@ -1,0 +1,16 @@
+# Outside research on the digital divide, shown on the home page.
+# Every figure names its source; add a url when the source is public.
+- value: 1 in 3
+  text: young people aged 11 to 18 have shared personal information with strangers online.
+  source: AQA research
+  url: https://cdn.sanity.io/files/p28bar15/green/17c41329134aa44640a481444680a1c0a58adf7e.pdf
+- value: £63bn
+  text: lost each year in the UK due to the digital skills gap.
+  source: House of Commons Library, 2024
+- value: 48%
+  text: of students leave education without the digital skills they need.
+  source: Royal Society, 2025
+- value: 84%
+  text: of teachers want new digital literacy content to teach.
+  source: AQA research
+  url: https://cdn.sanity.io/files/p28bar15/green/17c41329134aa44640a481444680a1c0a58adf7e.pdf

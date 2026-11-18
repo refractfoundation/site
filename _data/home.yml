@@ -1,0 +1,78 @@
+# Content for the home page. Photo ids refer to _data/photos.yml; partner ids to partners.yml.
+
+# The hero carousel. Plays once, then stops on the first slide.
+# photo:     id in photos.yml.  position: which part of the photo to keep when it is cropped.
+slides:
+  - title: Real skills.<br>Real opportunity.
+    text: Helping schools identify and address barriers to digital inclusion across the West Midlands.
+    lead: Every young person deserves the confidence, skills and opportunity to thrive in a digital world.
+    button: { label: Discover our work, url: /our-work }
+    photo: haven-west-midlands-2026-009
+    position: 50% 50%
+  - title: Know your digital future
+    text: Our Census measures digital access, confidence, safety and development across schools, so every student can thrive online.
+    button: { label: Explore the Census, url: /our-work/census }
+    photo: campfire-birmingham-2026-019
+    position: 50% 45%
+  - title: Bridging the digital divide
+    text: Hands-on digital skills for young people across the West Midlands, from a first smartphone to safe, responsible AI use.
+    button: { label: See our work, url: /our-work }
+    photo: haven-west-midlands-2026-015
+    position: 50% 45%
+  - title: Youth-led, always
+    text: From local workshops to county-wide programmes, young people shape everything we do.
+    button: { label: Get involved, url: /contact }
+    photo: haven-west-midlands-2026-014
+    position: 50% 58%
+
+gap:
+  heading: Bridging the gap
+  text: Refract is a youth-led initiative based in the West Midlands, dedicated to ensuring that digital skills are accessible to everyone. We build confidence in navigating the digital landscape, from basic smartphone skills to online safety and artificial intelligence.
+  points:
+    - Empowering young people
+    - Data-driven change
+    - A more inclusive future
+  photo: campfire-birmingham-2026-037
+
+divide:
+  heading: The digital divide
+  intro: Digital literacy isn’t a luxury, it’s essential for everyday life. Whether applying for jobs, staying connected or accessing vital services, everyone deserves the skills to navigate our digital world safely, effectively and responsibly.
+  body: Without digital skills, millions are locked out of opportunities, independence and inclusion. These aren’t just statistics. They’re our neighbours, friends and family.
+  callout: "And the appetite is there: <strong>59% of students</strong> want to learn digital literacy at school."
+  callout_source: AQA research
+  callout_url: https://cdn.sanity.io/files/p28bar15/green/17c41329134aa44640a481444680a1c0a58adf7e.pdf
+  button: { label: Learn more, url: /our-work/census }
+
+# The Census band takes its text and logo from the Census programme page (_programmes/census.md).
+census:
+  heading: Know your digital future
+  text: Census is a youth-led research initiative that helps schools understand how students use technology in their everyday lives, with anonymous data on skills, confidence, safety, access and AI.
+  photo: campfire-birmingham-2026-062
+  position: 35% 50%
+
+wall:
+  heading: Made by young people, for young people
+  photos:
+    - campfire-birmingham-2026-024
+    - haven-west-midlands-2026-029
+    - campfire-birmingham-2026-018
+    - haven-west-midlands-2026-035
+    - haven-west-midlands-2026-026
+    - campfire-birmingham-2026-023
+    - haven-west-midlands-2026-016
+    - haven-west-midlands-2026-024
+    - campfire-birmingham-2026-010
+    - haven-west-midlands-2026-030
+    - campfire-birmingham-2026-003
+    - haven-west-midlands-2026-015
+    - campfire-birmingham-2026-046
+    - haven-west-midlands-2026-014
+    - campfire-birmingham-2026-042
+    - haven-west-midlands-2026-032
+
+partners:
+  - cyber-heroez
+  - redops
+  - hack-club
+  - hackuk
+  - osca

@@ -1,0 +1,93 @@
+---
+title: About
+layout: default
+---
+{%- assign people = site.data.people -%}
+
+<section class="hero hero--people page-hero" style="--hero-height: 42vw" aria-labelledby="about-title">
+  {% include picture.html photo="haven-west-midlands-2026-002" class="hero__image" alt="" eager=true position="50% 35%" %}
+  <div class="wrap">
+    <div class="hero__body">
+      <p class="hero__eyebrow">About us</p>
+      <h1 class="hero__title" id="about-title">Who we are</h1>
+      <p class="hero__text">The Refract Foundation is a small, student-led initiative currently run by a single founder alongside other commitments.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="early-heading">
+  <div class="wrap two-column">
+    <h2 id="early-heading" class="rule">An early-stage project</h2>
+    <div class="stack">
+      <p class="section__lede">At this stage, it is an early-stage project rather than an established organisation. The focus is on exploring ways to improve digital literacy and access to opportunity in schools through small, practical interventions. Just as light is refracted through a lens to become clearer, we aim to break down complex digital concepts into practical, understandable skills.</p>
+      <p>Work currently sits across:</p>
+      <ul class="check-list">
+        <li>Informal digital literacy research</li>
+        <li>Early-stage school engagement</li>
+        <li>Experimental programme ideas</li>
+        <li>Pilot activities where possible</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" aria-labelledby="approach-heading">
+  <div class="wrap">
+    <h2 id="approach-heading" class="rule">Our approach</h2>
+    <p class="section__lede">Given the current scale of the project, our approach is intentionally lightweight and realistic.</p>
+    <div class="principles">
+      <div>
+        <h3>Small-scale first</h3>
+        <p>Work begins with small pilots or exploratory activity before anything is considered for wider rollout.</p>
+      </div>
+      <div>
+        <h3>Evidence through observation</h3>
+        <p>Rather than large-scale data collection, insights currently come from limited surveys, conversations, and direct engagement.</p>
+      </div>
+      <div>
+        <h3>School-aware design</h3>
+        <p>Any materials or activities are designed to fit around real school constraints, but without assuming large institutional capacity.</p>
+      </div>
+      <div>
+        <h3>No overcommitment</h3>
+        <p>Ideas are treated as prototypes until they are tested in real environments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="values-heading">
+  <div class="wrap">
+    <h2 id="values-heading" class="rule">Our values</h2>
+    <p class="section__lede">The Refract Foundation is guided by four core values, known collectively as <strong>AREA</strong>. Rather than acting as strict rules, these principles shape how we design programmes, make decisions, and support learners.</p>
+    <div class="values">
+      {%- for value in site.data.values %}
+      <article class="values__item">
+        <p class="values__letter" aria-hidden="true">{{ value.letter }}</p>
+        <h3>{{ value.name }}</h3>
+        <p>{{ value.description }}</p>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" aria-labelledby="team-heading">
+  <div class="wrap">
+    <h2 id="team-heading" class="rule">Our team</h2>
+    <div class="people-list">
+      {%- for person in site.data.team %}
+      {% include person-card.html person=person %}
+      {%- endfor %}
+    </div>
+    <h3 class="people-heading">Event organisers and mentors</h3>
+    <p class="section__lede">People who helped run our events.</p>
+    <ul class="link-list">
+      {%- for entry in people %}
+      {%- unless entry[0] == "oliver" %}
+      <li><a href="{{ entry[1].linkedin }}">{{ entry[1].name }}<span class="visually-hidden"> on LinkedIn</span></a></li>
+      {%- endunless %}
+      {%- endfor %}
+    </ul>
+  </div>
+</section>

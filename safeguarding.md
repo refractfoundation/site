@@ -1,7 +1,6 @@
 ---
 title: Safeguarding Policy
 layout: page
-content_class: policy
 ---
 
 # Safeguarding Policy
@@ -153,8 +152,3 @@ Safeguarding concerns should be reported to:
 
 [refractfoundation.org](https://refractfoundation.org)
 
----
-
-## Support Our Work
-
-{% include donate.html %}

@@ -1,0 +1,17 @@
+{%- comment -%}
+  Latest news.
+  Parameters
+    limit    how many posts to show (default: all)
+    heading  the heading level for each title, so the page's outline stays in order (default h3)
+{%- endcomment -%}
+{%- assign limit = include.limit | default: 999 -%}
+{%- assign heading = include.heading | default: "h3" -%}
+<ul class="news-list">
+  {%- for post in site.posts limit: limit %}
+  <li class="news-list__item">
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
+    <{{ heading }}><a href="{{ post.url }}">{{ post.title }}</a></{{ heading }}>
+    <span>{{ post.author }}</span>
+  </li>
+  {%- endfor %}
+</ul>

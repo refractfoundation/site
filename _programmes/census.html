@@ -1,0 +1,163 @@
+---
+title: Census
+tagline: Digital literacy research
+order: 1
+permalink: /our-work/census
+colour: "#00537C"
+logo: /assets/images/programmes/census/census-logo.svg
+logo_w: 500
+logo_h: 200
+cta: { label: Bring Census to your school, url: /contact }
+hero_text: Understanding digital skills, confidence, and online safety across the region
+hero:
+  photo: campfire-birmingham-2026-062
+  position: 50% 40%
+  height: 44vw
+---
+{%- assign census = site.data.census -%}
+
+<section class="section" aria-labelledby="what-heading">
+  <div class="wrap">
+    <div class="two-column">
+      <h2 id="what-heading" class="rule">What Census is</h2>
+      <div class="stack">
+        <p class="section__lede">Census is a youth-led research initiative by The Refract Foundation to help schools and workplaces better understand how students and staff use technology in their everyday lives.</p>
+        <p>The objective is to identify patterns in digital literacy and highlight where additional investment may be needed within individual institutions and across the region.</p>
+      </div>
+    </div>
+    <h3 class="gather-heading">Census gathers anonymous data on</h3>
+    <ul class="gather-list">
+      {%- for item in census.gathers %}
+      <li>{{ item }}</li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="band band--accent on-dark" aria-labelledby="dls-heading">
+  <div class="wrap">
+    <div class="dls">
+      <div>
+        <h2 id="dls-heading" class="rule">The Digital Literacy Score</h2>
+        <p class="section__lede">Every survey response helps to produce an average <strong>Digital Literacy Score (DLS)</strong>, a single number from <strong>0 to 100</strong>. The DLS is the average of four equally weighted index scores, Access, Confidence, Safety and Development, each capturing a different dimension of digital life.</p>
+      </div>
+      <figure class="dls__gauge">
+        {% include dls-gauge.html %}
+        <figcaption>One number from 0 to 100. The higher the score, the higher the digital literacy.</figcaption>
+      </figure>
+    </div>
+    <div class="dls__cards">
+      {%- for index in census.indices %}
+      <div class="dls__card">
+        <span class="dls__code">{{ index.code }}</span>
+        <h3>{{ index.name }}</h3>
+        <p>{{ index.text }}</p>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="survey-heading">
+  <div class="wrap">
+    <h2 id="survey-heading" class="rule">Inside the survey</h2>
+    <p class="section__lede">The survey takes around <strong>5–7 minutes</strong> to complete, with no right or wrong answers. Demographics questions are optional: students can answer “Prefer not to say”. Sections 2–5 feed directly into the four Digital Literacy indices.</p>
+    <div class="survey">
+      {%- for section in census.survey %}
+      <article class="survey__row">
+        <div>
+          <p class="survey__section">{{ section.section }}</p>
+          <h3>{{ section.name }}</h3>
+          <p>{{ section.text }}</p>
+          {%- if section.feeds %}
+          <p class="survey__feeds">Feeds the {{ section.feeds }}</p>
+          {%- endif %}
+        </div>
+        <ul class="survey__examples">
+          {%- for example in section.examples %}
+          <li>{{ example }}</li>
+          {%- endfor %}
+        </ul>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" aria-labelledby="found-heading">
+  <div class="wrap">
+    <h2 id="found-heading" class="rule">What we found</h2>
+    <p class="section__lede">The first pilot ran with <strong>{{ census.pilot.students }} students</strong> across {{ census.pilot.years }} at {{ census.pilot.school }}. Headline findings:</p>
+    <ul class="pilot-stats">
+      {%- for finding in census.findings %}
+      <li class="pilot-stats__item"><span class="pilot-stats__value">{{ finding.value }}</span><span class="pilot-stats__text">{{ finding.text }}</span></li>
+      {%- endfor %}
+    </ul>
+    <p class="callout">Confidence varies by task, from 4.71 / 5 for using a smartphone to 3.28 / 5 for sending emails and attachments. Device access is uneven too: just two-thirds of students have a desktop computer outside school, and one in six have no laptop at all. The <a href="{{ census.pilot.report }}">full OSCA Census report</a> covers access, confidence, online safety and AI in detail.</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="why-heading">
+  <div class="wrap">
+    <div class="two-column">
+      <h2 id="why-heading" class="rule">Why this matters</h2>
+      <div class="stack">
+        <p class="section__lede">Digital skills are now vital for learning, communication and work, however levels of confidence and access vary across the region.</p>
+        <p>Census turns anonymous, aggregated responses into the evidence schools need to plan their digital strategy.</p>
+        <p>All responses are anonymous and we report in an aggregated form.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" aria-labelledby="how-heading">
+  <div class="wrap">
+    <h2 id="how-heading" class="rule">How does Census work?</h2>
+    <ol class="steps">
+      {%- for step in census.steps %}
+      <li>
+        <h3>{{ step.name }}</h3>
+        <p>{{ step.text }}</p>
+      </li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="receive-heading">
+  <div class="wrap">
+    <h2 id="receive-heading" class="rule">What schools receive</h2>
+    <p class="section__lede">Every participating school gets a summary report and access to a data-rich dashboard containing:</p>
+    <ul class="receives">
+      {%- for item in census.receives %}
+      <li><b>{{ item.name }}</b><span>{{ item.text }}</span></li>
+      {%- endfor %}
+    </ul>
+    <p class="callout">The platform is branded to each school, so students and staff take part in a familiar, trusted environment.</p>
+  </div>
+</section>
+
+<section class="band band--accent on-dark" aria-labelledby="involved-heading">
+  <div class="wrap band__inner">
+    <div class="stack">
+      <h2 id="involved-heading" class="rule">Getting involved</h2>
+      <p class="section__lede">We can’t wait to work with schools, businesses and local authorities in the West Midlands to conduct Census! As of now, we’re particularly interested in working with secondary schools within the region to help us design our future programmes.</p>
+      <p>Please feel free to get in touch with us for further details: <a class="band__link" href="mailto:oliver@refractfoundation.org">oliver@refractfoundation.org</a></p>
+    </div>
+    <a class="button button--primary" href="/contact">Get in touch</a>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="privacy-heading">
+  <div class="wrap">
+    <h2 id="privacy-heading" class="rule">Privacy</h2>
+    <div class="prose">
+      <p>Protecting participants’ privacy is a core part of how Census is designed.</p>
+      <p>Census is designed to minimise the collection of personal information. Unless explicitly stated otherwise, it does not collect names, email addresses, student identifiers or other directly identifying information. Please do not include personal information in any free-text responses unless specifically requested.</p>
+      <p>Most findings are analysed and reported in aggregated or anonymised form to help identify trends and inform educational improvement, without identifying individual participants.</p>
+      <p>For full details about how we collect, use and protect information, please read our <a href="/privacy">Privacy Policy</a>.</p>
+    </div>
+  </div>
+</section>
+
+{% include donate.html %}

@@ -1,0 +1,103 @@
+// About page.
+
+.principles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8rem 3.5rem;
+  margin-top: 2.4rem;
+
+  h3 {
+    margin-bottom: 0.35rem;
+    padding-left: 1rem;
+    border-left: 4px solid var(--carrot);
+  }
+
+  p {
+    color: var(--brown-2);
+  }
+}
+
+@media (max-width: 760px) {
+  .principles {
+    grid-template-columns: 1fr;
+  }
+}
+
+// The four AREA values, each with an outlined initial.
+.values {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 2.4rem;
+
+  &__item {
+    display: grid;
+    gap: 0.5rem;
+    align-content: start;
+    min-height: 280px;
+    padding: 1.5rem;
+    background: var(--white);
+    box-shadow: inset 0 0 0 2px var(--forest);
+
+    h3 {
+      font-size: 1.4rem;
+    }
+
+    p:last-child {
+      color: var(--brown-2);
+      font-size: 0.98rem;
+    }
+  }
+
+  &__letter {
+    color: transparent;
+    font: 700 5rem / 0.9 var(--font);
+    -webkit-text-stroke: 2px var(--carrot);
+  }
+}
+
+@media (max-width: 980px) {
+  .values {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .values {
+    grid-template-columns: 1fr;
+
+    &__item {
+      min-height: 0;
+    }
+  }
+}
+
+.people-heading {
+  margin-top: 3rem;
+}
+
+.link-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.4rem 0 0;
+  padding: 0;
+  list-style: none;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0.35rem 1.1rem;
+    background: var(--white);
+    box-shadow: inset 0 0 0 1.5px var(--forest);
+    color: var(--forest);
+    font-weight: 700;
+    text-decoration: none;
+
+    &:hover {
+      background: var(--forest);
+      color: var(--white);
+    }
+  }
+}
