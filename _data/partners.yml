@@ -82,9 +82,11 @@ craftpix:
   h: 191
   colour: "#fc9326"
 
-# TODO: the Open Sauce logo file has never been in the repo. Add it as
-# assets/images/partners/open-sauce.* and set logo, w and h; until then the card shows the name.
 open-sauce:
   name: Open Sauce
   href: https://opensauce.com
+  logo: /assets/images/partners/open-sauce.svg
+  w: 130
+  h: 29
   colour: "#ff5a2e"
+  dark: true
