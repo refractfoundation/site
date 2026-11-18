@@ -32,7 +32,10 @@ layout: default
       <h2 id="divide-heading" class="rule">{{ home.divide.heading }}</h2>
       <p class="section__lede">{{ home.divide.intro }}</p>
       <p>{{ home.divide.body }}</p>
-      <p class="pull-quote">{{ home.divide.callout }}</p>
+      <blockquote class="pull-quote">
+        <p>{{ home.divide.callout }}</p>
+        <footer><a href="{{ home.divide.callout_url }}">{{ home.divide.callout_source }}</a></footer>
+      </blockquote>
       <div class="button-row">
         <a class="button button--primary" href="{{ home.divide.button.url }}">{{ home.divide.button.label }} {% include icon-arrow.html %}</a>
       </div>

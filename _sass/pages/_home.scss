@@ -51,10 +51,23 @@
 
 .pull-quote {
   max-width: 34ch;
+  margin-inline: 0;
   padding-left: 1.25rem;
   border-left: 3px solid var(--carrot);
   color: var(--forest);
   font: 600 clamp(1.25rem, 2vw, 1.5rem) / 1.35 var(--font);
+
+  footer {
+    margin-top: 0.5rem;
+    color: var(--brown-2);
+    font-size: 0.95rem;
+    font-weight: 400;
+
+    a {
+      color: inherit;
+      text-underline-offset: 3px;
+    }
+  }
 }
 
 // The digital divide: argument on the left, outside research on the right.

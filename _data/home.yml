@@ -38,8 +38,9 @@ divide:
   heading: The digital divide
   intro: Digital literacy isn’t a luxury, it’s essential for everyday life. Whether applying for jobs, staying connected or accessing vital services, everyone deserves the skills to navigate our digital world safely, effectively and responsibly.
   body: Without digital skills, millions are locked out of opportunities, independence and inclusion. These aren’t just statistics. They’re our neighbours, friends and family.
-  # TODO: source needed for this figure before launch.
   callout: "And the appetite is there: <strong>59% of students</strong> want to learn digital literacy at school."
+  callout_source: AQA research
+  callout_url: https://cdn.sanity.io/files/p28bar15/green/17c41329134aa44640a481444680a1c0a58adf7e.pdf
   button: { label: Learn more, url: /our-work/census }
 
 # The Census band takes its text and logo from the Census programme page (_programmes/census.md).
