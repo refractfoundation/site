@@ -111,9 +111,21 @@
     font-weight: 700;
   }
 
+  // Programme heroes put the programme logo in the h1 (its alt text is the title).
+  &__logo-title {
+    margin: 0;
+    line-height: 0;
+  }
+
   &__logo {
     width: clamp(200px, 24vw, 320px);
     height: auto;
+  }
+
+  &__text--large {
+    font-family: var(--font);
+    font-size: clamp(1.3rem, 2.4vw, 1.8rem);
+    line-height: 1.3;
   }
 }
 
