@@ -1,0 +1,194 @@
+// Site header and primary navigation. The "Our work" dropdown is a disclosure button
+// (nav.js toggles aria-expanded); below 900px the whole nav collapses behind a Menu button.
+
+.site-header {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 50;
+  background: var(--cream);
+  border-bottom: 1px solid var(--line);
+
+  &__bar {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    min-height: var(--header-height);
+  }
+}
+
+.brand {
+  display: block;
+  line-height: 0;
+
+  img {
+    width: auto;
+    height: 42px;
+  }
+}
+
+.nav {
+  margin-left: auto;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 0.15rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    min-height: 44px;
+    padding: 0.4rem 0.95rem;
+    border: 0;
+    background: none;
+    color: var(--forest);
+    font: 700 1.05rem var(--font);
+    text-decoration: none;
+    cursor: pointer;
+
+    // The orange underline from the original site.
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0.95rem;
+      right: 0.95rem;
+      bottom: 6px;
+      height: 3px;
+      background: var(--carrot);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.2s;
+    }
+
+    &:hover::after,
+    &[aria-current="page"]::after {
+      transform: scaleX(1);
+    }
+
+    svg {
+      width: 14px;
+      height: 14px;
+      transition: transform 0.2s;
+    }
+
+    &[aria-expanded="true"] svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__item--cta {
+    margin-left: 0.6rem;
+  }
+
+  &__dropdown {
+    position: relative;
+  }
+
+  &__menu {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    z-index: 5;
+    display: none;
+    flex-direction: column;
+    min-width: 280px;
+    padding: 0.4rem;
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--carrot);
+    background: var(--white);
+    box-shadow: 0 18px 32px -18px rgb(58 42 26 / 45%);
+
+    .nav__link[aria-expanded="true"] + & {
+      display: flex;
+    }
+  }
+
+  &__group {
+    padding: 0.55rem 0.95rem 0.1rem;
+    color: var(--brown-2);
+    font: 700 0.72rem var(--font);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  &__menu-link {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0.95rem;
+    color: var(--forest);
+    font-weight: 700;
+    text-decoration: none;
+
+    &:hover {
+      background: var(--oak-tint);
+    }
+
+    small {
+      color: var(--brown-2);
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.menu-toggle {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  margin-left: auto;
+  padding: 0.4rem 1rem;
+  border: 2px solid var(--forest);
+  background: none;
+  color: var(--forest);
+  font: 700 1rem var(--font);
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    max-height: calc(100svh - var(--header-height));
+    margin: 0;
+    padding: 0.75rem var(--gutter-end) 1rem var(--gutter);
+    overflow: auto;
+    background: var(--cream);
+    border-bottom: 1px solid var(--line);
+
+    &.is-open {
+      display: block;
+    }
+
+    &__list {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    &__menu {
+      position: static;
+      min-width: 0;
+      margin-left: 1rem;
+      border: 0;
+      background: var(--oak-tint);
+      box-shadow: none;
+    }
+
+    &__item--cta {
+      margin: 0.5rem 0 0;
+    }
+  }
+}

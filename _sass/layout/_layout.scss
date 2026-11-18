@@ -1,0 +1,93 @@
+// Page structure: the centred content column and the bands of colour between sections.
+
+.wrap {
+  width: 100%;
+  max-width: var(--content-width);
+  margin-inline: auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter-end);
+}
+
+.section {
+  padding-block: clamp(64px, 8vw, 100px);
+
+  // Pale Oak tint, used to separate neighbouring sections.
+  &--tint {
+    background: var(--oak-tint);
+  }
+
+  // Introductory text under a section heading.
+  &__lede {
+    max-width: 62ch;
+    margin-top: 1.4rem;
+    color: var(--brown-2);
+    font-size: clamp(1.1rem, 1.5vw, 1.25rem);
+  }
+}
+
+// Text on a dark surface (forest or a programme colour).
+.on-dark {
+  color: var(--white);
+
+  h1,
+  h2,
+  h3 {
+    color: var(--white);
+  }
+}
+
+// Long-form content written in Markdown: policies, news posts, plain pages.
+.prose {
+  max-width: 72ch;
+
+  > * + * {
+    margin-top: 1rem;
+  }
+
+  h1,
+  h2 {
+    margin-top: 2.5rem;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      margin-top: 0.7rem;
+      background: var(--accent);
+    }
+  }
+
+  h3,
+  h4 {
+    margin-top: 2rem;
+  }
+
+  a {
+    color: var(--carrot-text);
+    text-underline-offset: 3px;
+  }
+
+  ul,
+  ol {
+    padding-left: 1.4rem;
+
+    li + li {
+      margin-top: 0.35rem;
+    }
+  }
+
+  blockquote {
+    margin-inline: 0;
+    padding-left: 1.25rem;
+    border-left: 3px solid var(--accent);
+    color: var(--forest);
+    font-size: 1.2em;
+  }
+
+  hr {
+    margin-block: 2.5rem;
+    border: 0;
+    border-top: 1px solid var(--line);
+  }
+}
