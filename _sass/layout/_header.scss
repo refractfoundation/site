@@ -5,8 +5,8 @@
   position: sticky;
   top: env(safe-area-inset-top, 0px);
   z-index: 50;
-  background: var(--cream);
-  border-bottom: 1px solid var(--line);
+  background: var(--oak);
+  border-bottom: 1px solid rgb(0 66 37 / 18%);
 
   &__bar {
     display: flex;
@@ -22,7 +22,7 @@
 
   img {
     width: auto;
-    height: 42px;
+    height: 56px;
   }
 }
 
