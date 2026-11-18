@@ -1,8 +1,6 @@
 ---
 title: The Campfire Experience
-layout: post
 author: Oliver Potter
-date: 2026-03-01
 cover: /assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-025.jpg
 permalink: /news/campfire-experience
 ---

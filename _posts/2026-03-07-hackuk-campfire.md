@@ -1,8 +1,6 @@
 ---
 title: "Behind Campfire: HackUK"
-layout: post
 author: Oliver Potter
-date: 2026-03-07
 cover: /assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-055.jpg
 permalink: /news/hackuk-campfire
 ---

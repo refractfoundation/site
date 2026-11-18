@@ -1,11 +1,18 @@
 ---
+# Paused while development is on hold. Remove "published: false" to bring this programme back;
+# it then appears in the nav and on /our-work. Add its hero photo to _data/photos.yml first.
+published: false
 title: Revise
-layout: programme
-hero_sub: Supporting Computer Science students through accessible learning resources
-hero_logo: /assets/images/programmes/revise/revise-logo.svg
-hero_back: /assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-004.jpg
-hero_alt: Revise
-hero_colour: "#00AE62"
+tagline: Supporting Computer Science Students
+order: 3
+permalink: /our-work/revise
+colour: "#00AE62"
+logo: /assets/images/programmes/revise/revise-logo.svg
+logo_w: 500
+logo_h: 200
+hero_text: Supporting Computer Science students through accessible learning resources
+hero:
+  photo: campfire-birmingham-2026-004
 ---
 
 Revise is a developing programme by The Refract Foundation designed to support students studying Computer Science.

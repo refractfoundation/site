@@ -1,11 +1,18 @@
 ---
+# Paused while development is on hold. Remove "published: false" to bring this programme back;
+# it then appears in the nav and on /our-work. Add its hero photo to _data/photos.yml first.
+published: false
 title: RAISE
-layout: programme
-hero_sub: A framework for the responsible use of artificial intelligence in education
-hero_logo: /assets/images/programmes/raise/raise-logo.svg
-hero_back: /assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-002.jpg
-hero_alt: RAISE
-hero_colour: "#FF63E2"
+tagline: Responsible AI in Education
+order: 2
+permalink: /our-work/raise
+colour: "#FF63E2"
+logo: /assets/images/programmes/raise/raise-logo.svg
+logo_w: 500
+logo_h: 200
+hero_text: A framework for the responsible use of artificial intelligence in education
+hero:
+  photo: campfire-birmingham-2026-002
 ---
 
 RAISE is a developing initiative by The Refract Foundation focused on helping schools, educators and students navigate the growing role of artificial intelligence in education.

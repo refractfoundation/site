@@ -1,10 +1,18 @@
 ---
+# Paused while development is on hold. Remove "published: false" to bring this programme back;
+# it then appears in the nav and on /our-work. Add its hero photo to _data/photos.yml first.
+published: false
 title: Voice
-layout: programme
-hero_sub: Young people deserve a say in their digital future.
-hero_logo: /assets/images/programmes/voice/voice-logo.svg
-hero_back: /assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-002.jpg
-hero_alt: Voice
+tagline: Young people deserve a say in their digital future
+order: 5
+permalink: /our-work/voice
+colour: "#EB0000"
+logo: /assets/images/programmes/voice/voice-logo.svg
+logo_w: 500
+logo_h: 200
+hero_text: Young people deserve a say in their digital future.
+hero:
+  photo: campfire-birmingham-2026-002
 ---
 
 # What is happening?

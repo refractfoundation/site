@@ -1,8 +1,6 @@
 ---
 title: The First Census Pilot
-layout: post
 author: Oliver Potter
-date: 2026-07-14
 cover: /assets/images/news/census-pilot-osca.jpg
 permalink: /news/osca-census-pilot
 ---

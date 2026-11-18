@@ -1,11 +1,17 @@
 ---
 title: Census
-layout: programme
-hero_sub: Understanding digital skills, confidence, and online safety across the region
-hero_logo: /assets/images/programmes/census/census-logo.svg
-hero_back: /assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-003.jpg
-hero_alt: Census
-hero_colour: "#00537C"
+tagline: Digital literacy research
+order: 1
+permalink: /our-work/census
+colour: "#00537C"
+logo: /assets/images/programmes/census/census-logo.svg
+logo_w: 500
+logo_h: 200
+hero_text: Understanding digital skills, confidence, and online safety across the region
+hero:
+  photo: campfire-birmingham-2026-062
+  position: 50% 40%
+  height: 44vw
 ---
 
 Census is a youth-led research initiative by The Refract Foundation to help schools and workplaces better understand how students and staff use technology in their everyday lives.
