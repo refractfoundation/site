@@ -1,0 +1,121 @@
+---
+layout: default
+---
+{%- assign home = site.data.home -%}
+{%- assign census = site.programmes | where: "slug", "census" | first -%}
+{%- assign events = site.events | sort: "date" | reverse -%}
+{%- assign upcoming = events | where_exp: "event", "event.date > site.time" -%}
+{%- assign past = events | where_exp: "event", "event.date <= site.time" -%}
+
+{% include carousel.html slides=home.slides %}
+
+<section class="section" aria-labelledby="gap-heading">
+  <div class="wrap split">
+    <div>
+      <h2 id="gap-heading" class="rule">{{ home.gap.heading }}</h2>
+      <p class="section__lede">{{ home.gap.text }}</p>
+      <ul class="check-list">
+        {%- for point in home.gap.points %}
+        <li>{{ point }}</li>
+        {%- endfor %}
+      </ul>
+    </div>
+    <div class="split__photo">
+      {% include picture.html photo=home.gap.photo sizes="(max-width: 860px) 100vw, 50vw" %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" aria-labelledby="divide-heading">
+  <div class="wrap divide">
+    <div class="divide__copy">
+      <h2 id="divide-heading" class="rule">{{ home.divide.heading }}</h2>
+      <p class="section__lede">{{ home.divide.intro }}</p>
+      <p>{{ home.divide.body }}</p>
+      <p class="pull-quote">{{ home.divide.callout }}</p>
+      <div class="button-row">
+        <a class="button button--primary" href="{{ home.divide.button.url }}">{{ home.divide.button.label }} {% include icon-arrow.html %}</a>
+      </div>
+    </div>
+    <ul class="research" aria-label="Research on digital skills in the UK">
+      {%- for figure in site.data.research %}
+      <li class="research__item">
+        <span class="research__value">{{ figure.value }}</span>
+        <p class="research__text">{{ figure.text }}</p>
+        <cite class="research__source">{% if figure.url %}<a href="{{ figure.url }}">{{ figure.source }}</a>{% else %}{{ figure.source }}{% endif %}</cite>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="census-band" aria-labelledby="census-heading">
+  <div class="census-band__grid">
+    <div class="census-band__text on-dark">
+      <img class="census-band__logo" src="{{ census.logo }}" alt="{{ census.title }}" width="{{ census.logo_w }}" height="{{ census.logo_h }}">
+      <h2 id="census-heading" class="rule">{{ home.census.heading }}</h2>
+      <p class="census-band__lede">{{ home.census.text }}</p>
+      <ul class="chip-list" aria-label="The four Digital Literacy indices">
+        {%- for index in site.data.census.indices %}
+        <li><b>{{ index.code }}</b>{{ index.short }}</li>
+        {%- endfor %}
+      </ul>
+      <div class="button-row">
+        <a class="button button--primary" href="{{ census.url }}">Explore Census {% include icon-arrow.html %}</a>
+      </div>
+    </div>
+    <div class="census-band__photo">
+      {% include picture.html photo=home.census.photo alt="" position=home.census.position sizes="(max-width: 900px) 100vw, 50vw" %}
+    </div>
+  </div>
+  <div class="census-band__stats on-dark">
+    <ul class="wrap">
+      {%- for stat in site.data.census.band %}
+      <li><b>{{ stat.value }}</b><span>{{ stat.text }}</span></li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="events-heading">
+  <div class="wrap">
+    {%- if upcoming.size > 0 %}
+    <h2 class="rule">Upcoming events</h2>
+    <div class="event-list">
+      {%- for event in upcoming reversed %}{% include event-card.html event=event %}{% endfor %}
+    </div>
+    {%- endif %}
+    {%- if past.size > 0 %}
+    <h2 id="events-heading" class="rule{% if upcoming.size > 0 %} rule--spaced{% endif %}">Recent events</h2>
+    <div class="event-list">
+      {%- for event in past %}{% include event-card.html event=event %}{% endfor %}
+    </div>
+    {%- endif %}
+  </div>
+</section>
+
+<section class="section section--tint" aria-labelledby="wall-heading">
+  <div class="wrap">
+    <h2 id="wall-heading" class="rule">{{ home.wall.heading }}</h2>
+    {% include gallery.html photos=home.wall.photos %}
+  </div>
+</section>
+
+<section class="section" aria-labelledby="partners-heading">
+  <div class="wrap">
+    <h2 id="partners-heading" class="rule">Our partners</h2>
+    {% include partner-cards.html ids=home.partners %}
+  </div>
+</section>
+
+<section class="section section--tint" aria-labelledby="news-heading">
+  <div class="wrap">
+    <h2 id="news-heading" class="rule">News</h2>
+    {% include news-list.html limit=4 %}
+    <div class="button-row">
+      <a class="button" href="/news">All news {% include icon-arrow.html %}</a>
+    </div>
+  </div>
+</section>
+
+{% include donate.html %}

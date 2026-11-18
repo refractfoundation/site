@@ -1,0 +1,30 @@
+# Census pilot results (Ormiston Sandwell Community Academy, 2025-26). Used by the home page
+# band and the Census page. Source: the OSCA Census report in /assets/.
+pilot:
+  students: 261
+  school: Ormiston Sandwell Community Academy
+  years: Years 7 to 9
+  report: /assets/OSCA%20Student%20Census%20Report%202526.pdf
+  published: July 2026
+
+# Three figures for the strip under the Census band on the home page.
+band:
+  - { value: 261, text: "students in our first pilot, Years 7 to 9" }
+  - { value: 90%, text: "of students use AI tools, regularly or sometimes" }
+  - { value: 96%, text: "have a smartphone outside school" }
+
+# Headline findings, shown as tiles on the Census page.
+findings:
+  - { value: 90%, text: "of students use AI tools, regularly or sometimes." }
+  - { value: 63%, text: "have been taught to use AI safely, effectively and responsibly." }
+  - { value: 75%, text: "feel safe when using the internet." }
+  - { value: 36%, text: "have clicked on something online that later felt unsafe or suspicious." }
+  - { value: 96%, text: "have a smartphone outside school." }
+  - { value: 76%, text: "of students learn digital skills at school." }
+
+# The four Digital Literacy indices that make up the Digital Literacy Score (DLS).
+indices:
+  - { code: DAI, name: Digital Access, short: Access, text: Access to devices, connectivity and the internet. }
+  - { code: DCI, name: Digital Confidence, short: Confidence, text: Comfort and self-efficacy using digital tools. }
+  - { code: DSI, name: Digital Safety, short: Safety, text: Awareness of online risks and safe behaviour. }
+  - { code: DDI, name: Digital Development, short: Development, text: Skills, learning and ongoing digital growth. }
