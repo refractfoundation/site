@@ -4,8 +4,8 @@ layout: programme
 hero_position_y: 0vh
 hero_date: Saturday 28th February 2026
 hero_loc: Ormiston Sandwell Community Academy
-hero_logo: /assets/images/logo/campfire.svg
-hero_back: /assets/images/heroes/campfire-hero.png
+hero_logo: /assets/images/events/campfire-birmingham-2026/campfire-birmingham-logo.svg
+hero_back: /assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-hero.png
 hero_alt: Campfire Birmingham
 ---
 

@@ -12,6 +12,7 @@ exclude:
   - README.md
   - README.MD
   - CLAUDE.md
+  - docs
   - LICENSE
   - "*.gem"
   - "*.gemspec"
@@ -21,6 +22,7 @@ exclude:
   - vercel.json
   - scripts/generate-webp.js
   - scripts/optimise-images.js
+  - scripts/check-images.js
   # Only bootstrap.min.css and bootstrap.min.js are referenced (_includes/head.html)
   - scripts/bootstrap-dist/css/bootstrap-*
   - scripts/bootstrap-dist/css/bootstrap.css

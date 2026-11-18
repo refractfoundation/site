@@ -2,8 +2,8 @@
 title: Voice
 layout: programme
 hero_sub: Young people deserve a say in their digital future.
-hero_logo: /assets/images/logo/for-web/Voice.svg
-hero_back: /assets/images/campfire/hcampfire_2.JPG
+hero_logo: /assets/images/programmes/voice/voice-logo.svg
+hero_back: /assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-002.jpg
 hero_alt: Voice
 ---
 
@@ -37,7 +37,7 @@ We believe that young people should be present in making decisions about young p
     <div class="col">
       <div
         class="event-card event-card--bg d-flex flex-column justify-content-between align-items-center text-center"
-        style="--event-card-image: url(/assets/images/campfire/1.JPG);"
+        style="--event-card-image: url(/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-003.jpg);"
       >
         <h2>Share your thoughts</h2>
         <a class="btn" href="#" aria-label="Share your thoughts about the social media ban">Start ></a>
@@ -46,7 +46,7 @@ We believe that young people should be present in making decisions about young p
     <div class="col">
       <div
         class="event-card event-card--bg d-flex flex-column justify-content-between align-items-center text-center"
-        style="--event-card-image: url(/assets/images/campfire/1.JPG);"
+        style="--event-card-image: url(/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-003.jpg);"
       >
         <h2>Write to your MP</h2>
         <a class="btn" href="#" aria-label="Write to your MP about the social media ban">Start ></a>

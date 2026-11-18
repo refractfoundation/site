@@ -7,22 +7,22 @@ hero_slides:
     lead: Every young person deserves the confidence, skills and opportunity to thrive in a digital world.
     cta: Discover Our Work
     link: /our-work
-    img: /assets/images/CF_BIRMINGHAM_0072.JPG
+    img: /assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-025.jpg
   - title: Know your digital future
     sub: Our Census measures digital access, confidence, safety and development across schools &mdash; so every student can thrive online.
     cta: Explore the Census
     link: /our-work/census
-    img: /assets/images/campfire/hcampfire_10.JPG
+    img: /assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-010.jpg
   - title: Bridging the digital divide
     sub: Hands-on digital skills for young people across the West Midlands &mdash; from a first smartphone to safe, responsible AI use.
     cta: See Our Work
     link: /our-work
-    img: /assets/images/campfire/22.JPG
+    img: /assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-059.jpg
   - title: Youth-led, always
     sub: From local workshops to county-wide programmes, young people shape everything we do.
     cta: Get Involved
     link: /contact
-    img: /assets/images/campfire/0.JPG
+    img: /assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-000.jpg
 ---
 
 {% if site.data.events.size > 0 %}
@@ -51,7 +51,7 @@ hero_slides:
     </div>
   </div>
   <div class="split-intro__media">
-    <img src="/assets/images/campfire/campfirefullroom.jpg" alt="Young people working together at a Refract workshop" loading="lazy" />
+    <img src="/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-065.jpg" alt="Young people working together at a Refract workshop" loading="lazy" />
   </div>
 </div>
 

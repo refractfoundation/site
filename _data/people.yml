@@ -1,0 +1,20 @@
+# People credited in photo captions. Names were inferred from LinkedIn URLs: confirm the spellings.
+# Use {key} in a caption (see photos.yml) to render the person as a LinkedIn link.
+oliver:
+  name: "Oliver Potter"
+  linkedin: "https://linkedin.com/in/opott"
+preston:
+  name: "Preston Saunders"
+  linkedin: "https://www.linkedin.com/in/preston-saunders-1990b83a6/"
+shaven:
+  name: "Shaven Wickramanayaka"
+  linkedin: "https://www.linkedin.com/in/shavenwickramanayaka/"
+owhonda:
+  name: "Owhonda Nwokekoro"
+  linkedin: "https://www.linkedin.com/in/owhondanwokekoro/"
+dipesh:
+  name: "Dipesh Thapa"
+  linkedin: "https://www.linkedin.com/in/dipeshthapa07/"
+boma:
+  name: "Boma Peters"
+  linkedin: "https://www.linkedin.com/in/bomapeters/"

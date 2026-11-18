@@ -2,8 +2,8 @@
 title: RAISE
 layout: programme
 hero_sub: A framework for the responsible use of artificial intelligence in education
-hero_logo: /assets/images/logo/for-web/RAISE.svg
-hero_back: /assets/images/campfire/hcampfire_2.JPG
+hero_logo: /assets/images/programmes/raise/raise-logo.svg
+hero_back: /assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-002.jpg
 hero_alt: RAISE
 hero_colour: "#FF63E2"
 ---
