@@ -117,6 +117,15 @@
     margin-top: 1rem;
   }
 
+  // Inside long-form text, headings step down from page-title size.
+  h2 {
+    font-size: clamp(1.6rem, 3vw, 2.1rem);
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
   h1,
   h2 {
     margin-top: 2.5rem;
@@ -162,5 +171,10 @@
     margin-block: 2.5rem;
     border: 0;
     border-top: 1px solid var(--line);
+  }
+
+  // Plain pages: the first heading starts at the top of the page.
+  &--page > :first-child {
+    margin-top: 0;
   }
 }

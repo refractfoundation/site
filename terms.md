@@ -1,7 +1,6 @@
 ---
 title: Terms and Conditions
 layout: page
-content_class: policy
 ---
 
 # Terms and Conditions

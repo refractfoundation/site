@@ -205,3 +205,18 @@ oliver-potter:
   w: 2400
   h: 2400
   alt: "Portrait of Oliver Potter"
+campfire-birmingham-2026-025:
+  file: "/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-025.jpg"
+  w: 2400
+  h: 1600
+  alt: "Two attendees laughing together over a laptop"
+campfire-birmingham-2026-055:
+  file: "/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-055.jpg"
+  w: 2400
+  h: 1600
+  alt: "A mentor in a cap leaning in to help two attendees at a laptop"
+census-pilot-osca:
+  file: "/assets/images/news/census-pilot-osca.jpg"
+  w: 2000
+  h: 1000
+  alt: "The front of Ormiston Sandwell Community Academy under a cloudy sky"

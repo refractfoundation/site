@@ -1,7 +1,6 @@
 ---
 title: Safeguarding Policy
 layout: page
-content_class: policy
 ---
 
 # Safeguarding Policy

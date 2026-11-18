@@ -1,7 +1,7 @@
 ---
 title: The First Census Pilot
 author: Oliver Potter
-cover: /assets/images/news/census-pilot-osca.jpg
+cover: census-pilot-osca
 permalink: /news/osca-census-pilot
 ---
 

@@ -1,13 +1,13 @@
 ---
+layout: default
 ---
-
-<!DOCTYPE html>
-<html lang="en">
-  {% include head.html %}
-  <body>
-    <a class="skip-link" href="#main-content">Skip to main content</a>
-    {% include header.html %}
-    <main id="main-content" class="content container my-5{% if page.content_class %} {{ page.content_class }}{% endif %}" tabindex="-1">{{ content }}</main>
-    {% include footer.html %}
-  </body>
-</html>
+{%- comment -%}
+  Plain prose pages (policies and similar). The page's own Markdown supplies the h1.
+{%- endcomment -%}
+<section class="section">
+  <div class="wrap">
+    <div class="prose prose--page">
+      {{ content }}
+    </div>
+  </div>
+</section>

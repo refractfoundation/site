@@ -1,7 +1,7 @@
 ---
 title: The Campfire Experience
 author: Oliver Potter
-cover: /assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-025.jpg
+cover: campfire-birmingham-2026-025
 permalink: /news/campfire-experience
 ---
 

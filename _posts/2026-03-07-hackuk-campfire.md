@@ -1,7 +1,7 @@
 ---
 title: "Behind Campfire: HackUK"
 author: Oliver Potter
-cover: /assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-055.jpg
+cover: campfire-birmingham-2026-055
 permalink: /news/hackuk-campfire
 ---
 

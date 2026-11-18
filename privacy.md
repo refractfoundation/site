@@ -1,7 +1,6 @@
 ---
 title: Privacy Policy
 layout: page
-content_class: policy
 ---
 
 # Privacy Policy

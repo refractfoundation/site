@@ -1,7 +1,6 @@
 ---
 title: Code of Conduct
 layout: page
-content_class: policy
 ---
 
 # Code of Conduct

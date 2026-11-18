@@ -1,7 +1,7 @@
 ---
 title: "Behind Campfire: Cyber Heroez"
 author: Oliver Potter
-cover: /assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-066.jpg
+cover: campfire-birmingham-2026-066
 permalink: /news/cyber-heroez-campfire
 ---
 

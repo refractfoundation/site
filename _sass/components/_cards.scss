@@ -213,3 +213,51 @@
     }
   }
 }
+
+// ---- Programme card: a tile in the programme's own colour (--accent) ----
+
+.programme-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.2rem;
+  margin-top: 2.4rem;
+}
+
+.programme-card {
+  display: grid;
+  gap: 1rem;
+  align-content: space-between;
+  min-height: 260px;
+  padding: 1.6rem;
+  background: var(--accent);
+  color: var(--white);
+  text-decoration: none;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  &__logo {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__tagline {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  &__more {
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-weight: 700;
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}

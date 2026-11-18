@@ -1,0 +1,22 @@
+---
+title: Contact
+layout: default
+---
+<section class="section">
+  <div class="wrap">
+    <h1 class="rule">Get in touch</h1>
+    <p class="section__lede">We’d love to hear from you. Reach out via email or connect with us on LinkedIn.</p>
+    <div class="contact-list">
+      {%- for method in site.data.contact %}
+      <div class="contact-card">
+        <h2>{{ method.name }}</h2>
+        <p>{{ method.description }}</p>
+        <p class="contact-card__detail">{{ method.detail }}</p>
+        <a class="button" href="{{ method.href }}">{{ method.button }}</a>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+{% include donate.html %}

@@ -1,0 +1,8 @@
+{%- comment -%}
+  A programme tile in the programme's own colour. Parameter: programme  a programmes document
+{%- endcomment -%}
+<a class="programme-card" href="{{ include.programme.url }}" style="--accent: {{ include.programme.colour }}">
+  <img class="programme-card__logo" src="{{ include.programme.logo }}" alt="{{ include.programme.title }}" width="{{ include.programme.logo_w }}" height="{{ include.programme.logo_h }}" loading="lazy">
+  <p class="programme-card__tagline">{{ include.programme.tagline }}</p>
+  <span class="programme-card__more">Read more {% include icon-arrow.html %}</span>
+</a>
