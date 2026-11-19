@@ -5,6 +5,8 @@ cover: haven-west-midlands-2026-hero
 permalink: /news/haven-west-midlands-announcement
 ---
 
+![Hack Club Haven logo](/assets/images/events/haven-west-midlands-2026/haven-logo.png){: style="width: 240px; max-width: 100%"}
+
 On Saturday 14 November, Refract Foundation will host Haven West Midlands at the University of Wolverhampton Science Park: a free game jam for teenagers aged 13 to 18.
 
 It will be our second Hack Club event, following Campfire Birmingham in February.

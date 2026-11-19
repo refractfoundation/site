@@ -5,6 +5,8 @@ cover: campfire-birmingham-2026-artwork
 permalink: /news/campfire-birmingham-announcement
 ---
 
+![Hack Club Campfire logo](/assets/images/events/campfire-birmingham-2026/campfire-logo.svg){: style="width: 360px; max-width: 100%"}
+
 On Saturday 28 February, Refract Foundation will host Campfire Birmingham at Ormiston Sandwell Community Academy: a 12-hour game jam for teenagers aged 13 to 18 from across the West Midlands.
 
 It will be our first hackathon, and the first event we have run in partnership with [Hack Club](https://hackclub.com), the global nonprofit network of teen coders.
