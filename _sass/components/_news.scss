@@ -1,45 +1,67 @@
-// News list on the home page and the news index.
+// News on the home page and the news index: cards led by each post's cover photo.
 
 .news-list {
-  margin: 2.2rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: clamp(1rem, 2vw, 1.6rem);
+  margin: 2.4rem 0 0;
   padding: 0;
   list-style: none;
-  border-top: 2px solid var(--forest);
-
-  &__item {
-    display: grid;
-    grid-template-columns: 150px 1fr auto;
-    gap: 1rem;
-    align-items: baseline;
-    padding: 1.1rem 0;
-    border-bottom: 1px solid var(--line);
-
-    h2,
-    h3 {
-      font-size: 1.3rem;
-
-      a {
-        color: inherit;
-        text-decoration: none;
-
-        &:hover {
-          text-decoration: underline;
-          text-underline-offset: 3px;
-        }
-      }
-    }
-
-    time,
-    span {
-      color: var(--brown-2);
-      font-size: 0.95rem;
-    }
-  }
 }
 
-@media (max-width: 640px) {
-  .news-list__item {
-    grid-template-columns: 1fr;
-    gap: 0.15rem;
+.news-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  box-shadow: 0 0 0 2px var(--forest);
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  &__image {
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 14px));
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .meta {
+    font-size: 0.88rem;
+  }
+
+  &__body {
+    display: grid;
+    gap: 0.3rem;
+    padding: 0.8rem 1.1rem 1.1rem;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      // Makes the whole card the link.
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+      }
+
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+    }
   }
 }
