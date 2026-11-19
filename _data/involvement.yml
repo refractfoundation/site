@@ -1,0 +1,19 @@
+census:
+  - name: Schools
+    description: Run Census across your school to see where pupils' digital skills, confidence and online safety need support. Results are anonymous and come with a public report.
+    button: Bring Census to your school
+    href: mailto:hello@refractfoundation.org?subject=Census%20-%20bringing%20it%20to%20our%20school
+  - name: Trusts and councils
+    description: Run Census across several schools at once to compare results and see the picture for your area.
+    button: Talk to us about Census
+    href: mailto:hello@refractfoundation.org?subject=Census%20-%20for%20our%20trust%20or%20council
+
+companies:
+  - name: Partner with us
+    description: Work with us on programmes, events or resources, and put your organisation's name alongside young people's digital skills.
+    button: Start a partnership
+    href: mailto:hello@refractfoundation.org?subject=Partnership%20enquiry
+  - name: Fund us
+    description: Fund the workshops, events and research that Refract's young team runs across the West Midlands.
+    button: Discuss funding
+    href: mailto:hello@refractfoundation.org?subject=Funding%20enquiry

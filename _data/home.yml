@@ -21,7 +21,7 @@ slides:
     position: 50% 45%
   - title: Youth-led, always
     text: From local workshops to county-wide programmes, young people shape everything we do.
-    button: { label: Get involved, url: /contact }
+    button: { label: Get involved, url: /get-involved }
     photo: haven-west-midlands-2026-014
     position: 50% 58%
 

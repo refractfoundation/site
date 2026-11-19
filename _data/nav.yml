@@ -9,6 +9,10 @@
   dropdown: true
 - label: Contact
   link: /contact
+- label: Get involved
+  link: /get-involved
+  button: true
 - label: Donate
   link: https://donate.refractfoundation.org
   button: true
+  style: primary

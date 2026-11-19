@@ -1,0 +1,58 @@
+---
+title: Get involved
+layout: default
+---
+{%- assign involvement = site.data.involvement -%}
+
+<section class="hero hero--people page-hero" style="--hero-height: 42vw" aria-labelledby="get-involved-title">
+  {% include picture.html photo="haven-west-midlands-2026-022" class="hero__image" alt="" eager=true position="40% 40%" %}
+  <div class="wrap">
+    <div class="hero__body">
+      <p class="hero__eyebrow">Get involved</p>
+      <h1 class="hero__title" id="get-involved-title">Bring Census to your school or council</h1>
+      <p class="hero__text">Census shows where young people's digital skills, confidence and online safety need support. Run it with us, or partner with us and fund our work.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="census-heading">
+  <div class="wrap">
+    <h2 id="census-heading" class="rule">For schools, trusts and councils</h2>
+    <p class="section__lede">Census is a youth-led survey of digital literacy. Each institution gets its own public report, and the results feed a regional picture. <a href="/our-work/census">Find out more about Census</a>.</p>
+    <div class="contact-list">
+      {%- for way in involvement.census %}
+      <div class="contact-card">
+        <h3>{{ way.name }}</h3>
+        <p>{{ way.description }}</p>
+        <a class="button" href="{{ way.href }}">{{ way.button }}</a>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" aria-labelledby="companies-heading">
+  <div class="wrap">
+    <h2 id="companies-heading" class="rule">For companies</h2>
+    <p class="section__lede">We are a youth-led initiative. Partners and funders help us keep programmes and research running.</p>
+    <div class="contact-list">
+      {%- for way in involvement.companies %}
+      <div class="contact-card">
+        <h3>{{ way.name }}</h3>
+        <p>{{ way.description }}</p>
+        <a class="button" href="{{ way.href }}">{{ way.button }}</a>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="partners-heading">
+  <div class="wrap">
+    <h2 id="partners-heading" class="rule">Our partners</h2>
+    <p class="section__lede">Schools, organisations and companies already working with us.</p>
+    {% include partner-cards.html ids=site.data.home.partners %}
+  </div>
+</section>
+
+{% include donate.html %}
