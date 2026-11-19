@@ -1,0 +1,25 @@
+---
+title: Census institutions
+layout: default
+permalink: /our-work/census/institutions
+---
+{%- assign institutions = site.data.census_institutions | sort: "name" -%}
+<div class="programme" style="--accent: var(--census)">
+  <section class="section" aria-labelledby="institutions-title">
+    <div class="wrap">
+      <p class="meta"><a href="/our-work/census">&larr; Census</a></p>
+      <h1 class="rule" id="institutions-title">Census institutions</h1>
+      <p class="section__lede">Schools and institutions that take part in Census, with every report we have published for them.</p>
+      <div class="institution-list">
+        {%- for institution in institutions %}
+        {%- assign latest = institution.reports | sort: "date" | last %}
+        <a class="institution-card" href="/our-work/census/institutions/{{ institution.slug }}">
+          <h2 class="institution-card__name">{{ institution.name }}</h2>
+          <p class="meta"><span>{{ institution.type }}</span>{% if institution.location %}<span>{{ institution.location }}</span>{% endif %}</p>
+          <p class="institution-card__latest">{{ institution.reports.size }} report{% if institution.reports.size != 1 %}s{% endif %}{% if latest %} &middot; latest {{ latest.year }}{% endif %}</p>
+        </a>
+        {%- endfor %}
+      </div>
+    </div>
+  </section>
+</div>

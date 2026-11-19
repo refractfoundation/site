@@ -1,0 +1,19 @@
+---
+layout: default
+---
+{%- assign institution = site.data.census_institutions | where: "slug", page.slug | first -%}
+<div class="programme" style="--accent: var(--census)">
+  <section class="section" aria-labelledby="institution-title">
+    <div class="wrap">
+      <p class="meta"><a href="/our-work/census/institutions">&larr; All Census institutions</a></p>
+      <h1 class="rule" id="institution-title">{{ institution.name }}</h1>
+      <p class="meta">
+        <span>{{ institution.type }}</span>
+        {%- if institution.location %}<span>{{ institution.location }}</span>{% endif %}
+      </p>
+      {%- if institution.intro %}<p class="section__lede">{{ institution.intro }}</p>{% endif %}
+      <h2 class="rule">Report history</h2>
+      {% include census-reports.html reports=institution.reports %}
+    </div>
+  </section>
+</div>
