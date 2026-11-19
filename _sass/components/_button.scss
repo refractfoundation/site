@@ -46,6 +46,16 @@
     }
   }
 
+  // White with accent text, for a secondary action beside a Carrot button on a dark background.
+  &--light {
+    background: var(--white);
+    color: var(--accent, var(--forest));
+
+    &:hover {
+      background: rgb(255 255 255 / 88%);
+    }
+  }
+
   &--dark {
     background: var(--brown);
 

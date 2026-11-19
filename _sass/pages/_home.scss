@@ -90,6 +90,7 @@
 
 // The Census band: the programme colour used boldly, photo filling the right half.
 .census-band {
+  --accent: var(--census);
   background: var(--census);
   color: var(--white);
 

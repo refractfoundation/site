@@ -8,6 +8,7 @@ logo: /assets/images/programmes/census/census-logo.svg
 logo_w: 500
 logo_h: 200
 cta: { label: Bring Census to your school, url: /contact }
+cta2: { label: Read the Census reports, url: /our-work/census/institutions }
 hero_text: Understanding digital skills, confidence, and online safety across the region
 hero:
   photo: campfire-birmingham-2026-062
@@ -31,6 +32,23 @@ hero:
       <li>{{ item }}</li>
       {%- endfor %}
     </ul>
+  </div>
+</section>
+
+<section class="section section--tint" aria-labelledby="reports-heading">
+  <div class="wrap band__inner">
+    <div class="stack">
+      <h2 id="reports-heading" class="rule">Census reports</h2>
+      <p class="section__lede">Every institution that takes part in Census has a public page with its full report history, so anyone can read the results.</p>
+      <ul class="report-links">
+        {%- assign institutions = site.data.census_institutions | sort: "name" %}
+        {%- for institution in institutions %}
+        {%- assign latest = institution.reports | sort: "date" | last %}
+        <li><a href="/our-work/census/institutions/{{ institution.slug }}">{{ institution.name }}</a> <span>latest report {{ latest.year }}</span></li>
+        {%- endfor %}
+      </ul>
+    </div>
+    <a class="button button--primary" href="/our-work/census/institutions">Browse all reports</a>
   </div>
 </section>
 
@@ -93,7 +111,8 @@ hero:
       <li class="pilot-stats__item"><span class="pilot-stats__value">{{ finding.value }}</span><span class="pilot-stats__text">{{ finding.text }}</span></li>
       {%- endfor %}
     </ul>
-    <p class="callout">Confidence varies by task, from 4.71 / 5 for using a smartphone to 3.28 / 5 for sending emails and attachments. Device access is uneven too: just two-thirds of students have a desktop computer outside school, and one in six have no laptop at all. The <a href="{{ census.pilot.report }}">full OSCA Census report</a> covers access, confidence, online safety and AI in detail.</p>
+    <p class="callout">Confidence varies by task, from 4.71 / 5 for using a smartphone to 3.28 / 5 for sending emails and attachments. Device access is uneven too: just two-thirds of students have a desktop computer outside school, and one in six have no laptop at all. The <a href="/our-work/census/institutions/osca/2025-26">full OSCA Census report</a> covers access, confidence, online safety and AI in detail.</p>
+    <div class="button-row"><a class="button button--primary" href="/our-work/census/institutions">See participating institutions and their reports</a></div>
   </div>
 </section>
 

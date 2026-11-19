@@ -1,0 +1,29 @@
+# Institutions that take part in Census, and their public report history.
+# Only add an institution once it has agreed to be listed publicly.
+#
+# To add one: add an entry here, add _institutions/<slug>.md (front matter only, see osca.md),
+# put report PDFs in assets/reports/census/ (lowercase slug filenames), then open a PR.
+#
+# Shape:
+#   slug:     url id, must match the _institutions file name
+#   name:     full institution name
+#   type:     e.g. Secondary school
+#   location: town or city (optional)
+#   intro:    one or two sentences (optional)
+#   reports:  newest first or any order (sorted by "date" on the page)
+#     year:      academic year, e.g. "2025/26"
+#     date:      publication date, YYYY-MM-DD
+#     pdf:       path from site root; URL-encode any spaces as %20
+#     students:  number surveyed (optional)
+#     years:     year groups surveyed (optional)
+#     dls:       Digital Literacy Score (optional)
+- slug: osca
+  name: Ormiston Sandwell Community Academy
+  type: Secondary school
+  intro: The first school to take part in Census, in our 2025-26 pilot.
+  reports:
+    - year: "2025/26"
+      date: 2026-07-14
+      pdf: /assets/reports/census/osca/osca-2025-26.pdf
+      students: 261
+      years: Years 7 to 9

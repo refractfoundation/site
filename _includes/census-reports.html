@@ -1,0 +1,22 @@
+{%- comment -%} Report history list. Pass: institution (an entry from census_institutions). {%- endcomment -%}
+{%- assign sorted = include.institution.reports | sort: "date" | reverse -%}
+<ul class="report-list">
+  {%- for report in sorted %}
+  {%- assign year_slug = report.year | replace: "/", "-" %}
+  <li class="report-list__item">
+    <div class="report-list__main">
+      <h3 class="report-list__year">{{ report.year }}</h3>
+      <p class="meta">
+        {%- if report.date %}<span>Published {{ report.date | date: "%B %Y" }}</span>{% endif %}
+        {%- if report.students %}<span>{{ report.students }} students</span>{% endif %}
+        {%- if report.years %}<span>{{ report.years }}</span>{% endif %}
+        {%- if report.dls %}<span>DLS {{ report.dls }}</span>{% endif %}
+      </p>
+    </div>
+    <div class="button-row">
+      {%- if report.online != false %}<a class="button button--primary" href="/our-work/census/institutions/{{ include.institution.slug }}/{{ year_slug }}">Read the report</a>{% endif %}
+      <a class="button button--dark" href="{{ report.pdf }}">Download PDF</a>
+    </div>
+  </li>
+  {%- endfor %}
+</ul>

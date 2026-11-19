@@ -1,0 +1,1180 @@
+{
+  "students": {
+    "n": 261,
+    "demographics": {
+      "year": {
+        "label": "Year group",
+        "n": 261,
+        "options": [
+          {
+            "label": "Year 7",
+            "count": 80
+          },
+          {
+            "label": "Year 8",
+            "count": 22
+          },
+          {
+            "label": "Year 9",
+            "count": 159
+          }
+        ]
+      },
+      "gender": {
+        "label": "Gender",
+        "n": 261,
+        "options": [
+          {
+            "label": "Male",
+            "count": 120
+          },
+          {
+            "label": "Female",
+            "count": 124
+          },
+          {
+            "label": "Non-binary",
+            "count": 5
+          },
+          {
+            "label": "Other",
+            "count": 3
+          },
+          {
+            "label": "Prefer not to say",
+            "count": 9
+          }
+        ]
+      },
+      "ethnicity": {
+        "label": "Ethnicity",
+        "n": 261,
+        "options": [
+          {
+            "label": "White",
+            "count": 99
+          },
+          {
+            "label": "Asian / Asian British",
+            "count": 85
+          },
+          {
+            "label": "Black / Black British",
+            "count": 29
+          },
+          {
+            "label": "Mixed / Multiple ethnic backgrounds",
+            "count": 23
+          },
+          {
+            "label": "Prefer not to say",
+            "count": 20
+          },
+          {
+            "label": "Other",
+            "count": 3
+          },
+          {
+            "label": "Arab",
+            "count": 2
+          }
+        ]
+      },
+      "sen": {
+        "label": "Special educational needs",
+        "n": 261,
+        "options": [
+          {
+            "label": "Yes",
+            "count": 15
+          },
+          {
+            "label": "No",
+            "count": 226
+          },
+          {
+            "label": "Prefer not to say",
+            "count": 20
+          }
+        ]
+      },
+      "financial_support": {
+        "label": "Receives financial support",
+        "n": 261,
+        "options": [
+          {
+            "label": "Yes",
+            "count": 47
+          },
+          {
+            "label": "No",
+            "count": 200
+          },
+          {
+            "label": "Prefer not to say",
+            "count": 14
+          }
+        ]
+      }
+    },
+    "access": {
+      "smartphone": {
+        "label": "Smartphone",
+        "n": 261,
+        "options": [
+          {
+            "label": "My own",
+            "count": 245
+          },
+          {
+            "label": "A family member's",
+            "count": 24
+          },
+          {
+            "label": "At a library/community centre",
+            "count": 2
+          },
+          {
+            "label": "No access",
+            "count": 11
+          }
+        ]
+      },
+      "tablet": {
+        "label": "Tablet",
+        "n": 261,
+        "options": [
+          {
+            "label": "My own",
+            "count": 151
+          },
+          {
+            "label": "A family member's",
+            "count": 65
+          },
+          {
+            "label": "At a library/community centre",
+            "count": 1
+          },
+          {
+            "label": "No access",
+            "count": 59
+          }
+        ]
+      },
+      "laptop": {
+        "label": "Laptop",
+        "n": 261,
+        "options": [
+          {
+            "label": "My own",
+            "count": 128
+          },
+          {
+            "label": "A family member's",
+            "count": 102
+          },
+          {
+            "label": "At a library/community centre",
+            "count": 8
+          },
+          {
+            "label": "No access",
+            "count": 42
+          }
+        ]
+      },
+      "computer": {
+        "label": "Desktop computer",
+        "n": 261,
+        "options": [
+          {
+            "label": "My own",
+            "count": 81
+          },
+          {
+            "label": "A family member's",
+            "count": 81
+          },
+          {
+            "label": "At a library/community centre",
+            "count": 19
+          },
+          {
+            "label": "No access",
+            "count": 96
+          }
+        ]
+      },
+      "tv": {
+        "label": "Smart TV",
+        "n": 261,
+        "options": [
+          {
+            "label": "My own",
+            "count": 184
+          },
+          {
+            "label": "A family member's",
+            "count": 98
+          },
+          {
+            "label": "At a library/community centre",
+            "count": 3
+          },
+          {
+            "label": "No access",
+            "count": 6
+          }
+        ]
+      },
+      "speaker": {
+        "label": "Smart speaker",
+        "n": 261,
+        "options": [
+          {
+            "label": "My own",
+            "count": 115
+          },
+          {
+            "label": "A family member's",
+            "count": 67
+          },
+          {
+            "label": "At a library/community centre",
+            "count": 2
+          },
+          {
+            "label": "No access",
+            "count": 94
+          }
+        ]
+      }
+    },
+    "internet": {
+      "label": "Where students access the internet",
+      "n": 261,
+      "options": [
+        {
+          "label": "At home",
+          "count": 256
+        },
+        {
+          "label": "At a family member's home",
+          "count": 118
+        },
+        {
+          "label": "At a library/community centre",
+          "count": 32
+        },
+        {
+          "label": "Other",
+          "count": 8
+        },
+        {
+          "label": "No access",
+          "count": 2
+        }
+      ]
+    },
+    "confidence": [
+      {
+        "key": "computer",
+        "label": "Computer use",
+        "average": 4.0,
+        "distribution": [
+          3,
+          14,
+          59,
+          88,
+          97
+        ]
+      },
+      {
+        "key": "smartphone",
+        "label": "Smartphone use",
+        "average": 4.66,
+        "distribution": [
+          2,
+          3,
+          14,
+          44,
+          198
+        ]
+      },
+      {
+        "key": "email",
+        "label": "Sending emails and attachments",
+        "average": 3.28,
+        "distribution": [
+          15,
+          43,
+          94,
+          71,
+          38
+        ]
+      },
+      {
+        "key": "search",
+        "label": "Searching for information",
+        "average": 4.15,
+        "distribution": [
+          5,
+          14,
+          36,
+          87,
+          119
+        ]
+      },
+      {
+        "key": "forms",
+        "label": "Using websites and forms",
+        "average": 3.86,
+        "distribution": [
+          2,
+          17,
+          73,
+          92,
+          77
+        ]
+      },
+      {
+        "key": "safety",
+        "label": "Online safety",
+        "average": 3.5,
+        "distribution": [
+          16,
+          26,
+          84,
+          82,
+          53
+        ]
+      },
+      {
+        "key": "passwords",
+        "label": "Maintaining passwords",
+        "average": 4.07,
+        "distribution": [
+          5,
+          12,
+          46,
+          94,
+          104
+        ]
+      },
+      {
+        "key": "privacy",
+        "label": "Privacy settings",
+        "average": 4.17,
+        "distribution": [
+          4,
+          8,
+          50,
+          76,
+          123
+        ]
+      },
+      {
+        "key": "communication",
+        "label": "Communication",
+        "average": 3.96,
+        "distribution": [
+          4,
+          18,
+          61,
+          80,
+          98
+        ]
+      },
+      {
+        "key": "ai",
+        "label": "AI use",
+        "average": 3.77,
+        "distribution": [
+          5,
+          18,
+          82,
+          82,
+          74
+        ]
+      }
+    ],
+    "safety": [
+      {
+        "label": "I can identify a scam email or message.",
+        "n": 261,
+        "options": [
+          {
+            "label": "Yes",
+            "count": 179
+          },
+          {
+            "label": "No",
+            "count": 7
+          },
+          {
+            "label": "Unsure",
+            "count": 75
+          }
+        ]
+      },
+      {
+        "label": "I know what to do if my account gets hacked.",
+        "n": 261,
+        "options": [
+          {
+            "label": "Yes",
+            "count": 157
+          },
+          {
+            "label": "No",
+            "count": 52
+          },
+          {
+            "label": "Unsure",
+            "count": 52
+          }
+        ]
+      },
+      {
+        "label": "I understand how to check if a website is trustworthy.",
+        "n": 261,
+        "options": [
+          {
+            "label": "Yes",
+            "count": 173
+          },
+          {
+            "label": "No",
+            "count": 27
+          },
+          {
+            "label": "Unsure",
+            "count": 61
+          }
+        ]
+      },
+      {
+        "label": "I have received a suspicious message or scam attempt before.",
+        "n": 261,
+        "options": [
+          {
+            "label": "Yes",
+            "count": 182
+          },
+          {
+            "label": "No",
+            "count": 50
+          },
+          {
+            "label": "Unsure",
+            "count": 29
+          }
+        ]
+      },
+      {
+        "label": "I have clicked on something online that later felt unsafe or suspicious.",
+        "n": 261,
+        "options": [
+          {
+            "label": "Yes",
+            "count": 93
+          },
+          {
+            "label": "No",
+            "count": 125
+          },
+          {
+            "label": "Unsure",
+            "count": 43
+          }
+        ]
+      },
+      {
+        "label": "I feel safe when using the internet.",
+        "n": 261,
+        "options": [
+          {
+            "label": "Yes",
+            "count": 196
+          },
+          {
+            "label": "No",
+            "count": 18
+          },
+          {
+            "label": "Unsure",
+            "count": 47
+          }
+        ]
+      }
+    ],
+    "learning": {
+      "learns": {
+        "label": "How students learn digital skills",
+        "n": 261,
+        "options": [
+          {
+            "label": "School lessons",
+            "count": 199
+          },
+          {
+            "label": "Self-taught (YouTube/online)",
+            "count": 131
+          },
+          {
+            "label": "Friends or family",
+            "count": 129
+          },
+          {
+            "label": "I have not really learned them formally",
+            "count": 15
+          },
+          {
+            "label": "Community workshops",
+            "count": 12
+          },
+          {
+            "label": "Other",
+            "count": 2
+          }
+        ]
+      },
+      "improve": {
+        "label": "How students think they could improve their digital skills",
+        "n": 261,
+        "options": [
+          {
+            "label": "Videos",
+            "count": 90
+          },
+          {
+            "label": "Short lessons in school",
+            "count": 90
+          },
+          {
+            "label": "I feel well supported already",
+            "count": 87
+          },
+          {
+            "label": "Step-by-step guides",
+            "count": 75
+          },
+          {
+            "label": "One-to-one help",
+            "count": 45
+          },
+          {
+            "label": "Workshops",
+            "count": 27
+          },
+          {
+            "label": "Other",
+            "count": 5
+          }
+        ]
+      },
+      "safety_lessons": {
+        "label": "Have you had internet safety lessons?",
+        "n": 261,
+        "options": [
+          {
+            "label": "Yes",
+            "count": 220
+          },
+          {
+            "label": "No",
+            "count": 15
+          },
+          {
+            "label": "Unsure",
+            "count": 26
+          }
+        ]
+      }
+    },
+    "ai": {
+      "used": {
+        "label": "Have you used AI tools before?",
+        "n": 261,
+        "options": [
+          {
+            "label": "Yes, regularly",
+            "count": 81
+          },
+          {
+            "label": "Yes, sometimes",
+            "count": 155
+          },
+          {
+            "label": "No",
+            "count": 20
+          },
+          {
+            "label": "Unsure",
+            "count": 5
+          }
+        ]
+      },
+      "uses": {
+        "label": "Ways students use AI",
+        "n": 261,
+        "options": [
+          {
+            "label": "Homework help",
+            "count": 159
+          },
+          {
+            "label": "Explaining topics",
+            "count": 116
+          },
+          {
+            "label": "Creative tasks",
+            "count": 105
+          },
+          {
+            "label": "Summarising information",
+            "count": 99
+          },
+          {
+            "label": "Writing support",
+            "count": 70
+          },
+          {
+            "label": "I do not use AI tools",
+            "count": 25
+          },
+          {
+            "label": "Other",
+            "count": 13
+          }
+        ]
+      },
+      "taught": {
+        "label": "Have you been taught how to use AI safely, effectively and responsibly?",
+        "n": 261,
+        "options": [
+          {
+            "label": "Yes",
+            "count": 165
+          },
+          {
+            "label": "No",
+            "count": 50
+          },
+          {
+            "label": "Unsure",
+            "count": 46
+          }
+        ]
+      },
+      "help_harm": {
+        "label": "Do you think AI tools help or make learning harder?",
+        "n": 261,
+        "options": [
+          {
+            "label": "Help more than they harm",
+            "count": 120
+          },
+          {
+            "label": "A mix of both",
+            "count": 104
+          },
+          {
+            "label": "Harm more than they help",
+            "count": 13
+          },
+          {
+            "label": "Unsure",
+            "count": 24
+          }
+        ]
+      }
+    }
+  },
+  "staff": {
+    "n": 16,
+    "access": {
+      "smartphone": {
+        "label": "Smartphone",
+        "n": 16,
+        "options": [
+          {
+            "label": "My own",
+            "count": 15
+          },
+          {
+            "label": "No access",
+            "count": 1
+          }
+        ]
+      },
+      "tablet": {
+        "label": "Tablet",
+        "n": 16,
+        "options": [
+          {
+            "label": "My own",
+            "count": 6
+          },
+          {
+            "label": "A family member's",
+            "count": 6
+          },
+          {
+            "label": "No access",
+            "count": 4
+          }
+        ]
+      },
+      "laptop": {
+        "label": "Laptop",
+        "n": 16,
+        "options": [
+          {
+            "label": "My own",
+            "count": 12
+          },
+          {
+            "label": "A family member's",
+            "count": 4
+          }
+        ]
+      },
+      "computer": {
+        "label": "Desktop computer",
+        "n": 16,
+        "options": [
+          {
+            "label": "My own",
+            "count": 3
+          },
+          {
+            "label": "A family member's",
+            "count": 3
+          },
+          {
+            "label": "At a library/community centre",
+            "count": 1
+          },
+          {
+            "label": "No access",
+            "count": 9
+          }
+        ]
+      },
+      "tv": {
+        "label": "Smart TV",
+        "n": 16,
+        "options": [
+          {
+            "label": "My own",
+            "count": 15
+          },
+          {
+            "label": "No access",
+            "count": 1
+          }
+        ]
+      },
+      "speaker": {
+        "label": "Smart speaker",
+        "n": 16,
+        "options": [
+          {
+            "label": "My own",
+            "count": 8
+          },
+          {
+            "label": "No access",
+            "count": 8
+          }
+        ]
+      }
+    },
+    "confidence": [
+      {
+        "key": "computer",
+        "label": "Computer use",
+        "average": 4.38,
+        "distribution": [
+          0,
+          1,
+          2,
+          3,
+          10
+        ]
+      },
+      {
+        "key": "work",
+        "label": "Digital tools for work",
+        "average": 4.25,
+        "distribution": [
+          0,
+          0,
+          3,
+          6,
+          7
+        ]
+      },
+      {
+        "key": "troubleshooting",
+        "label": "Troubleshooting",
+        "average": 3.25,
+        "distribution": [
+          2,
+          2,
+          5,
+          4,
+          3
+        ]
+      },
+      {
+        "key": "email",
+        "label": "Sending emails and attachments",
+        "average": 4.75,
+        "distribution": [
+          0,
+          0,
+          1,
+          2,
+          13
+        ]
+      },
+      {
+        "key": "search",
+        "label": "Searching for information",
+        "average": 4.75,
+        "distribution": [
+          0,
+          0,
+          0,
+          4,
+          12
+        ]
+      },
+      {
+        "key": "safety",
+        "label": "Online safety",
+        "average": 3.88,
+        "distribution": [
+          0,
+          1,
+          4,
+          7,
+          4
+        ]
+      },
+      {
+        "key": "passwords",
+        "label": "Maintaining passwords",
+        "average": 4.25,
+        "distribution": [
+          0,
+          0,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "key": "ai",
+        "label": "AI use",
+        "average": 3.44,
+        "distribution": [
+          2,
+          1,
+          6,
+          2,
+          5
+        ]
+      }
+    ],
+    "safety": [
+      {
+        "label": "I understand how to check if a website is trustworthy.",
+        "n": 16,
+        "options": [
+          {
+            "label": "Yes",
+            "count": 10
+          },
+          {
+            "label": "No",
+            "count": 1
+          },
+          {
+            "label": "Unsure",
+            "count": 5
+          }
+        ]
+      },
+      {
+        "label": "I have received a suspicious message or scam attempt before.",
+        "n": 16,
+        "options": [
+          {
+            "label": "Yes",
+            "count": 15
+          },
+          {
+            "label": "No",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "label": "I have clicked on something online that later felt unsafe or suspicious.",
+        "n": 16,
+        "options": [
+          {
+            "label": "Yes",
+            "count": 8
+          },
+          {
+            "label": "No",
+            "count": 6
+          },
+          {
+            "label": "Unsure",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "label": "I feel safe when using the internet.",
+        "n": 16,
+        "options": [
+          {
+            "label": "Yes",
+            "count": 12
+          },
+          {
+            "label": "No",
+            "count": 2
+          },
+          {
+            "label": "Unsure",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "label": "I feel confident supporting students with online safety issues.",
+        "n": 16,
+        "options": [
+          {
+            "label": "Yes",
+            "count": 12
+          },
+          {
+            "label": "Unsure",
+            "count": 4
+          }
+        ]
+      }
+    ],
+    "learning": {
+      "develops": {
+        "label": "How staff develop their digital skills",
+        "n": 16,
+        "options": [
+          {
+            "label": "Self-taught (YouTube/online)",
+            "count": 10
+          },
+          {
+            "label": "School CPD / training",
+            "count": 9
+          },
+          {
+            "label": "Colleagues",
+            "count": 5
+          },
+          {
+            "label": "External courses",
+            "count": 4
+          },
+          {
+            "label": "I have not received formal support",
+            "count": 3
+          }
+        ]
+      },
+      "improve": {
+        "label": "How staff think they could improve their digital skills",
+        "n": 16,
+        "options": [
+          {
+            "label": "Videos",
+            "count": 9
+          },
+          {
+            "label": "Step-by-step guides",
+            "count": 8
+          },
+          {
+            "label": "School CPD / training",
+            "count": 6
+          },
+          {
+            "label": "One-to-one help",
+            "count": 6
+          },
+          {
+            "label": "I feel well supported already",
+            "count": 4
+          }
+        ]
+      },
+      "sufficient_training": {
+        "label": "Have you had sufficient digital training?",
+        "n": 16,
+        "options": [
+          {
+            "label": "Yes",
+            "count": 7
+          },
+          {
+            "label": "No",
+            "count": 5
+          },
+          {
+            "label": "Unsure",
+            "count": 4
+          }
+        ]
+      }
+    },
+    "ai": {
+      "used": {
+        "label": "Have you used AI tools before?",
+        "n": 16,
+        "options": [
+          {
+            "label": "Yes, regularly",
+            "count": 7
+          },
+          {
+            "label": "Yes, sometimes",
+            "count": 7
+          },
+          {
+            "label": "No",
+            "count": 2
+          }
+        ]
+      },
+      "uses": {
+        "label": "Ways staff use AI",
+        "n": 16,
+        "options": [
+          {
+            "label": "Summarising information",
+            "count": 7
+          },
+          {
+            "label": "Creative tasks",
+            "count": 6
+          },
+          {
+            "label": "Explaining topics",
+            "count": 5
+          },
+          {
+            "label": "Lesson planning",
+            "count": 4
+          },
+          {
+            "label": "Writing support",
+            "count": 3
+          },
+          {
+            "label": "I do not use AI tools",
+            "count": 3
+          },
+          {
+            "label": "Other",
+            "count": 1
+          }
+        ]
+      },
+      "taught": {
+        "label": "Have you been taught how to use AI safely, effectively and responsibly?",
+        "n": 16,
+        "options": [
+          {
+            "label": "Yes",
+            "count": 1
+          },
+          {
+            "label": "No",
+            "count": 14
+          },
+          {
+            "label": "Unsure",
+            "count": 1
+          }
+        ]
+      },
+      "can_guide": {
+        "label": "Can you guide students on using AI?",
+        "n": 16,
+        "options": [
+          {
+            "label": "Yes",
+            "count": 5
+          },
+          {
+            "label": "No",
+            "count": 8
+          },
+          {
+            "label": "Unsure",
+            "count": 3
+          }
+        ]
+      },
+      "help_harm": {
+        "label": "Do you think AI tools help or make learning harder?",
+        "n": 16,
+        "options": [
+          {
+            "label": "Help more than they harm",
+            "count": 5
+          },
+          {
+            "label": "A mix of both",
+            "count": 9
+          },
+          {
+            "label": "Harm more than they help",
+            "count": 1
+          },
+          {
+            "label": "Unsure",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "students_confident": {
+      "label": "Do you think students are digitally confident?",
+      "n": 16,
+      "options": [
+        {
+          "label": "Yes",
+          "count": 5
+        },
+        {
+          "label": "No",
+          "count": 7
+        },
+        {
+          "label": "Unsure",
+          "count": 4
+        }
+      ]
+    }
+  }
+}
