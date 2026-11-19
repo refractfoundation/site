@@ -1,7 +1,7 @@
 ---
 title: "Haven West Midlands Is Coming"
 author: Oliver Potter
-cover: haven-west-midlands-2026-000
+cover: haven-west-midlands-2026-hero
 permalink: /news/haven-west-midlands-announcement
 ---
 

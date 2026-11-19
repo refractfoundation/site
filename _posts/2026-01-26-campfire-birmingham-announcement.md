@@ -1,7 +1,7 @@
 ---
 title: "Campfire Birmingham Is Coming"
 author: Oliver Potter
-cover: campfire-birmingham-2026-064
+cover: census-pilot-osca
 permalink: /news/campfire-birmingham-announcement
 ---
 
