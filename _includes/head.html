@@ -1,45 +1,18 @@
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   {% seo %}
-  <link rel="stylesheet" href="/scripts/bootstrap-dist/css/bootstrap.min.css" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     rel="stylesheet"
-    href="/assets/style.css?v={{ site.time | date: '%s' }}"
+    href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
   />
-  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
-  <script src="https://static.airtable.com/js/base/embed.js" defer></script>
-  <script src="/scripts/bootstrap-dist/js/bootstrap.min.js" defer></script>
+  <link rel="stylesheet" href="/assets/css/main.css?v={{ site.time | date: '%s' }}" />
+
+  <!-- Tawk.to chat widget -->
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var addAccessibleFrameName = function (iframe) {
-        if (!iframe || iframe.getAttribute("title")) return;
-        iframe.setAttribute("title", "Embedded content");
-      };
-
-      document.querySelectorAll("iframe").forEach(addAccessibleFrameName);
-
-      if (document.body) {
-        var observer = new MutationObserver(function (mutations) {
-          mutations.forEach(function (mutation) {
-            mutation.addedNodes.forEach(function (node) {
-              if (node.nodeType !== Node.ELEMENT_NODE) return;
-              if (node.tagName === "IFRAME") {
-                addAccessibleFrameName(node);
-              }
-              if (node.querySelectorAll) {
-                node.querySelectorAll("iframe").forEach(addAccessibleFrameName);
-              }
-            });
-          });
-        });
-
-        observer.observe(document.body, { childList: true, subtree: true });
-      }
-    });
-  </script>
-  <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
     var Tawk_API = Tawk_API || {},
       Tawk_LoadStart = new Date();
     (function () {
@@ -52,5 +25,4 @@
       s0.parentNode.insertBefore(s1, s0);
     })();
   </script>
-  <!--End of Tawk.to Script-->
 </head>

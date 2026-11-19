@@ -1,0 +1,31 @@
+// News posts.
+
+.post {
+  max-width: 900px;
+
+  &__back {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    color: var(--carrot-text);
+    font-weight: 700;
+    text-underline-offset: 3px;
+  }
+
+  .meta {
+    margin-top: 1rem;
+  }
+
+  &__cover {
+    margin: 2rem 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  // Images written in the post's Markdown.
+  .prose img {
+    width: 100%;
+    margin-block: 1.5rem;
+  }
+}

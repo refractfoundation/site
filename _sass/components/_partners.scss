@@ -1,0 +1,45 @@
+// Partner logos. As on the original site, each card takes its tint and border from the
+// partner's own colour (--partner, set from _data/partners.yml). Logos that are white or
+// designed for dark backgrounds sit on a dark tile (dark: true) or are inverted (invert: true).
+
+.partner-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 1rem;
+  margin-top: 2.4rem;
+}
+
+.partner-card {
+  display: grid;
+  place-items: center;
+  min-height: 120px;
+  padding: 1.25rem 1rem;
+  border: 1.5px solid color-mix(in srgb, var(--partner) 65%, rgb(0 66 37 / 14%));
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--partner) 5%, #fff);
+  text-decoration: none;
+  transition: background-color 0.2s, border-color 0.2s;
+
+  &:hover {
+    border-color: var(--partner);
+    background: color-mix(in srgb, var(--partner) 12%, #fff);
+  }
+
+  img {
+    width: auto;
+    max-width: 100%;
+    max-height: 60px;
+  }
+
+  &--dark {
+    background: #1b1b1f;
+
+    &:hover {
+      background: #26262c;
+    }
+  }
+
+  &__logo--invert {
+    filter: invert(1);
+  }
+}

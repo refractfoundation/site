@@ -1,8 +1,18 @@
-- link: /
-  label: Home
-- link: /about
-  label: About
-- link: /our-work
-  label: Our Work
-- link: /contact
-  label: Contact
+# Primary navigation. The "Our work" dropdown is built automatically from the
+# programmes and events collections, so it needs no entries here.
+- label: Home
+  link: /
+- label: About
+  link: /about
+- label: Our work
+  link: /our-work
+  dropdown: true
+- label: Contact
+  link: /contact
+- label: Get involved
+  link: /get-involved
+  button: true
+- label: Donate
+  link: https://donate.refractfoundation.org
+  button: true
+  style: primary

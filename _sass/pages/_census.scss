@@ -1,0 +1,203 @@
+// Census page. Everything accented follows --accent, which the programme layout sets to the
+// programme's colour, so these styles work for any programme.
+
+.gather-heading {
+  margin-top: 3rem;
+}
+
+.gather-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 2.5rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding: 0.9rem 0 0.9rem 1.1rem;
+    border-left: 5px solid var(--accent);
+    color: var(--accent);
+    font: 700 1.2rem var(--font);
+  }
+}
+
+@media (max-width: 700px) {
+  .gather-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Digital Literacy Score: the gauge and the four indices, on the accent band.
+.dls {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: clamp(24px, 5vw, 64px);
+  align-items: center;
+
+  &__gauge {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+
+    figcaption {
+      margin-top: 0.5rem;
+      color: rgb(255 255 255 / 92%);
+      font-size: 0.95rem;
+      text-align: center;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 2.6rem;
+  }
+
+  &__card {
+    display: grid;
+    gap: 0.25rem;
+    align-content: start;
+    padding: 1.2rem 1.3rem;
+    background: rgb(0 0 0 / 22%);
+
+    h3 {
+      font-size: 1.25rem;
+    }
+
+    p {
+      color: rgb(255 255 255 / 90%);
+      font-size: 0.96rem;
+    }
+  }
+
+  &__code {
+    color: var(--oak);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+  }
+}
+
+@media (max-width: 900px) {
+  .dls {
+    grid-template-columns: 1fr;
+
+    &__cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+// The survey, section by section.
+.survey {
+  margin-top: 2.2rem;
+  border-top: 3px solid var(--accent);
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 1rem 3rem;
+    padding: 1.6rem 0;
+    border-bottom: 1px solid var(--line);
+
+    h3 {
+      color: var(--accent);
+    }
+
+    p {
+      color: var(--brown-2);
+    }
+  }
+
+  &__section {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  &__feeds {
+    margin-top: 0.4rem;
+    color: var(--accent) !important;
+    font-weight: 700;
+  }
+
+  &__examples {
+    display: grid;
+    gap: 0.5rem;
+    margin: 0;
+    padding-left: 1.2rem;
+    align-content: start;
+  }
+}
+
+@media (max-width: 760px) {
+  .survey__row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.steps {
+  margin: 2.2rem 0 0;
+  padding: 0;
+  border-top: 3px solid var(--accent);
+  list-style: none;
+  counter-reset: step;
+
+  li {
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    gap: 0.3rem 1.5rem;
+    padding: 1.3rem 0;
+    border-bottom: 1px solid var(--line);
+    counter-increment: step;
+
+    &::before {
+      content: counter(step);
+      grid-row: 1 / 3;
+      color: var(--accent);
+      font: 700 2.8rem / 1 var(--font);
+    }
+
+    h3 {
+      color: var(--accent);
+      font-size: 1.3rem;
+    }
+
+    p {
+      max-width: 72ch;
+      color: var(--brown-2);
+    }
+  }
+}
+
+.receives {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 2.5rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding: 0.3rem 0 0.3rem 1.1rem;
+    border-left: 5px solid var(--accent);
+  }
+
+  b {
+    display: block;
+    color: var(--accent);
+    font: 700 1.25rem var(--font);
+  }
+
+  span {
+    color: var(--brown-2);
+  }
+}
+
+@media (max-width: 700px) {
+  .receives {
+    grid-template-columns: 1fr;
+  }
+}

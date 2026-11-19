@@ -1,0 +1,12 @@
+// 404 page.
+
+.not-found {
+  &__code {
+    margin: 0 0 0.4rem;
+    color: var(--carrot-text);
+    font-size: clamp(5rem, 18vw, 11rem);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+}

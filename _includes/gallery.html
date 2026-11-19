@@ -1,0 +1,20 @@
+{%- comment -%}
+  A photo gallery. Each photo links to its full-size file; lightbox.js turns the links into a viewer.
+  Parameters
+    photos    list of ids from _data/photos.yml
+    captions  true to show captions under the photos (event pages)
+{%- endcomment -%}
+<div class="gallery{% if include.captions %} gallery--captioned{% endif %}" data-gallery>
+  {%- for id in include.photos %}
+  {%- assign photo = site.data.photos[id] %}
+  {%- capture caption %}{% if photo.caption %}{% include caption.html text=photo.caption %}{% else %}{{ photo.alt | escape }}{% endif %}{% endcapture %}
+  <figure class="gallery__item">
+    <a class="gallery__link" href="{{ photo.file }}" aria-label="View larger: {{ photo.alt | escape }}" data-alt="{{ photo.alt | escape }}" data-caption="{{ caption | strip | escape }}">
+      {% include picture.html photo=id alt="" sizes="(max-width: 700px) 50vw, 25vw" %}
+    </a>
+    {%- if include.captions and photo.caption %}
+    <figcaption>{{ caption | strip }}</figcaption>
+    {%- endif %}
+  </figure>
+  {%- endfor %}
+</div>

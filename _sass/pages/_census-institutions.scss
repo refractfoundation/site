@@ -1,0 +1,256 @@
+// Census institutions directory and per-institution report history.
+
+.institution-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: clamp(1.2rem, 3vw, 2rem);
+  margin-top: 2rem;
+}
+
+.institution-card {
+  display: block;
+  padding: 1.4rem;
+  background: var(--white);
+  box-shadow: 0 0 0 2px var(--accent);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.2s;
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-3px);
+  }
+
+  &__name {
+    margin: 0 0 0.4rem;
+    font-size: 1.25rem;
+  }
+
+  &__latest {
+    margin: 0.8rem 0 0;
+    font-weight: 700;
+    color: var(--accent);
+  }
+}
+
+.report-list {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.2rem 1.4rem;
+    background: var(--white);
+    box-shadow: 0 0 0 2px var(--accent);
+  }
+
+  &__year {
+    margin: 0 0 0.3rem;
+    font-size: 1.3rem;
+  }
+}
+
+// ---- Full report page ----
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr));
+  gap: 2rem clamp(1.5rem, 4vw, 3rem);
+  margin-top: 1.8rem;
+}
+
+.chart {
+  margin: 0;
+
+  &__title {
+    margin-bottom: 0.7rem;
+    font-weight: 700;
+  }
+
+  &__n {
+    color: var(--brown-2);
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+}
+
+.bars {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__row {
+    display: grid;
+    grid-template-columns: minmax(7rem, 11rem) 1fr 5.5rem;
+    gap: 0.8rem;
+    align-items: center;
+    font-size: 0.95rem;
+  }
+
+  &__track {
+    height: 0.9rem;
+    background: rgb(0 0 0 / 8%);
+  }
+
+  &__fill {
+    display: block;
+    height: 100%;
+    background: var(--accent);
+  }
+
+  &__value {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+
+    small {
+      color: var(--brown-2);
+      font-weight: 400;
+    }
+  }
+
+  &--confidence {
+    margin-top: 1.6rem;
+  }
+}
+
+.agree-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr));
+  gap: 1.8rem clamp(1.5rem, 4vw, 3rem);
+  margin-top: 1.8rem;
+}
+
+.agree {
+  margin: 0;
+
+  &__title {
+    margin-bottom: 0.6rem;
+    font-weight: 700;
+  }
+
+  &__bar {
+    display: flex;
+    height: 1rem;
+    background: rgb(0 0 0 / 8%);
+  }
+
+  &__seg,
+  &__key {
+    &--yes { background: var(--accent); }
+    &--no { background: #b4452f; }
+    &--unsure { background: #9a9a9a; }
+  }
+
+  &__legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem 1.1rem;
+    margin: 0.6rem 0 0;
+    font-size: 0.92rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  &__key {
+    display: inline-block;
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-right: 0.4rem;
+  }
+}
+
+.themes {
+  display: grid;
+  gap: 0.6rem;
+  margin: 1rem 0 0;
+
+  &__row {
+    display: grid;
+    grid-template-columns: minmax(8rem, 14rem) 1fr;
+    gap: 1rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid rgb(0 0 0 / 15%);
+  }
+
+  dt { font-weight: 700; }
+  dd { margin: 0; }
+}
+
+.findings {
+  display: grid;
+  gap: 1.6rem;
+  margin: 1.5rem 0 0;
+  padding-left: 1.4rem;
+
+  h3 { margin: 0 0 0.4rem; }
+  p { margin: 0; }
+}
+
+@media (max-width: 640px) {
+  .bars__row {
+    grid-template-columns: 1fr auto;
+
+    .bars__track {
+      grid-column: 1 / -1;
+      order: 3;
+    }
+  }
+
+  .themes__row {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+}
+
+.report-links {
+  display: grid;
+  gap: 0.4rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+
+  span {
+    opacity: 0.85;
+    font-size: 0.95rem;
+  }
+}
+
+// ---- Charts inside news posts ----
+
+.post-visual {
+  --accent: var(--census);
+  margin-block: 1.8rem;
+}
+
+.post-chart-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.8rem;
+}
+
+.prose .post-visual {
+  ul.pilot-stats,
+  ul.bars {
+    padding: 0;
+    list-style: none;
+  }
+
+  li::marker {
+    content: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .pilot-stats.post-visual {
+    grid-template-columns: 1fr;
+  }
+}

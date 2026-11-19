@@ -1,7 +1,6 @@
 ---
 title: Terms and Conditions
 layout: page
-content_class: policy
 ---
 
 # Terms and Conditions
@@ -126,8 +125,3 @@ Any disputes arising from these Terms shall be subject to the jurisdiction of th
 
 [refractfoundation.org](https://refractfoundation.org)
 
----
-
-## Support Our Work
-
-{% include donate.html %}

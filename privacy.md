@@ -1,7 +1,6 @@
 ---
 title: Privacy Policy
 layout: page
-content_class: policy
 ---
 
 # Privacy Policy
@@ -238,8 +237,3 @@ The latest version will always be published on our website with the revised "Las
 
 [refractfoundation.org](https://refractfoundation.org)
 
----
-
-## Support Our Work
-
-{% include donate.html %}

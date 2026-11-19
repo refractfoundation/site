@@ -1,0 +1,67 @@
+// News on the home page and the news index: cards led by each post's cover photo.
+
+.news-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: clamp(1rem, 2vw, 1.6rem);
+  margin: 2.4rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.news-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  box-shadow: 0 0 0 2px var(--forest);
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  &__image {
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 14px));
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .meta {
+    font-size: 0.88rem;
+  }
+
+  &__body {
+    display: grid;
+    gap: 0.3rem;
+    padding: 0.8rem 1.1rem 1.1rem;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      // Makes the whole card the link.
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+      }
+
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+    }
+  }
+}

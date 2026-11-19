@@ -1,33 +1,23 @@
 ---
+layout: default
 ---
+<article class="section">
+  <div class="wrap post">
+    <a class="post__back" href="/news">&larr; Back to news</a>
+    <h1 class="rule">{{ page.title }}</h1>
+    <p class="meta">
+      <span>{{ page.author }}</span>
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+    </p>
+    {%- if page.cover %}
+    <div class="post__cover">
+      {% include picture.html photo=page.cover eager=true sizes="(max-width: 960px) 100vw, 900px" %}
+    </div>
+    {%- endif %}
+    <div class="prose">
+      {{ content }}
+    </div>
+  </div>
+</article>
 
-<!DOCTYPE html>
-<html lang="en">
-  {% include head.html %}
-  <body>
-    <a class="skip-link" href="#main-content">Skip to main content</a>
-    {% include header.html %}
-    <main id="main-content" class="content container my-5" tabindex="-1">
-      <a href="/news" class="post-back">&larr; Back to News</a>
-      <h1>{{ page.title }}</h1>
-      <div class="post-meta">
-        <span class="post-meta__author">{{ page.author }}</span>
-        <span class="post-meta__sep">&middot;</span>
-        <time class="post-meta__date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
-      </div>
-      {% if page.cover %}
-        <img src="{{ page.cover }}" alt="{{ page.title }}" class="post-cover w-100 rounded-4 mb-4" loading="eager" />
-      {% endif %}
-      <div class="post-body">
-        {{ content }}
-      </div>
-
-      <hr class="my-5">
-
-      <h2>Support Our Work</h2>
-
-      {% include donate.html %}
-    </main>
-    {% include footer.html %}
-  </body>
-</html>
+{% include donate.html %}

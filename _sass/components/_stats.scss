@@ -1,0 +1,113 @@
+// Figures. Three treatments:
+//   .research     outside research, large forest numerals over a short rule (home page)
+//   .pilot-stats  Census pilot results as solid tiles in the page's accent colour
+//   .facts        key facts about an event (attendees, volunteers, theme...)
+
+.research {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    padding-top: 1rem;
+    border-top: 3px solid var(--forest);
+  }
+
+  &__value {
+    display: block;
+    color: var(--forest);
+    font: 700 clamp(3rem, 5.6vw, 4.6rem) / 1 var(--font);
+    font-variant-numeric: tabular-nums;
+  }
+
+  &__text {
+    margin-top: 0.7rem;
+  }
+
+  &__source {
+    display: block;
+    margin-top: 0.7rem;
+    color: var(--brown-2);
+    font-size: 0.95rem;
+    font-style: normal;
+
+    a {
+      text-underline-offset: 3px;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .research {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pilot-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2.4rem 0 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    display: grid;
+    gap: 0.4rem;
+    align-content: start;
+    padding: 1.4rem 1.5rem 1.5rem;
+    background: var(--accent);
+    color: var(--white);
+  }
+
+  &__value {
+    font: 700 clamp(2.8rem, 5.4vw, 4.2rem) / 1 var(--font);
+    font-variant-numeric: tabular-nums;
+  }
+
+  &__text {
+    color: rgb(255 255 255 / 94%);
+    line-height: 1.35;
+  }
+}
+
+@media (max-width: 860px) {
+  .pilot-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .pilot-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 0;
+
+  &__item {
+    padding-top: 0.8rem;
+    border-top: 3px solid var(--forest);
+  }
+
+  dt {
+    color: var(--brown-2);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  dd {
+    margin: 0.3rem 0 0;
+    color: var(--forest);
+    font: 700 clamp(1.5rem, 3vw, 2.1rem) / 1.1 var(--font);
+  }
+}
