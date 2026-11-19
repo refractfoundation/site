@@ -3,22 +3,33 @@ title: Campfire Birmingham
 permalink: /our-work/campfire
 date: 2026-02-28
 venue: Ormiston Sandwell Community Academy
-summary: "Our first hackathon: six games shipped in twelve hours."
+summary: "Our first hackathon: 14 teenagers shipped six games in twelve hours around the theme “Beneath the surface”, with Cat-Fishing Frenzy taking first place."
 lede: Our first ever hackathon, as a Hack Club satellite event of the world’s biggest game jam, running in 200 cities at once.
 
 hero:
   photo: campfire-birmingham-2026-064
-  position: 50% 62%
-  height: 50vw
+  position: 50% 50%
+  height: 44vw
 
 # The event's Hack Club logo, shown in the hero and on the event cards.
 logo: { src: /assets/images/events/campfire-birmingham-2026/campfire-logo.svg, w: 912, h: 262, alt: Hack Club Campfire }
 
 facts:
-  - { label: Attendees, value: ~20 teenagers }
+  - { label: Attendees, value: 14 teenagers }
   - { label: Volunteers, value: "6" }
+  - { label: Age range, value: 13 to 18 }
   - { label: Build time, value: 12 hours }
   - { label: Theme, value: Beneath the surface }
+
+# The winning team, shown in the dark band. position picks which part of the photo stays in frame.
+spotlight:
+  eyebrow: 1st place · peer vote
+  title: Cat-Fishing Frenzy
+  text: Built by Ethan, Ryley and Sam, who took first place in the day’s peer vote.
+  photo: campfire-birmingham-2026-010
+  position: 0% 30%
+  landscape: true
+  button: { label: Play the game, url: "https://ethanhawksley.itch.io/cat-fishing-frenzy" }
 
 projects_heading: Six games in twelve hours
 projects:

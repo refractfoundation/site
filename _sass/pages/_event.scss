@@ -54,6 +54,12 @@
       object-fit: cover;
       object-position: 50% 20%;
     }
+
+    // For a landscape photo (e.g. a team): a squarer arch so more of the frame shows.
+    &--landscape {
+      max-width: 400px;
+      aspect-ratio: 1;
+    }
   }
 
   &__eyebrow {
