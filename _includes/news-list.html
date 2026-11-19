@@ -1,5 +1,5 @@
 {%- comment -%}
-  Latest news.
+  Latest news, as cards with each post's cover photo.
   Parameters
     limit    how many posts to show (default: all)
     heading  the heading level for each title, so the page's outline stays in order (default h3)
@@ -8,10 +8,16 @@
 {%- assign heading = include.heading | default: "h3" -%}
 <ul class="news-list">
   {%- for post in site.posts limit: limit %}
-  <li class="news-list__item">
-    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
-    <{{ heading }}><a href="{{ post.url }}">{{ post.title }}</a></{{ heading }}>
-    <span>{{ post.author }}</span>
+  <li class="news-card">
+    {%- if post.cover %}
+    <div class="news-card__image">
+      {% include picture.html photo=post.cover alt="" sizes="(max-width: 760px) 100vw, 50vw" %}
+    </div>
+    {%- endif %}
+    <div class="news-card__body">
+      <div class="meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time><span>{{ post.author }}</span></div>
+      <{{ heading }} class="news-card__title"><a href="{{ post.url }}">{{ post.title }}</a></{{ heading }}>
+    </div>
   </li>
   {%- endfor %}
 </ul>

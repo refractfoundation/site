@@ -87,7 +87,7 @@ campfire-birmingham-2026-062:
 campfire-birmingham-2026-064:
   file: "/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-064.jpg"
   w: 2400
-  h: 1600
+  h: 1061
   alt: "Everyone at Campfire Birmingham posing together in a classroom, with one attendee held horizontally in front"
   caption: "All attendees at Campfire Birmingham."
 campfire-birmingham-2026-065:
@@ -220,3 +220,13 @@ census-pilot-osca:
   w: 2000
   h: 1000
   alt: "The front of Ormiston Sandwell Community Academy under a cloudy sky"
+haven-west-midlands-2026-hero:
+  file: "/assets/images/events/haven-west-midlands-2026/haven-west-midlands-2026-hero.png"
+  w: 1822
+  h: 1291
+  alt: "Illustrated autumn woodland with orange leaves and a grassy clearing"
+campfire-birmingham-2026-artwork:
+  file: "/assets/images/events/campfire-birmingham-2026/campfire-birmingham-2026-artwork.png"
+  w: 842
+  h: 595
+  alt: "Illustrated blue sky with orange clouds above a strip of grass"

@@ -12,6 +12,9 @@ layout: default
   {% include picture.html photo=page.hero.photo class="hero__image" alt="" eager=true position=page.hero.position %}
   <div class="wrap">
     <div class="hero__body">
+      {%- if page.logo %}
+      <img class="hero__event-logo" src="{{ page.logo.src }}" alt="{{ page.logo.alt }}" width="{{ page.logo.w }}" height="{{ page.logo.h }}">
+      {%- endif %}
       <p class="hero__eyebrow">{% if is_past %}Event recap{% else %}Upcoming event{% endif %}</p>
       <h1 class="hero__title" id="event-title">{{ page.title }}</h1>
       <p class="hero__meta"><span>{{ page.date | date: "%A %-d %B %Y" }}</span><span>{{ page.venue }}</span></p>
@@ -42,8 +45,8 @@ layout: default
 <section class="spotlight on-dark" aria-labelledby="spotlight-heading">
   <div class="wrap">
     <div class="spotlight__panel">
-      <div class="spotlight__photo">
-        {% include picture.html photo=page.spotlight.photo sizes="340px" %}
+      <div class="spotlight__photo{% if page.spotlight.landscape %} spotlight__photo--landscape{% endif %}">
+        {% include picture.html photo=page.spotlight.photo sizes="340px" position=page.spotlight.position %}
       </div>
       <div>
         <p class="spotlight__eyebrow">{{ page.spotlight.eyebrow }}</p>

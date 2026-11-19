@@ -3,7 +3,7 @@ title: Haven West Midlands
 permalink: /our-work/haven
 date: 2026-11-14
 venue: University of Wolverhampton Science Park
-summary: Ten teenagers built a game from scratch around the theme “Bounce Back”.
+summary: "Our second Hack Club event: ten teenagers built six games around the theme “Bounce Back”, with Escape for your Life taking first place."
 lede: "Our second Hack Club event: a teen game jam where ten teenagers spent the day building a video game from scratch."
 
 # The page hero. height is a vw value chosen so this photo is cropped as little as possible.
@@ -12,10 +12,14 @@ hero:
   position: 50% 50%
   height: 44vw
 
+# The event's Hack Club logo, shown in the hero and on the event cards.
+logo: { src: /assets/images/events/haven-west-midlands-2026/haven-logo.png, w: 588, h: 379, alt: Hack Club Haven }
+
 facts:
   - { label: Attendees, value: 10 teenagers }
   - { label: Volunteers, value: "5" }
   - { label: Age range, value: 13 to 18 }
+  - { label: Build time, value: 12 hours }
   - { label: Theme, value: Bounce Back }
 
 # The winning project, shown in the dark band.

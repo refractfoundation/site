@@ -7,26 +7,54 @@ layout: default
 {%- assign upcoming = events | where_exp: "event", "event.date > site.time" -%}
 {%- assign past = events | where_exp: "event", "event.date <= site.time" -%}
 
-<section class="section" aria-labelledby="problem-heading">
-  <div class="wrap">
-    <h1 class="rule">Our work</h1>
-    <div class="prose">
-      <h2 id="problem-heading" class="rule">The problem</h2>
-      <p>Education systems are evolving, but not quickly enough to match the pace of technological change. Across schools, there are consistent and widening gaps in digital skills, confidence, and opportunity.</p>
-      <h3>Uneven digital literacy</h3>
-      <p>Students do not enter education with the same level of access or experience. Some have regular exposure to digital tools, coding, and structured learning outside the classroom. Others have minimal experience beyond basic device usage. This creates unequal starting points that are rarely addressed in a structured way.</p>
-      <h3>Limited applied learning</h3>
-      <p>Much of digital education remains theoretical. Students are often taught concepts without consistent opportunities to apply them in practical, real-world contexts. As a result, confidence in using technology does not always match knowledge of it.</p>
-      <h3>Unclear career pathways</h3>
-      <p>Many students have limited understanding of how digital careers actually work. Roles in software, cybersecurity, data, and technology are often poorly explained or inconsistently represented, making progression into these fields feel inaccessible or unclear.</p>
-      <h3>Lack of student-informed design</h3>
-      <p>Educational programmes are frequently designed without direct input from students. This can lead to interventions that do not reflect real classroom experiences, barriers, or motivations.</p>
-      <p>These challenges combine to create a system where opportunity is unevenly distributed, particularly in digital and technology-focused subjects. Our programmes exist to explore and address these challenges through small, practical interventions.</p>
+<section class="section our-work-intro">
+  <div class="wrap our-work-intro__grid">
+    <div class="our-work-intro__text">
+      <h1 class="rule">Our work</h1>
+      <p class="section__lede">Small, practical programmes that close the gaps in digital skills, confidence and opportunity, designed with the students they are for.</p>
+      <ul class="intro-stats">
+        <li class="intro-stats__item"><span class="intro-stats__value">4</span><span class="intro-stats__label">barriers we tackle</span></li>
+        <li class="intro-stats__item"><span class="intro-stats__value">{{ programmes.size }}</span><span class="intro-stats__label">{% if programmes.size == 1 %}live programme{% else %}live programmes{% endif %}</span></li>
+        <li class="intro-stats__item"><span class="intro-stats__value">{{ events.size }}</span><span class="intro-stats__label">{% if events.size == 1 %}event{% else %}events{% endif %} so far</span></li>
+      </ul>
+    </div>
+    <div class="our-work-intro__photo">
+      {% include picture.html photo="campfire-birmingham-2026-010" sizes="(max-width: 820px) 100vw, 45vw" eager=true %}
     </div>
   </div>
 </section>
 
-<section class="section section--tint" aria-labelledby="programmes-heading">
+<section class="section section--tint problem" aria-labelledby="problem-heading">
+  <div class="wrap">
+    <h2 id="problem-heading" class="rule">The problem</h2>
+    <p class="section__lede">Education systems are evolving, but not quickly enough to match the pace of technological change. Across schools, there are consistent and widening gaps in digital skills, confidence, and opportunity.</p>
+    <ol class="problem__list">
+      <li class="problem__card">
+        <span class="problem__number" aria-hidden="true">01</span>
+        <h3>Uneven digital literacy</h3>
+        <p>Students do not enter education with the same level of access or experience. Some have regular exposure to digital tools, coding, and structured learning outside the classroom. Others have minimal experience beyond basic device usage. This creates unequal starting points that are rarely addressed in a structured way.</p>
+      </li>
+      <li class="problem__card">
+        <span class="problem__number" aria-hidden="true">02</span>
+        <h3>Limited applied learning</h3>
+        <p>Much of digital education remains theoretical. Students are often taught concepts without consistent opportunities to apply them in practical, real-world contexts. As a result, confidence in using technology does not always match knowledge of it.</p>
+      </li>
+      <li class="problem__card">
+        <span class="problem__number" aria-hidden="true">03</span>
+        <h3>Unclear career pathways</h3>
+        <p>Many students have limited understanding of how digital careers actually work. Roles in software, cybersecurity, data, and technology are often poorly explained or inconsistently represented, making progression into these fields feel inaccessible or unclear.</p>
+      </li>
+      <li class="problem__card">
+        <span class="problem__number" aria-hidden="true">04</span>
+        <h3>Lack of student-informed design</h3>
+        <p>Educational programmes are frequently designed without direct input from students. This can lead to interventions that do not reflect real classroom experiences, barriers, or motivations.</p>
+      </li>
+    </ol>
+    <p class="problem__summary">These challenges combine to create a system where opportunity is unevenly distributed, particularly in digital and technology-focused subjects. Our programmes exist to explore and address these challenges through small, practical interventions.</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="programmes-heading">
   <div class="wrap">
     <h2 id="programmes-heading" class="rule">Current programmes</h2>
     <div class="programme-list">
@@ -37,7 +65,7 @@ layout: default
   </div>
 </section>
 
-<section class="section" aria-labelledby="events-heading">
+<section class="section section--tint" aria-labelledby="events-heading">
   <div class="wrap">
     {%- if upcoming.size > 0 %}
     <h2 class="rule">Upcoming events</h2>
@@ -54,10 +82,13 @@ layout: default
   </div>
 </section>
 
-<section class="section section--tint" aria-labelledby="news-heading">
+<section class="section" aria-labelledby="news-heading">
   <div class="wrap">
     <h2 id="news-heading" class="rule">Latest news</h2>
-    {% include news-list.html %}
+    {% include news-list.html limit=4 %}
+    <div class="button-row">
+      <a class="button" href="/news">All news {% include icon-arrow.html %}</a>
+    </div>
   </div>
 </section>
 
