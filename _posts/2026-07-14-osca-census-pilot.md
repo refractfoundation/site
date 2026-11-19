@@ -5,76 +5,74 @@ cover: census-pilot-osca
 permalink: /news/osca-census-pilot
 ---
 
-Today, we're pleased to publish the results of the first pilot of the Refract Digital Literacy Census, delivered in partnership with Ormiston Sandwell Community Academy.
+Today we're publishing the results of the first Refract Digital Literacy Census pilot, delivered with Ormiston Sandwell Community Academy (OSCA).
 
-As Refract's first Census pilot, this marks an important milestone in our mission to help schools better understand the digital experiences of their students. While digital literacy is increasingly recognised as an essential life skill, many schools have limited evidence about the barriers, opportunities and confidence levels within their own student population.
-
-The Census aims to change that by providing schools with meaningful, actionable insight into students' digital access, confidence, online safety and use of emerging technologies such as artificial intelligence.
+**261 students** in Years 7 to 9 and **16 members of staff** took part. Almost all of them have a smartphone, but a third of students have no desktop computer, only a third are confident sending an email with an attachment, and **90% already use AI tools**. Schools rarely have evidence like this about their own students, and Census exists to provide it.
 
 ## Why we created Census
 
-Digital literacy extends far beyond knowing how to use a computer. It includes accessing technology, communicating professionally, staying safe online, understanding artificial intelligence and having the confidence to use digital tools throughout education and employment.
+Digital literacy is more than knowing how to use a computer. It covers having access to technology, communicating professionally, staying safe online, understanding AI and feeling confident enough to use digital tools in education and work.
 
-Schools often make decisions about digital education based on observation and experience. Census provides another perspective by collecting anonymous student and staff feedback, allowing schools to identify strengths, understand challenges and make evidence-based decisions.
+Schools often decide how to teach digital skills based on observation and experience. Census adds another perspective: anonymous feedback from students and staff, so a school can see its strengths, understand its challenges and make decisions based on evidence.
 
 ## The pilot
 
-Our first pilot took place at Ormiston Sandwell Community Academy during the 2025/26 academic year.
+The pilot ran at OSCA during the 2025/26 academic year. Students answered questions on access to devices, confidence with everyday tasks, online safety, how they learn digital skills and how they use AI. Staff answered a shorter survey. The students' answers show a good spread of genders, ethnicities, SEN and pupil premium students.
 
-The survey collected responses from **261 students** across Years 7, 8 and 9, alongside feedback from members of staff. While this represents only one school, it demonstrates the value of collecting consistent evidence about digital literacy and provides the foundation for future benchmarking between schools.
+This is a single school, so these results describe OSCA, not schools in general. They do show what consistent evidence can tell a school, and they are the starting point for benchmarking between schools.
 
 ## Five key findings
 
 ### 1. Access to technology is strong, but inequalities remain
 
-Smartphone access was almost universal amongst participating students, demonstrating that most young people have a reliable means of accessing digital services.
+**96% of students have a smartphone**, so most young people can reach digital services. Devices that suit schoolwork are far less evenly spread:
 
-However, access to devices better suited to education was less consistent. Around **one in six students** reported having no access to a laptop, while over one in three lacked access to a desktop computer outside school.
+- **16%** (about one in six) have no access to a laptop, and almost half of those who do share one with their family
+- **37%** have no desktop computer
+- **23%** have no tablet
 
-This highlights an important point: internet access alone does not guarantee digital opportunity.
+Internet access alone does not guarantee digital opportunity. A phone is not a substitute for a laptop when you are writing coursework or learning to code.
 
-### 2. Students are confident with everyday technology, but less prepared for professional digital environments
+### 2. Students are confident with everyday technology, less so with professional skills
 
-Students reported high confidence using smartphones and general computer technology.
+Students rated their confidence out of 5. Smartphones scored highest (**4.66**), with passwords (4.07) and searching for information (4.15) close behind. Sending emails with attachments scored lowest (**3.28**), followed by online safety (3.50) and using AI (3.77).
 
-However, confidence dropped noticeably when carrying out workplace-focused tasks such as sending emails with attachments. These are skills that become increasingly important in further education and employment, suggesting schools have an important role in developing workplace-ready digital confidence.
+Email and file handling are the skills students will need most in further education and work. Schools are well placed to teach them.
 
-### 3. Cybersecurity awareness is encouraging, but practical resilience requires further development
+### 3. Cybersecurity awareness is encouraging, but practical resilience needs work
 
-Most students felt able to identify scams and reported feeling safe online.
+**69%** of students said they can identify a scam message, and **75%** feel safe online. But:
 
-However, a significant minority were unsure how to respond if an online account became compromised or how to determine whether a website could be trusted. Many students also reported having previously encountered scams or suspicious online content.
+- **40%** said they don't know, or are unsure, what to do if an account is hacked
+- **34%** don't know, or are unsure, how to check whether a website is trustworthy
+- **70%** have already received a scam or suspicious message, and **36%** have clicked on something that later felt unsafe
 
-Rather than focusing solely on awareness, cybersecurity education should increasingly emphasise practical decision-making and real-world scenarios.
+Awareness is a good start. Students now need to practise real decisions in realistic scenarios.
 
-### 4. Artificial intelligence has become part of everyday learning
+### 4. AI is already part of everyday learning
 
-AI is already part of everyday education for many young people.
+**90% of students have used AI tools**, and 31% use them regularly. The most common use is homework help (61% of students), followed by explaining topics, creative tasks and summarising information. Opinion is split on whether it helps: **46%** think AI helps learning more than it harms it, **40%** think it's a mix of both, and 5% think it harms more than it helps.
 
-The overwhelming majority of students reported using AI tools to support homework, explain difficult topics and summarise information. Most also believed AI benefits learning more than it harms it.
+**63%** of students have been taught how to use AI safely and responsibly. That leaves more than a third who haven't. Schools have a chance to teach responsible, ethical use rather than discourage it.
 
-As AI continues to develop, schools have an opportunity to teach students how to use these tools responsibly, ethically and effectively rather than discouraging their adoption.
+### 5. Students want practical digital skills teaching
 
-### 5. Students value practical digital skills education
+School is the main place students learn digital skills (**76%**), followed by self-teaching online (50%) and family and friends (49%). Asked what would help, they asked for videos, short lessons in school, step-by-step guides and one-to-one help. In their own words, they wanted more help with everyday tasks, cybersecurity, email and workplace technology, rather than more theory.
 
-When asked how schools could better support them, students consistently requested practical learning opportunities rather than additional theory.
+## What staff told us
 
-Many wanted more help with everyday digital tasks, cybersecurity, email communication and workplace technology, reinforcing the importance of hands-on digital literacy education.
+Sixteen members of staff from a range of departments responded. It's a small sample, so we only look at the group as a whole, but one result stands out. **Only 1 of 16** has been taught how to use AI safely and responsibly, and just **5 of 16** feel able to guide students in using it. Students are already using AI, and staff are looking for the training and guidance to help them.
 
 ## Looking ahead
 
-This report represents the beginning of Census, not the end.
+This report is the beginning of Census, not the end. As more schools take part, we'll be able to benchmark anonymised results, spot regional and national trends, measure the impact of interventions and build a clearer picture of digital literacy across education.
 
-As more schools participate, we'll be able to benchmark anonymised results, identify regional and national trends, measure the impact of interventions and build a clearer picture of digital literacy across the education sector.
-
-Ultimately, our goal is simple: to ensure every young person has the knowledge, confidence and opportunities needed to thrive in an increasingly digital society.
+Our goal is simple: every young person should have the knowledge, confidence and opportunities to thrive in a digital society.
 
 ## Read the full report
 
-The full pilot report, including detailed analysis, visualisations and strategic recommendations, is available below.
+The full report includes every chart, the staff survey, students' free-text themes and our recommendations. You can [read it online](/our-work/census/institutions/osca/2025-26) or [download the PDF](/assets/reports/census/osca/osca-2025-26.pdf). Every institution's report history is on the [Census institutions page](/our-work/census/institutions).
 
-We're incredibly grateful to Ormiston Sandwell Community Academy for supporting this pilot and helping us shape the future of Census.
+We're grateful to OSCA's leadership team and computing department for supporting this pilot and helping shape the future of Census.
 
-If you're a headteacher, trust leader or computing curriculum lead interested in running  Census at your school, we'd love to hear from you.
-
-[Read the full report online >](/our-work/census/institutions/osca/2025-26) or [download the PDF >](/assets/reports/census/osca/osca-2025-26.pdf)
+If you're a headteacher, trust leader or computing lead and want to run Census at your school, we'd love to hear from you. [Get in touch](/contact).
