@@ -47,7 +47,7 @@
         </li>
           {%- elsif item.button %}
         <li class="nav__item--cta">
-          <a class="button button--primary" href="{{ item.link }}">{{ item.label }}</a>
+          <a class="button{% if item.style %} button--{{ item.style }}{% endif %}" href="{{ item.link }}">{{ item.label }}</a>
         </li>
           {%- else %}
         <li>
