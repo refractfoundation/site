@@ -97,7 +97,9 @@ School is the main place students learn digital skills (**76%**), followed by se
 
 ## What staff told us
 
-Sixteen members of staff from a range of departments responded. It's a small sample, so we only look at the group as a whole, but one result stands out. **Only 1 of 16** has been taught how to use AI safely and responsibly, and just **5 of 16** feel able to guide students in using it. <div class="post-visual post-chart-grid">
+Sixteen members of staff from a range of departments responded. It's a small sample, so we only look at the group as a whole, but one result stands out. **Only 1 of 16** has been taught how to use AI safely and responsibly, and just **5 of 16** feel able to guide students in using it.
+
+<div class="post-visual post-chart-grid">
   {% include census-bars.html q=staff.ai.taught %}
   {% include census-bars.html q=staff.ai.can_guide %}
 </div>
