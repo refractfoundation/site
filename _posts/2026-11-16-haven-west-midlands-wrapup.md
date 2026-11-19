@@ -13,7 +13,7 @@ By the end of the 12 hours, the room had produced six finished, playable games, 
 
 ## How the day worked
 
-Haven is a teen game jam run by [Hack Club](https://hackclub.com), the global nonprofit network of teen coders. Local events like ours are organised by volunteers, and ours was run by a team of five: [myself](https://www.linkedin.com/in/opott/), [Preston](https://www.linkedin.com/in/preston-saunders-1990b83a6/) and [Shaven](https://www.linkedin.com/in/shavenwickramanayaka/) as organisers, with Owhonda and Dipesh from [Cyber Heroez CIC](https://cyberheroez.co.uk/) mentoring on the day.
+Haven is a teen game jam run by [Hack Club](https://hackclub.com), the global nonprofit network of teen coders. Local events like ours are organised by volunteers, and ours was run by a team of five: [myself](https://www.linkedin.com/in/opott/), [Preston](https://www.linkedin.com/in/preston-saunders-1990b83a6/) and [Shaven](https://www.linkedin.com/in/shavenwickramanayaka/) as organisers, with [Owhonda](https://www.linkedin.com/in/owhondanwokekoro/) and [Dipesh](https://www.linkedin.com/in/dipeshthapa07/) from [Cyber Heroez CIC](https://cyberheroez.co.uk/) mentoring on the day.
 
 Attendees worked alone or in small teams, supported by workshops, lightning talks and hands-on help from the volunteers. The day finished with each team presenting their game to the room, followed by a peer vote.
 
@@ -40,7 +40,7 @@ Haven only happened because of the people and organisations behind it:
 
 - The organising team: [Oliver](https://www.linkedin.com/in/opott/), [Shaven](https://www.linkedin.com/in/shavenwickramanayaka/) and [Preston](https://www.linkedin.com/in/preston-saunders-1990b83a6/)
 - [Hack Club](https://hackclub.com/), for creating Haven and supporting local organisers, and in particular [Aly](https://www.linkedin.com/in/aly-kotb/), an event manager there who was incredibly helpful throughout
-- [Cyber Heroez CIC](https://cyberheroez.co.uk/), whose mentors Owhonda and Dipesh gave their day to the attendees
+- [Cyber Heroez CIC](https://cyberheroez.co.uk/), whose mentors [Owhonda](https://www.linkedin.com/in/owhondanwokekoro/) and [Dipesh](https://www.linkedin.com/in/dipeshthapa07/) gave their day to the attendees
 - [RedOps](https://redops.co.uk), [CodeCrafters](https://codecrafters.io) and [gen.xyz](https://gen.xyz), for the free food and prizes
 - The events team at the University of Wolverhampton Science Park, for hosting us and looking after us on the day
 - Every attendee, for turning up on a Saturday and shipping a game
