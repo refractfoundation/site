@@ -223,3 +223,34 @@
     font-size: 0.95rem;
   }
 }
+
+// ---- Charts inside news posts ----
+
+.post-visual {
+  --accent: var(--census);
+  margin-block: 1.8rem;
+}
+
+.post-chart-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.8rem;
+}
+
+.prose .post-visual {
+  ul.pilot-stats,
+  ul.bars {
+    padding: 0;
+    list-style: none;
+  }
+
+  li::marker {
+    content: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .pilot-stats.post-visual {
+    grid-template-columns: 1fr;
+  }
+}
