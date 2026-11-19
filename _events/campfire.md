@@ -11,6 +11,9 @@ hero:
   position: 50% 62%
   height: 50vw
 
+# The event's Hack Club logo, shown in the hero and on the event cards.
+logo: { src: /assets/images/events/campfire-birmingham-2026/campfire-logo.svg, w: 912, h: 262, alt: Hack Club Campfire }
+
 facts:
   - { label: Attendees, value: ~20 teenagers }
   - { label: Volunteers, value: "6" }

@@ -60,6 +60,19 @@
     font-size: 1.8rem;
   }
 
+  // The badge on the left, the event's logo on the right.
+  &__top {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: auto;
+    height: 48px;
+  }
+
   .badge {
     justify-self: start;
   }

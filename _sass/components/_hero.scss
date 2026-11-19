@@ -122,6 +122,20 @@
     height: auto;
   }
 
+  // Event heroes show the event's own Hack Club logo. On wide screens it sits at the bottom
+  // right, over the dark part of the gradient, so it stays clear of the faces in the photo.
+  &__event-logo {
+    width: auto;
+    height: clamp(56px, 7vw, 88px);
+
+    @media (min-width: 900px) {
+      position: absolute;
+      right: 0;
+      bottom: clamp(2rem, 4vw, 3.5rem);
+      height: clamp(80px, 9vw, 120px);
+    }
+  }
+
   &__text--large {
     font-family: var(--font);
     font-size: clamp(1.3rem, 2.4vw, 1.8rem);

@@ -12,6 +12,9 @@ hero:
   position: 50% 50%
   height: 44vw
 
+# The event's Hack Club logo, shown in the hero and on the event cards.
+logo: { src: /assets/images/events/haven-west-midlands-2026/haven-logo.png, w: 588, h: 379, alt: Hack Club Haven }
+
 facts:
   - { label: Attendees, value: 10 teenagers }
   - { label: Volunteers, value: "5" }
