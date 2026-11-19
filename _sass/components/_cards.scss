@@ -48,7 +48,8 @@
 
     img {
       width: 100%;
-      aspect-ratio: 3 / 2;
+      // Event hero photos are wide group shots (about 2.26:1). A 3:2 box cropped their sides.
+      aspect-ratio: 9 / 4;
       object-fit: cover;
       transition: transform 0.4s;
     }
