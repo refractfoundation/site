@@ -24,6 +24,6 @@
   reports:
     - year: "2025/26"
       date: 2026-07-14
-      pdf: /assets/OSCA%20Student%20Census%20Report%202526.pdf
+      pdf: /assets/reports/census/osca/osca-2025-26.pdf
       students: 261
       years: Years 7 to 9

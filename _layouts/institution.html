@@ -13,7 +13,7 @@ layout: default
       </p>
       {%- if institution.intro %}<p class="section__lede">{{ institution.intro }}</p>{% endif %}
       <h2 class="rule">Report history</h2>
-      {% include census-reports.html reports=institution.reports %}
+      {% include census-reports.html institution=institution %}
     </div>
   </section>
 </div>

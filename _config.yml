@@ -19,6 +19,8 @@ collections:
     output: true
   programmes:
     output: true
+  census_reports:
+    output: true
   institutions:
     output: true
     permalink: /our-work/census/institutions/:name
@@ -28,6 +30,8 @@ defaults:
     values: { layout: event }
   - scope: { path: "", type: programmes }
     values: { layout: programme }
+  - scope: { path: "", type: census_reports }
+    values: { layout: census-report }
   - scope: { path: "", type: institutions }
     values: { layout: institution }
   - scope: { path: "", type: posts }

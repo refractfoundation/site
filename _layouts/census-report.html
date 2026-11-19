@@ -1,0 +1,144 @@
+---
+layout: default
+---
+{%- assign institution = site.data.census_institutions | where: "slug", page.institution | first -%}
+{%- assign data = site.data.census_reports[page.institution][page.year] -%}
+{%- assign r = data.results.students -%}
+{%- assign report = data.report -%}
+{%- assign staff = data.results.staff -%}
+{%- assign year_label = page.year | replace: "-", "/" -%}
+<div class="programme report" style="--accent: var(--census)">
+  <section class="section" aria-labelledby="report-title">
+    <div class="wrap">
+      <p class="meta"><a href="/our-work/census/institutions/{{ institution.slug }}">&larr; {{ institution.name }}</a></p>
+      <h1 class="rule" id="report-title">{{ institution.name }}<br>Census report {{ year_label }}</h1>
+      <p class="meta">
+        <span>Published {{ report.published | date: "%-d %B %Y" }}</span>
+        <span>{{ r.n }} students{% if report.cohort %}, {{ report.cohort }}{% endif %}</span>
+        {%- if staff %}<span>{{ staff.n }} staff</span>{% endif %}
+      </p>
+      <div class="button-row"><a class="button button--primary" href="{{ report.pdf }}">Download the PDF</a></div>
+      {%- if report.highlights %}
+      <ul class="pilot-stats">
+        {%- for h in report.highlights %}
+        <li class="pilot-stats__item"><span class="pilot-stats__value">{{ h.value }}</span><span class="pilot-stats__text">{{ h.text }}</span></li>
+        {%- endfor %}
+      </ul>
+      {%- endif %}
+    </div>
+  </section>
+
+  <section class="section section--tint" aria-labelledby="demo-heading">
+    <div class="wrap">
+      <h2 id="demo-heading" class="rule">Who took part</h2>
+      <div class="chart-grid">
+        {%- for pair in r.demographics %}{% assign q = pair[1] %}{% include census-bars.html q=q %}{% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="access-heading">
+    <div class="wrap">
+      <h2 id="access-heading" class="rule">Access</h2>
+      {%- if report.insights.access %}<p class="section__lede">{{ report.insights.access }}</p>{% endif %}
+      <div class="chart-grid">
+        {%- for pair in r.access %}{% assign q = pair[1] %}{% include census-bars.html q=q %}{% endfor %}
+        {% include census-bars.html q=r.internet %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint" aria-labelledby="conf-heading">
+    <div class="wrap">
+      <h2 id="conf-heading" class="rule">Confidence</h2>
+      <p class="section__lede">Average self-rated confidence, from 1 (not confident) to 5 (very confident).</p>
+      {% include census-confidence.html items=r.confidence %}
+      {%- if report.insights.confidence %}<p class="callout">{{ report.insights.confidence }}</p>{% endif %}
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="safety-heading">
+    <div class="wrap">
+      <h2 id="safety-heading" class="rule">Online safety</h2>
+      {% include census-agree.html questions=r.safety %}
+    </div>
+  </section>
+
+  <section class="section section--tint" aria-labelledby="learning-heading">
+    <div class="wrap">
+      <h2 id="learning-heading" class="rule">Learning digital skills</h2>
+      {%- if report.insights.learning %}<p class="section__lede">{{ report.insights.learning }}</p>{% endif %}
+      <div class="chart-grid">
+        {% include census-bars.html q=r.learning.learns %}
+        {% include census-bars.html q=r.learning.improve %}
+        {% include census-bars.html q=r.learning.safety_lessons %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="ai-heading">
+    <div class="wrap">
+      <h2 id="ai-heading" class="rule">Artificial intelligence</h2>
+      <div class="chart-grid">
+        {% include census-bars.html q=r.ai.used %}
+        {% include census-bars.html q=r.ai.uses %}
+        {% include census-bars.html q=r.ai.taught %}
+        {% include census-bars.html q=r.ai.help_harm %}
+      </div>
+      {%- if report.insights.ai %}<p class="callout">{{ report.insights.ai }}</p>{% endif %}
+    </div>
+  </section>
+
+  {%- if report.free_response %}
+  <section class="section section--tint" aria-labelledby="free-heading">
+    <div class="wrap">
+      <h2 id="free-heading" class="rule">In students' words</h2>
+      {%- for fr in report.free_response %}
+      <h3>{{ fr.question }}</h3>
+      <dl class="themes">
+        {%- for t in fr.themes %}<div class="themes__row"><dt>{{ t.theme }}</dt><dd>{{ t.text }}</dd></div>{% endfor %}
+      </dl>
+      <p class="callout">{{ fr.takeaway }}</p>
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endif %}
+
+  {%- if staff %}
+  <section class="section" aria-labelledby="staff-heading">
+    <div class="wrap">
+      <h2 id="staff-heading" class="rule">Staff survey</h2>
+      <p class="section__lede">{{ staff.n }} members of staff responded. {{ report.staff_note }}</p>
+      <h3>Confidence</h3>
+      {% include census-confidence.html items=staff.confidence %}
+      <h3>Online safety</h3>
+      {% include census-agree.html questions=staff.safety %}
+      <h3>Training and AI</h3>
+      <div class="chart-grid">
+        {% include census-bars.html q=staff.learning.sufficient_training %}
+        {% include census-bars.html q=staff.ai.used %}
+        {% include census-bars.html q=staff.ai.taught %}
+        {% include census-bars.html q=staff.ai.can_guide %}
+        {% include census-bars.html q=staff.ai.help_harm %}
+        {% include census-bars.html q=staff.students_confident %}
+      </div>
+    </div>
+  </section>
+  {%- endif %}
+
+  <section class="section section--tint" aria-labelledby="findings-heading">
+    <div class="wrap">
+      <h2 id="findings-heading" class="rule">Key findings</h2>
+      <ol class="findings">
+        {%- for f in report.findings %}<li><h3>{{ f.title }}</h3><p>{{ f.text }}</p></li>{% endfor %}
+      </ol>
+      <h2 class="rule rule--spaced">Recommendations</h2>
+      <ul class="prose">
+        {%- for rec in report.recommendations %}<li>{{ rec }}</li>{% endfor %}
+      </ul>
+      <div class="button-row"><a class="button button--primary" href="{{ report.pdf }}">Download the PDF</a></div>
+    </div>
+  </section>
+</div>
+
+{% include donate.html %}

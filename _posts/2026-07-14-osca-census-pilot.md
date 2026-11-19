@@ -77,4 +77,4 @@ We're incredibly grateful to Ormiston Sandwell Community Academy for supporting 
 
 If you're a headteacher, trust leader or computing curriculum lead interested in running  Census at your school, we'd love to hear from you.
 
-[Read the full report >](<../assets/OSCA Student Census Report 2526.pdf>)
+[Read the full report online >](/our-work/census/institutions/osca/2025-26) or [download the PDF >](/assets/reports/census/osca/osca-2025-26.pdf)

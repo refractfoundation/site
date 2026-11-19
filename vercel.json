@@ -13,6 +13,16 @@
       "permanent": true
     },
     {
+      "source": "/assets/OSCA%20Student%20Census%20Report%202526.pdf",
+      "destination": "/assets/reports/census/osca/osca-2025-26.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/assets/OSCA Student Census Report 2526.pdf",
+      "destination": "/assets/reports/census/osca/osca-2025-26.pdf",
+      "permanent": true
+    },
+    {
       "source": "/our-work/dlc",
       "destination": "/our-work/census",
       "permanent": true
