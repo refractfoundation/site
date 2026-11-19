@@ -40,6 +40,7 @@
 
   &:hover {
     transform: translateY(-3px);
+    box-shadow: 0 0 0 2px var(--forest), 0 16px 26px -18px rgb(0 0 0 / 50%);
   }
 
   &__image {
@@ -47,7 +48,14 @@
 
     img {
       width: 100%;
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
+      transition: transform 0.4s;
     }
+  }
+
+  &:hover &__image img {
+    transform: scale(1.03);
   }
 
   &__body {
@@ -253,11 +261,21 @@
     display: inline-flex;
     gap: 0.5rem;
     align-items: center;
+    min-height: 44px;
     font-weight: 700;
 
     svg {
       width: 18px;
       height: 18px;
+      transition: transform 0.2s;
     }
+  }
+
+  &:hover &__more svg {
+    transform: translateX(4px);
+  }
+
+  &:hover {
+    box-shadow: 0 14px 24px -16px rgb(0 0 0 / 45%);
   }
 }
