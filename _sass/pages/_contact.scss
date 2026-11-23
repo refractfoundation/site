@@ -1,0 +1,31 @@
+// Contact page.
+
+.contact-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+  margin-top: 2.4rem;
+}
+
+.contact-card {
+  display: grid;
+  gap: 0.8rem;
+  align-content: start;
+  padding: 1.6rem;
+  background: var(--white);
+  box-shadow: 0 0 0 2px var(--forest);
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  &__detail {
+    color: var(--forest);
+    font-weight: 700;
+  }
+
+  .button {
+    justify-self: start;
+    margin-top: 0.4rem;
+  }
+}

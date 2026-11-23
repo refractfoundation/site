@@ -1,0 +1,21 @@
+{%- comment -%}
+  Partner logo cards. Parameter: ids  a list of partner ids from _data/partners.yml
+{%- endcomment -%}
+<div class="partner-list">
+  {%- for id in include.ids %}
+  {%- assign partner = site.data.partners[id] %}
+  <a class="partner-card{% if partner.dark %} partner-card--dark{% endif %}" href="{{ partner.href }}" style="--partner: {{ partner.colour }}">
+    {%- if partner.logo %}
+      {%- assign extension = partner.logo | split: "." | last %}
+      {%- if partner.invert %}{% assign logo_class = "partner-card__logo--invert" %}{% else %}{% assign logo_class = nil %}{% endif %}
+      {%- if extension == "svg" %}
+    <img{% if logo_class %} class="{{ logo_class }}"{% endif %} src="{{ partner.logo }}" width="{{ partner.w }}" height="{{ partner.h }}" alt="{{ partner.name | escape }}" loading="lazy">
+      {%- else %}
+    {% include picture.html src=partner.logo w=partner.w h=partner.h alt=partner.name class=logo_class sizes="200px" %}
+      {%- endif %}
+    {%- else %}
+    <span>{{ partner.name }}</span>
+    {%- endif %}
+  </a>
+  {%- endfor %}
+</div>

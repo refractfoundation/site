@@ -1,0 +1,11 @@
+{%- comment -%}
+  Expands {person} tokens in a photo caption into LinkedIn links from _data/people.yml.
+  Usage: {% include caption.html text=photo.caption %}
+{%- endcomment -%}
+{%- assign out = include.text | escape -%}
+{%- for person in site.data.people -%}
+  {%- assign token = '{' | append: person[0] | append: '}' -%}
+  {%- capture link -%}<a href="{{ person[1].linkedin }}">{{ person[1].name }}</a>{%- endcapture -%}
+  {%- assign out = out | replace: token, link -%}
+{%- endfor -%}
+{{- out -}}

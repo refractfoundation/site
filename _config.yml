@@ -3,15 +3,50 @@ description: "Real skills. Real opportunity."
 url: https://refractfoundation.org
 encoding: utf-8
 
+# Contact details used in the footer and on the contact page.
+email: hello@refractfoundation.org
+linkedin: https://linkedin.com/company/refractfoundation
+
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-target-blank
 
+# Content lives in collections. Each document sets its own permalink so the
+# public URLs stay exactly as they were (/our-work/haven, /news/hackuk-campfire).
+collections:
+  events:
+    output: true
+  programmes:
+    output: true
+  census_reports:
+    output: true
+  institutions:
+    output: true
+    permalink: /our-work/census/institutions/:name
+
+defaults:
+  - scope: { path: "", type: events }
+    values: { layout: event }
+  - scope: { path: "", type: programmes }
+    values: { layout: programme }
+  - scope: { path: "", type: census_reports }
+    values: { layout: census-report }
+  - scope: { path: "", type: institutions }
+    values: { layout: institution }
+  - scope: { path: "", type: posts }
+    values: { layout: post }
+
+# Stylesheet is assets/css/main.scss, built from _sass/.
+sass:
+  style: compressed
+  sourcemap: never
+
 exclude:
   - README.md
   - README.MD
   - CLAUDE.md
+  - docs
   - LICENSE
   - "*.gem"
   - "*.gemspec"
@@ -19,13 +54,5 @@ exclude:
   - package.json
   - package-lock.json
   - vercel.json
-  - scripts/generate-webp.js
-  - scripts/optimise-images.js
-  # Only bootstrap.min.css and bootstrap.min.js are referenced (_includes/head.html)
-  - scripts/bootstrap-dist/css/bootstrap-*
-  - scripts/bootstrap-dist/css/bootstrap.css
-  - scripts/bootstrap-dist/css/bootstrap.rtl*
-  - scripts/bootstrap-dist/js/bootstrap.bundle*
-  - scripts/bootstrap-dist/js/bootstrap.esm*
-  - scripts/bootstrap-dist/js/bootstrap.js
-  - "scripts/bootstrap-dist/**/*.map"
+  - scripts
+  - node_modules

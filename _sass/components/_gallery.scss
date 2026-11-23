@@ -1,0 +1,54 @@
+// Photo galleries. Photos sit in a masonry flow with a slight alternating tilt; each one is a
+// link to the full image that lightbox.js upgrades into a viewer. Without JavaScript the
+// link simply opens the photo.
+
+.gallery {
+  margin-top: 2.4rem;
+  column-gap: 16px;
+  columns: 4 220px;
+
+  // The event pages show captions, so they use wider columns.
+  &--captioned {
+    column-gap: 24px;
+    columns: 3 300px;
+  }
+
+  &__item {
+    display: grid;
+    gap: 0.5rem;
+    margin: 0 0 18px;
+    break-inside: avoid;
+
+    &:nth-child(odd) { transform: rotate(-0.8deg); }
+    &:nth-child(even) { transform: rotate(0.7deg); }
+  }
+
+  &__link {
+    display: block;
+    overflow: hidden;
+    border-radius: 14px;
+    box-shadow: 0 14px 26px -18px rgb(58 42 26 / 60%);
+    cursor: zoom-in;
+
+    img {
+      width: 100%;
+      transition: transform 0.5s;
+    }
+
+    &:hover img {
+      transform: scale(1.04);
+    }
+  }
+
+  figcaption {
+    color: var(--brown-2);
+    font-size: 0.93rem;
+    line-height: 1.45;
+
+    a {
+      color: var(--carrot-text);
+      font-weight: 700;
+      text-underline-offset: 3px;
+    }
+  }
+}

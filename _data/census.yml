@@ -1,0 +1,119 @@
+# Census pilot results (Ormiston Sandwell Community Academy, 2025-26). Used by the home page
+# band and the Census page. Source: the OSCA Census report in /assets/.
+pilot:
+  students: 261
+  school: Ormiston Sandwell Community Academy
+  years: Years 7 to 9
+  report: /assets/reports/census/osca/osca-2025-26.pdf
+  published: July 2026
+
+# Three figures for the strip under the Census band on the home page.
+band:
+  - { value: 261, text: "students in our first pilot, Years 7 to 9" }
+  - { value: 90%, text: "of students use AI tools, regularly or sometimes" }
+  - { value: 96%, text: "have a smartphone outside school" }
+
+# Headline findings, shown as tiles on the Census page.
+findings:
+  - { value: 90%, text: "of students use AI tools, regularly or sometimes." }
+  - { value: 63%, text: "have been taught to use AI safely, effectively and responsibly." }
+  - { value: 75%, text: "feel safe when using the internet." }
+  - { value: 36%, text: "have clicked on something online that later felt unsafe or suspicious." }
+  - { value: 96%, text: "have a smartphone outside school." }
+  - { value: 76%, text: "of students learn digital skills at school." }
+
+# The four Digital Literacy indices that make up the Digital Literacy Score (DLS).
+indices:
+  - { code: DAI, name: Digital Access, short: Access, text: "Access to devices, connectivity and the internet." }
+  - { code: DCI, name: Digital Confidence, short: Confidence, text: "Comfort and self-efficacy using digital tools." }
+  - { code: DSI, name: Digital Safety, short: Safety, text: "Awareness of online risks and safe behaviour." }
+  - { code: DDI, name: Digital Development, short: Development, text: "Skills, learning and ongoing digital growth." }
+
+# What Census gathers data on.
+gathers:
+  - Digital skills and confidence
+  - Online safety awareness
+  - Access to devices and the internet
+  - The emerging trend of AI
+
+# The student survey, section by section. "feeds" names the index a section contributes to.
+survey:
+  - section: Section 1
+    name: About You
+    text: A few short demographic questions, so every background is equally represented.
+    examples:
+      - What school year group are you in?
+      - What is your gender identity?
+      - What is your ethnicity?
+      - Do you receive free school meals or pupil premium?
+  - section: Section 2
+    name: Digital Access
+    text: Devices and connectivity outside of school.
+    feeds: Digital Access Index
+    examples:
+      - Which devices can you regularly use outside of school?
+      - Do you have internet access outside of school?
+      - Where do you have reliable internet access?
+  - section: Section 3
+    name: Digital Confidence
+    text: Self-rated confidence from 1–5 stars across everyday digital scenarios.
+    feeds: Digital Confidence Index
+    examples:
+      - How confident are you using a computer for everyday tasks?
+      - How confident are you spotting fake websites, scams, or phishing messages?
+      - How confident are you using AI tools safely and checking if their answers are accurate?
+  - section: Section 4
+    name: Digital Safety
+    text: Yes / No / Unsure statements about recognising and dealing with online risks.
+    feeds: Digital Safety Index
+    examples:
+      - I can identify a scam email or message.
+      - I know how to stay safe online and deal with security problems.
+      - I feel safe when using the internet.
+  - section: Section 5
+    name: Digital Development
+    text: Where students learn digital skills, and what would help them develop further.
+    feeds: Digital Development Index
+    examples:
+      - Where do you usually learn digital skills?
+      - What would help you most to improve your digital skills?
+      - Have you been taught about staying safe online?
+  - section: Section 6
+    name: Artificial Intelligence
+    text: How students use AI tools, and whether they feel AI helps or harms their learning.
+    examples:
+      - Do you use AI tools?
+      - Have you been taught how to use AI safely, effectively and responsibly?
+      - Overall, do AI tools help or harm your learning?
+  - section: Section 7
+    name: Open Feedback
+    text: Optional free-text questions for students to share challenges and ideas.
+    examples:
+      - What challenges do you face when using technology or the internet?
+      - How could schools or organisations support you to improve your digital skills or access to technology?
+
+# How Census works for a school.
+steps:
+  - name: School registration
+    text: Schools express interest in participation and nominate a staff contact. If the school runs a student digital leadership programme, a student representative can be nominated too. The school decides where the survey is targeted, such as running staff and student surveys, student-only surveys, or focusing on particular year groups.
+  - name: Survey distribution
+    text: Refract creates a secure survey link for students to complete during tutor time, IT lessons, or in their own time at home. If the staff survey is opted into, staff access a specific form they can complete in their own time.
+  - name: Data collection
+    text: Responses are analysed to identify trends and key findings, displayed in a data-rich dashboard.
+  - name: Reporting
+    text: Participating schools receive a summary report containing key statistics, trends and observations, suggested focus areas, and visual charts, plus a dashboard to view raw and filtered data.
+  - name: Renew
+    text: Following a successful Census, schools are invited to renew, distributing the survey every one to two academic years. This captures data on new intake and lets digital strategy improvements be measured.
+
+# What a participating school receives.
+receives:
+  - name: Key statistics
+    text: A clear picture of digital access, confidence, safety and development across the school.
+  - name: Trends and observations
+    text: Patterns identified from the responses.
+  - name: Suggested focus areas
+    text: Where additional investment or support may be needed.
+  - name: Visual charts
+    text: Accessible overviews for staff, governors and leadership teams.
+  - name: A data dashboard
+    text: Raw and filtered data for deeper exploration.

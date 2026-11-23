@@ -1,0 +1,107 @@
+---
+layout: default
+---
+{%- comment -%}
+  One layout for every event. Whether it reads as a recap or an upcoming event is decided
+  from the date. Spotlight, projects, gallery and partners are shown only when the event has them.
+{%- endcomment -%}
+{%- assign is_past = false -%}
+{%- if page.date <= site.time -%}{%- assign is_past = true -%}{%- endif -%}
+
+<section class="hero hero--people page-hero" style="--hero-height: {{ page.hero.height }}" aria-labelledby="event-title">
+  {% include picture.html photo=page.hero.photo class="hero__image" alt="" eager=true position=page.hero.position %}
+  <div class="wrap">
+    <div class="hero__body">
+      {%- if page.logo %}
+      <img class="hero__event-logo" src="{{ page.logo.src }}" alt="{{ page.logo.alt }}" width="{{ page.logo.w }}" height="{{ page.logo.h }}">
+      {%- endif %}
+      <p class="hero__eyebrow">{% if is_past %}Event recap{% else %}Upcoming event{% endif %}</p>
+      <h1 class="hero__title" id="event-title">{{ page.title }}</h1>
+      <p class="hero__meta"><span>{{ page.date | date: "%A %-d %B %Y" }}</span><span>{{ page.venue }}</span></p>
+      <p class="hero__text">{{ page.lede }}</p>
+      {%- if page.signup and is_past == false %}
+      <div class="button-row"><a class="button button--primary" href="{{ page.signup }}">Sign up {% include icon-arrow.html %}</a></div>
+      {%- endif %}
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="facts-heading">
+  <div class="wrap">
+    <h2 class="visually-hidden" id="facts-heading">Event facts</h2>
+    <dl class="facts">
+      {%- for fact in page.facts %}
+      <div class="facts__item"><dt>{{ fact.label }}</dt><dd>{{ fact.value }}</dd></div>
+      {%- endfor %}
+    </dl>
+    <div class="two-column event-story">
+      <h2 class="rule">{% if is_past %}The day{% else %}The plan{% endif %}</h2>
+      <div class="event-story__text">{{ content }}</div>
+    </div>
+  </div>
+</section>
+
+{%- if page.spotlight %}
+<section class="spotlight on-dark" aria-labelledby="spotlight-heading">
+  <div class="wrap">
+    <div class="spotlight__panel">
+      <div class="spotlight__photo{% if page.spotlight.landscape %} spotlight__photo--landscape{% endif %}">
+        {% include picture.html photo=page.spotlight.photo sizes="340px" position=page.spotlight.position %}
+      </div>
+      <div>
+        <p class="spotlight__eyebrow">{{ page.spotlight.eyebrow }}</p>
+        <h2 id="spotlight-heading">{{ page.spotlight.title }}</h2>
+        <p class="spotlight__text">{{ page.spotlight.text }}</p>
+        <div class="button-row">
+          <a class="button button--primary" href="{{ page.spotlight.button.url }}">{{ page.spotlight.button.label }} {% include icon-arrow.html %}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{%- endif %}
+
+{%- if page.projects %}
+<section class="section" aria-labelledby="projects-heading">
+  <div class="wrap">
+    <h2 id="projects-heading" class="rule">{{ page.projects_heading | default: "Projects" }}</h2>
+    <div class="project-list">
+      {%- for project in page.projects %}
+      {%- capture shot_alt %}Screenshot of {{ project.name }}{% endcapture %}
+      <article class="project-card">
+        {%- if project.rank %}
+        <span class="project-card__rank project-card__rank--{{ project.rank }}">{% case project.rank %}{% when 1 %}1st{% when 2 %}2nd{% when 3 %}3rd{% endcase %}</span>
+        {%- endif %}
+        <div class="project-card__image">
+          {% include picture.html src=project.image w=project.w h=project.h alt=shot_alt sizes="(max-width: 560px) 100vw, 33vw" %}
+        </div>
+        <div class="project-card__body">
+          <h3 class="project-card__title">{{ project.name }}</h3>
+          <p class="project-card__authors">By {{ project.people }}</p>
+          <a class="project-card__link" href="{{ project.url }}">Play on itch.io</a>
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+{%- endif %}
+
+{%- if page.gallery %}
+<section class="section section--tint" aria-labelledby="gallery-heading">
+  <div class="wrap">
+    <h2 id="gallery-heading" class="rule">{{ page.gallery_heading | default: "Gallery" }}</h2>
+    <p class="section__lede">Select any photo to view it larger.</p>
+    {% include gallery.html photos=page.gallery captions=true %}
+  </div>
+</section>
+{%- endif %}
+
+{%- if page.partners %}
+<section class="section" aria-labelledby="partners-heading">
+  <div class="wrap">
+    <h2 id="partners-heading" class="rule">Made possible by</h2>
+    {% include partner-cards.html ids=page.partners %}
+  </div>
+</section>
+{%- endif %}

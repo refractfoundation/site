@@ -1,0 +1,20 @@
+{%- comment -%} Yes / No / Unsure statements as stacked bars. Pass: questions (array from results.json). {%- endcomment -%}
+<div class="agree-list">
+  {%- for q in include.questions %}
+  <figure class="agree">
+    <figcaption class="agree__title">{{ q.label }}</figcaption>
+    <div class="agree__bar" aria-hidden="true">
+      {%- for opt in q.options %}
+      {%- assign pct = opt.count | times: 100.0 | divided_by: q.n %}
+      <span class="agree__seg agree__seg--{{ opt.label | downcase }}" style="width: {{ pct }}%"></span>
+      {%- endfor %}
+    </div>
+    <p class="agree__legend">
+      {%- for opt in q.options %}
+      {%- assign pct = opt.count | times: 100.0 | divided_by: q.n | round %}
+      <span><i class="agree__key agree__key--{{ opt.label | downcase }}"></i>{{ opt.label }} {{ opt.count }} <small>({{ pct }}%)</small></span>
+      {%- endfor %}
+    </p>
+  </figure>
+  {%- endfor %}
+</div>

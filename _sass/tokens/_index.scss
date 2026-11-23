@@ -1,0 +1,52 @@
+// Design tokens. Every colour, size and font used by the site starts here.
+//
+// COLOUR RULES
+// - Brand colours are Deep Forest, Crimson Carrot and Pale Oak, plus cream as the page colour.
+// - A programme page sets --accent to its own colour (Census is #00537c). Anything accented
+//   (heading rules, links, buttons, stat tiles) follows --accent, so a new programme only needs
+//   a colour in its front matter.
+// - Crimson Carrot is 3.45:1 against white, which passes WCAG AA only for large or bold text.
+//   So white text on Carrot is used only at 18.7px bold or larger (buttons, the donate band),
+//   and Carrot used as *text* on a light background uses --carrot-text (5:1).
+// - Cream-on-forest and forest-on-cream both exceed 10:1.
+
+:root {
+  color-scheme: light;
+
+  // Brand
+  --forest: #004225;
+  --forest-2: #0b5a36;
+  --carrot: #f94d00;
+  --oak: #dac8ae;
+  --cream: #f7f2e9;
+  --brown: #3a2a1a;
+
+  // Programme accents
+  --census: #00537c;
+  --census-dark: #00466a;
+  --accent: var(--carrot);
+
+  // Neutrals derived from the brand
+  --oak-tint: #eee5d7;            // Pale Oak at 30% over cream
+  --brown-2: #5f4e3e;             // secondary text, 7:1 on cream
+  --white: #fff;
+  --line: rgb(58 42 26 / 22%);
+
+  // Accessible variants
+  --carrot-text: #b33300;         // Carrot as text on light backgrounds
+  --carrot-hover: #d94100;        // darker so white text keeps its contrast on hover
+
+  // Focus ring: blue on light surfaces, warm yellow on dark ones
+  --focus: #0a4fc4;
+  --focus-on-dark: #ffd28a;
+
+  // Type. The site uses Zilla Slab throughout.
+  --font: "Zilla Slab", georgia, "Times New Roman", serif;
+  --text-base: clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem);
+
+  // Layout
+  --header-height: 92px;
+  --content-width: 1200px;
+  --gutter: max(20px, env(safe-area-inset-left, 0px));
+  --gutter-end: max(20px, env(safe-area-inset-right, 0px));
+}
