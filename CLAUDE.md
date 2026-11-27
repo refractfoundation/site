@@ -25,11 +25,12 @@ Vercel builds with `npm ci && node scripts/generate-webp.js && bundle exec jekyl
 
 ## Architecture
 
-Static Jekyll 4.4.1 site (Ruby) with Bootstrap 5 vendored in `scripts/bootstrap-dist/` (not from npm). Node is only used for image conversion.
+Static Jekyll 4.4.1 site (Ruby), no CSS framework. Node is only used for image scripts.
 
-- **Pages** are top-level `*.md` plus `our-work/` (programmes and events such as Campfire, Census, Haven) and `news/` (posts with `title`, `layout: post`, `author`, `date`, `cover`, `permalink`). Layouts live in `_layouts/` (`index`, `page`, `post`, `programme`); use only these.
-- **Content is data-driven**: nav, programmes, team, partners, values, contact, and events are YAML in `_data/`, rendered by partials in `_includes/` (e.g. `events-upcoming.html` / `events-past.html` read `_data/events.yml`). Change the YAML rather than the HTML where possible.
-- **WebP pipeline spans two places**: `scripts/generate-webp.js` writes `.webp` next to each source image (gitignored, never commit them), and `_plugins/webp_hook.rb` post-processes rendered HTML, wrapping `<img>` in `<picture>` and rewriting inline `url(...)` backgrounds when a `.webp` exists. Reference the original `.jpg/.png` path in content, with absolute paths from site root (`/assets/images/...`). Filename case matters on Vercel (Linux), so match the case exactly.
-- All custom styling is in the single `assets/style.css`.
+- **Content lives in collections**: `_events/` (Campfire, Haven), `_programmes/` (Census; paused ones have `published: false`), `_posts/` (news), `_institutions/` and `_census_reports/`, plus top-level pages (`about.html`, `contact.html`, policy `*.md`, …) and the `our-work/` and `news/` index pages. Layouts in `_layouts/`: `default`, `home`, `page`, `post`, `event`, `programme`, `institution`, `census-report`. Every page sets an explicit extensionless `permalink` (e.g. `/about`) so canonical URLs and the sitemap match Vercel's `cleanUrls`.
+- **Content is data-driven**: nav, home, people, partners, values, involvement, contact and Census data are YAML in `_data/`, rendered by partials in `_includes/`. Change the YAML rather than the HTML where possible.
+- **Photos**: `_data/photos.yml` maps a photo key to its file, size and alt text. Pages refer to photos by key (`cover:`, `hero.photo`, `gallery`) and render them with `_includes/picture.html`, which emits a `<picture>` with WebP srcsets. `scripts/generate-webp.js` writes those `.webp` files next to each source image (gitignored, never commit them). Use absolute paths from site root (`/assets/images/...`); filename case matters on Vercel (Linux).
+- **SEO**: `jekyll-seo-tag` and `jekyll-sitemap`. Give each page a `description:`. `_plugins/seo_defaults.rb` turns `cover` / `hero.photo` into the share image (falling back to `default_share_photo` in `_config.yml`) and an event's `summary` into its description.
+- Styles are Sass: `assets/css/main.scss` built from partials in `_sass/`.
 
 `_site/`, `.jekyll-cache/`, and generated `.webp` files are build output; don't edit or commit them.
