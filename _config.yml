@@ -1,11 +1,23 @@
 title: The Refract Foundation
-description: "Real skills. Real opportunity."
+tagline: "Digital Literacy for West Midlands Schools"
+description: "Refract is a youth-led initiative closing gaps in digital skills, confidence and opportunity for young people across the West Midlands."
 url: https://refractfoundation.org
 encoding: utf-8
 
 # Contact details used in the footer and on the contact page.
 email: hello@refractfoundation.org
 linkedin: https://linkedin.com/company/refractfoundation
+
+locale: en_GB
+logo: /assets/images/brand/refract-full-colour.svg
+social:
+  name: The Refract Foundation
+  links:
+    - https://linkedin.com/company/refractfoundation
+
+# Share image (a key in _data/photos.yml) for pages with no cover or hero photo of their own.
+# See _plugins/seo_defaults.rb.
+default_share_photo: haven-west-midlands-2026-000
 
 plugins:
   - jekyll-sitemap
@@ -29,7 +41,7 @@ defaults:
   - scope: { path: "", type: events }
     values: { layout: event }
   - scope: { path: "", type: programmes }
-    values: { layout: programme }
+    values: { layout: programme, seo: { type: WebPage } }
   - scope: { path: "", type: census_reports }
     values: { layout: census-report }
   - scope: { path: "", type: institutions }

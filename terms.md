@@ -1,6 +1,8 @@
 ---
 title: Terms and Conditions
 layout: page
+permalink: /terms
+description: "The terms and conditions for using The Refract Foundation’s website, events and programmes."
 ---
 
 # Terms and Conditions
