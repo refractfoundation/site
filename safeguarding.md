@@ -1,6 +1,7 @@
 ---
 title: Safeguarding Policy
 layout: page
+permalink: /safeguarding
 ---
 
 # Safeguarding Policy

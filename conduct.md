@@ -1,6 +1,7 @@
 ---
 title: Code of Conduct
 layout: page
+permalink: /conduct
 ---
 
 # Code of Conduct
