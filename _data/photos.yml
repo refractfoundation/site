@@ -230,3 +230,23 @@ campfire-birmingham-2026-artwork:
   w: 842
   h: 595
   alt: "Illustrated blue sky with orange clouds above a strip of grass"
+haven-spotlight-kyle-davies:
+  file: "/assets/images/news/haven-spotlight-kyle-davies.jpg"
+  w: 1920
+  h: 1080
+  alt: "Kyle Davies, wearing headphones, introducing himself in the Haven Developer Spotlight video"
+haven-spotlight-elliot-spencer:
+  file: "/assets/images/news/haven-spotlight-elliot-spencer.jpg"
+  w: 1920
+  h: 1080
+  alt: "Elliot Spencer introducing himself in the Haven Developer Spotlight video"
+haven-spotlight-reu-wilde:
+  file: "/assets/images/news/haven-spotlight-reu-wilde.jpg"
+  w: 1280
+  h: 720
+  alt: "Reu Wilde talking to camera in the Haven Developer Spotlight video"
+haven-developer-spotlight:
+  file: "/assets/images/news/haven-developer-spotlight.jpg"
+  w: 1200
+  h: 1200
+  alt: "Developer Spotlight graphic featuring Reu Wilde of Jinx Gaming, and Elliot Spencer and Kyle Davies of Apocalypse Games"
