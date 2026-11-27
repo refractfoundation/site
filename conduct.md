@@ -2,6 +2,7 @@
 title: Code of Conduct
 layout: page
 permalink: /conduct
+description: "The Code of Conduct for everyone taking part in The Refract Foundation’s events and programmes."
 ---
 
 # Code of Conduct

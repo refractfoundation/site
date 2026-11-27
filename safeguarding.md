@@ -2,6 +2,7 @@
 title: Safeguarding Policy
 layout: page
 permalink: /safeguarding
+description: "How The Refract Foundation keeps children and young people safe at our events and in our programmes."
 ---
 
 # Safeguarding Policy

@@ -2,6 +2,7 @@
 title: Privacy Policy
 layout: page
 permalink: /privacy
+description: "How The Refract Foundation collects, uses and protects personal data, including Census responses and event registrations."
 ---
 
 # Privacy Policy
