@@ -7,6 +7,10 @@ encoding: utf-8
 email: hello@refractfoundation.org
 linkedin: https://linkedin.com/company/refractfoundation
 
+# Share image (a key in _data/photos.yml) for pages with no cover or hero photo of their own.
+# See _plugins/seo_defaults.rb.
+default_share_photo: haven-west-midlands-2026-000
+
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
