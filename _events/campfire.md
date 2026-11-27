@@ -1,5 +1,6 @@
 ---
 title: Campfire Birmingham
+title_category: "Teen Game Jam"
 permalink: /our-work/campfire
 date: 2026-02-28
 venue: Ormiston Sandwell Community Academy

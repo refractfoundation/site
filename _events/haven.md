@@ -1,5 +1,6 @@
 ---
 title: Haven West Midlands
+title_category: "Teen Game Jam"
 permalink: /our-work/haven
 date: 2026-11-14
 venue: University of Wolverhampton Science Park
